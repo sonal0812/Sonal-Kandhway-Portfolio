@@ -160,9 +160,10 @@ nav.stuck {
 }
 .nav-links a {
   font-size: 0.78rem;
+  font-weight: 500;             /* was unset (defaulted to 300) — now medium */
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--ink-3);
+  color: var(--ink-2);          /* was --ink-3 (too dim) — now --ink-2 (readable) */
   transition: color 0.2s;
   position: relative;
 }
