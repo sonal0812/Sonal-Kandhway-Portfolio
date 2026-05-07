@@ -20,19 +20,22 @@
 </head>
 <body>
 
+<a href="#main" class="skip-link">Skip to main content</a>
+
 <div id="prog"></div>
 <div class="cur" id="cur"></div>
 <div class="cur-r" id="curR"></div>
 
 <!-- ═══ NAV ═══ -->
 <nav id="nav">
-  <div class="nav-logo-wrap"><img class="nav-logo-img logo-dark" src="assets/images/logo-dark.png" alt="Sonal Kandhway" height="56"><img class="nav-logo-img logo-light" src="assets/images/logo-white.png" alt="Sonal Kandhway" height="56"></div>
+  <div class="nav-logo-wrap"><img class="nav-logo-img logo-dark" src="assets/images/logo-dark.png" alt="Sonal Kandhway" height="72"><img class="nav-logo-img logo-light" src="assets/images/logo-white.png" alt="Sonal Kandhway" height="72"></div>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
+    <li><a href="#career">Journey</a></li>
     <li><a href="#work">Work</a></li>
     <li><a href="#process">Process</a></li>
     <li><a href="#skills">Skills</a></li>
-    <li><a href="#testimonials">Reviews</a></li>
+    <li><a href="#recommendations">Recommendations</a></li>
     <li><a href="#contact" class="nav-cta">Let's Talk</a></li>
   </ul>
   <div class="nav-right">
@@ -42,7 +45,24 @@
       </div>
     </button>
   </div>
+  <button class="hamburger" id="hamburger" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
+
+<!-- Mobile Navigation Drawer -->
+<div class="mobile-nav" id="mobileNav">
+  <a href="#about"        onclick="closeMobileNav()">About</a>
+  <a href="#career"       onclick="closeMobileNav()">Journey</a>
+  <a href="#work"         onclick="closeMobileNav()">Work</a>
+  <a href="#process"      onclick="closeMobileNav()">Process</a>
+  <a href="#skills"       onclick="closeMobileNav()">Skills</a>
+  <a href="#recommendations" onclick="closeMobileNav()">Recommendations</a>
+  <a href="#contact"      onclick="closeMobileNav()" class="mobile-nav-cta">Let's Talk</a>
+  <div class="mobile-nav-footer">sonalkandhway.com</div>
+</div>
+
+<main id="main" tabindex="-1">
 
 <!-- ═══ HERO ═══ -->
 <section id="hero">
@@ -75,6 +95,12 @@
       </a>
       <a href="#contact" class="btn-g">
         Let's collaborate →
+      </a>
+      <a href="assets/sonal-kandhway-cv.pdf" download class="btn-g">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <path d="M7 1v8M3.5 5.5L7 9l3.5-3.5M2 11.5h10" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Download CV
       </a>
     </div>
 
@@ -258,58 +284,85 @@
 
 <div class="divider"></div>
 
-<!-- ═══ CLIENT LOGOS ═══ -->
-<section id="logos">
-  <div class="logos-header rv">
-    <div class="logos-title">Brands &amp; organisations I've contributed to</div>
+<!-- ═══ CAREER TIMELINE ═══ -->
+<section id="career">
+  <div class="rv">
+    <div class="section-eyebrow">
+      <div class="ey-line"></div>
+      <span class="ey-txt">The Journey So Far</span>
+    </div>
+    <h2 class="section-title">12 years.<br>4 companies. <em>One craft.</em></h2>
+    <p style="font-size:1rem;color:var(--ink-2);margin-top:20px;max-width:560px;line-height:1.75">
+      I've grown from a junior designer figuring out the basics to leading enterprise design teams.
+      Here's the path — the companies, the lessons, the people who shaped how I think.
+    </p>
   </div>
-  <div class="logo-grid rv d1">
-    <!-- Logo 1: HealthCore -->
-    <div class="logo-cell">
-      <svg class="logo-svg" width="120" height="32" viewBox="0 0 120 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="0" y="10" width="14" height="14" rx="3" fill="var(--ink-1)"/>
-        <rect x="5" y="5" width="4" height="14" rx="2" fill="var(--ink-1)" opacity=".6"/>
-        <text x="20" y="22" font-family="Georgia,serif" font-size="14" font-weight="400" fill="var(--ink-1)">HealthCore</text>
-      </svg>
+
+  <div class="timeline rv d1">
+    <div class="tl-item tl-current">
+      <div class="tl-marker"></div>
+      <div class="tl-card">
+        <div class="tl-when">2021 — Present</div>
+        <div class="tl-role">Senior UX/UI Manager</div>
+        <div class="tl-where">The Higher Pitch · Noida, India</div>
+        <p class="tl-what">
+          Leading UX strategy and design ops for enterprise clients across healthcare,
+          fintech, and EdTech. Mentoring designers on craft and judgment, running
+          stakeholder workshops, and integrating AI tools into team research workflows.
+        </p>
+      </div>
     </div>
-    <!-- Logo 2: FinEdge -->
-    <div class="logo-cell">
-      <svg class="logo-svg" width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M8 24 L8 8 L22 8" stroke="var(--ink-1)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-        <path d="M8 16 L18 16" stroke="var(--ink-1)" stroke-width="2.5" stroke-linecap="round"/>
-        <text x="28" y="22" font-family="system-ui,sans-serif" font-size="13" font-weight="600" letter-spacing=".02em" fill="var(--ink-1)">FINEDGE</text>
-      </svg>
+
+    <div class="tl-item">
+      <div class="tl-marker"></div>
+      <div class="tl-card">
+        <div class="tl-when">Earlier</div>
+        <div class="tl-role">Senior UX/UI Designer</div>
+        <div class="tl-where">QSS Technosoft</div>
+        <p class="tl-what">
+          B2B SaaS product design for enterprise clients. Where I learned how to design
+          for people who use software 8 hours a day, not 8 minutes.
+        </p>
+      </div>
     </div>
-    <!-- Logo 3: LearnPro -->
-    <div class="logo-cell">
-      <svg class="logo-svg" width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M4 24 L12 8 L20 20 L28 12" stroke="var(--ink-1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity=".7"/>
-        <circle cx="28" cy="12" r="3" fill="var(--ink-1)"/>
-        <text x="36" y="22" font-family="Georgia,serif" font-size="14" font-weight="400" fill="var(--ink-1)">LearnPro</text>
-      </svg>
+
+    <div class="tl-item">
+      <div class="tl-marker"></div>
+      <div class="tl-card">
+        <div class="tl-when">Earlier</div>
+        <div class="tl-role">UX/UI Designer</div>
+        <div class="tl-where">Software Assurance LLC</div>
+        <p class="tl-what">
+          Healthcare and clinical workflow projects. First exposure to designing for
+          high-stakes environments where mistakes have real consequences.
+        </p>
+      </div>
     </div>
-    <!-- Logo 4: QSS Technosoft -->
-    <div class="logo-cell">
-      <svg class="logo-svg" width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="2" y="8" width="16" height="16" rx="4" fill="none" stroke="var(--ink-1)" stroke-width="2"/>
-        <text x="5.5" y="21" font-family="system-ui,sans-serif" font-size="10" font-weight="700" fill="var(--ink-1)">QSS</text>
-        <text x="24" y="22" font-family="system-ui,sans-serif" font-size="11" font-weight="400" fill="var(--ink-1)">Technosoft</text>
-      </svg>
+
+    <div class="tl-item">
+      <div class="tl-marker"></div>
+      <div class="tl-card">
+        <div class="tl-when">Earlier</div>
+        <div class="tl-role">UX Designer</div>
+        <div class="tl-where">Intalegencia</div>
+        <p class="tl-what">
+          First role out of design school. Where I learned the fundamentals of digital
+          product design and that good design starts with listening.
+        </p>
+      </div>
     </div>
-    <!-- Logo 5: The Higher Pitch -->
-    <div class="logo-cell">
-      <svg class="logo-svg" width="130" height="32" viewBox="0 0 130 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M4 24 L4 8 M14 8 L14 24 M4 16 L14 16" stroke="var(--ink-1)" stroke-width="2.2" stroke-linecap="round"/>
-        <text x="22" y="22" font-family="system-ui,sans-serif" font-size="11" font-weight="500" fill="var(--ink-1)" letter-spacing=".01em">The Higher Pitch</text>
-      </svg>
-    </div>
-    <!-- Logo 6: DataSync -->
-    <div class="logo-cell">
-      <svg class="logo-svg" width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="14" cy="16" r="10" fill="none" stroke="var(--ink-1)" stroke-width="2" opacity=".8"/>
-        <path d="M10 16 Q14 10 18 16 Q14 22 10 16" fill="var(--ink-1)" opacity=".6"/>
-        <text x="30" y="22" font-family="system-ui,sans-serif" font-size="13" font-weight="600" letter-spacing=".02em" fill="var(--ink-1)">DATASYNC</text>
-      </svg>
+
+    <div class="tl-item tl-edu">
+      <div class="tl-marker"></div>
+      <div class="tl-card">
+        <div class="tl-when">2010 — 2012</div>
+        <div class="tl-role">Diploma in Designing</div>
+        <div class="tl-where">Arena Animation Academy · Vinoba Bhave University (BCom)</div>
+        <p class="tl-what">
+          Where craft started. Learned design fundamentals, typography, composition,
+          and the discipline of making things that work.
+        </p>
+      </div>
     </div>
   </div>
 </section>
@@ -458,44 +511,176 @@
     </div>
   </div>
 
-  <!-- Secondary work cards -->
-  <div class="work-grid">
-    <div class="wcard rv d1">
-      <div class="wcard-thumb wt1">
-        <div style="position:absolute;inset:0;display:flex;align-items:center;padding:18px;gap:8px;">
-          <div style="width:52px;height:72px;background:rgba(255,255,255,.04);border-radius:6px;border:1px solid rgba(255,255,255,.06)"></div>
-          <div style="flex:1;display:flex;flex-direction:column;gap:5px;">
-            <div style="height:7px;background:rgba(255,255,255,.06);border-radius:3px;width:65%"></div>
-            <div style="height:5px;background:rgba(255,255,255,.04);border-radius:3px;width:45%"></div>
-            <div style="height:5px;background:rgba(255,255,255,.03);border-radius:3px;width:75%"></div>
-          </div>
-        </div>
-      </div>
-      <div class="wcard-arrow">→</div>
-      <div class="wcard-domain">Healthcare · Enterprise SaaS</div>
-      <h3 class="wcard-title">Clinical Workflow Redesign</h3>
-      <p class="wcard-desc">Rebuilt a legacy EHR dashboard for ICU nurses — reducing task completion time by 34% and cutting cognitive load during critical shift handoffs.</p>
-      <div class="wcard-tags">
-        <span class="wt">Research</span><span class="wt">Systems Design</span><span class="wt">Accessibility</span><span class="wt">Enterprise UX</span>
-      </div>
+  <!-- ═══ SELECTED PROJECTS ═══ -->
+  <div class="rv projects-header">
+    <div class="section-eyebrow">
+      <div class="ey-line"></div>
+      <span class="ey-txt">Selected Work · 2014 — 2024</span>
     </div>
+    <h2 class="section-title">Real projects.<br>Real users. Real <em>constraints.</em></h2>
+    <p class="projects-intro">
+      Beyond the case study above, here are some of the projects I'm proudest of —
+      not because they were the biggest, but because each one taught me something
+      I still carry into the work today.
+    </p>
+  </div>
 
-    <div class="wcard rv d2">
-      <div class="wcard-thumb wt2">
-        <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;gap:6px;padding:18px;">
-          <div style="flex:1;background:rgba(255,255,255,.03);border-radius:8px;height:70px;border:1px solid rgba(255,255,255,.05)"></div>
-          <div style="flex:1;background:rgba(255,255,255,.05);border-radius:8px;height:82px;border:1px solid rgba(255,255,255,.07)"></div>
-          <div style="flex:1;background:rgba(255,255,255,.03);border-radius:8px;height:65px;border:1px solid rgba(255,255,255,.05)"></div>
+  <div class="projects-grid">
+
+    <!-- 1. ORACLE -->
+    <article class="project-card rv d1">
+      <div class="project-hero" data-domain="fintech">
+        <div class="project-domain">Enterprise FinTech</div>
+        <div class="project-initial">O</div>
+      </div>
+      <div class="project-content">
+        <h3 class="project-title">Oracle FCCM Dashboard</h3>
+        <p class="project-desc">
+          Oracle's compliance officers were navigating six menu layers to find the alerts
+          that mattered. The fix wasn't more features — it was teaching the system
+          what to surface first. Rebuilt the IA around urgency and audit trail, so
+          senior officers could see what needed attention without hunting for it.
+        </p>
+        <div class="project-meta">
+          <div class="pm-item"><div class="pm-label">Role</div><div class="pm-value">UX Lead</div></div>
+          <div class="pm-divider"></div>
+          <div class="pm-item"><div class="pm-label">Year</div><div class="pm-value">2023</div></div>
+          <div class="pm-divider"></div>
+          <div class="pm-item"><div class="pm-label">Team</div><div class="pm-value">3 Designers</div></div>
         </div>
+        <a href="#contact" class="project-link">Discuss this work →</a>
       </div>
-      <div class="wcard-arrow">→</div>
-      <div class="wcard-domain">EdTech · B2B Platform</div>
-      <h3 class="wcard-title">Adaptive Learning Management System</h3>
-      <p class="wcard-desc">Designed an LMS for 50,000+ learners that introduced personalised learning paths and boosted course completion rates by 41%.</p>
-      <div class="wcard-tags">
-        <span class="wt">UX Strategy</span><span class="wt">Personalisation</span><span class="wt">Design System</span><span class="wt">B2B</span>
+    </article>
+
+    <!-- 2. MEDGENOME -->
+    <article class="project-card rv d2">
+      <div class="project-hero" data-domain="health">
+        <div class="project-domain">HealthTech · Genomics</div>
+        <div class="project-initial">M</div>
       </div>
-    </div>
+      <div class="project-content">
+        <h3 class="project-title">Medgenome Clinical Platform</h3>
+        <p class="project-desc">
+          Genomics diagnostics for clinicians reviewing hundreds of test results weekly.
+          The legacy interface treated all findings as equal priority — meaning critical
+          signals were buried alongside routine ones. After 4 weeks of contextual research
+          with their oncology team, we redesigned the review flow around clinical urgency.
+          The visual hierarchy did the heavy lifting.
+        </p>
+        <div class="project-meta">
+          <div class="pm-item"><div class="pm-label">Role</div><div class="pm-value">Lead UX Designer</div></div>
+          <div class="pm-divider"></div>
+          <div class="pm-item"><div class="pm-label">Year</div><div class="pm-value">2022</div></div>
+          <div class="pm-divider"></div>
+          <div class="pm-item"><div class="pm-label">Domain</div><div class="pm-value">Healthcare</div></div>
+        </div>
+        <a href="#contact" class="project-link">Discuss this work →</a>
+      </div>
+    </article>
+
+    <!-- 3. EDIT: PROJECT 3 -->
+    <article class="project-card rv d3">
+      <div class="project-hero" data-domain="edtech">
+        <div class="project-domain">[Domain — Edit Me]</div>
+        <div class="project-initial">?</div>
+      </div>
+      <div class="project-content">
+        <h3 class="project-title">[Project 3 — Add Client Name]</h3>
+        <p class="project-desc">
+          [Replace this with a designer-approach description in 2-3 sentences. Start
+          with the friction you observed, follow with the design move you made, end
+          with what changed for the user. Keep it specific. No buzzwords.]
+        </p>
+        <div class="project-meta">
+          <div class="pm-item"><div class="pm-label">Role</div><div class="pm-value">[Your role]</div></div>
+          <div class="pm-divider"></div>
+          <div class="pm-item"><div class="pm-label">Year</div><div class="pm-value">[YYYY]</div></div>
+          <div class="pm-divider"></div>
+          <div class="pm-item"><div class="pm-label">Domain</div><div class="pm-value">[Domain]</div></div>
+        </div>
+        <a href="#contact" class="project-link">Discuss this work →</a>
+      </div>
+    </article>
+
+    <!-- 4. EDIT: PROJECT 4 -->
+    <article class="project-card rv d1">
+      <div class="project-hero" data-domain="saas">
+        <div class="project-domain">[Domain — Edit Me]</div>
+        <div class="project-initial">?</div>
+      </div>
+      <div class="project-content">
+        <h3 class="project-title">[Project 4 — Add Client Name]</h3>
+        <p class="project-desc">
+          [Replace this with a designer-approach description. The pattern that works:
+          observation → reframe → decision. Avoid corporate language. Use concrete
+          numbers when you have them, but only when they actually help the story.]
+        </p>
+        <div class="project-meta">
+          <div class="pm-item"><div class="pm-label">Role</div><div class="pm-value">[Your role]</div></div>
+          <div class="pm-divider"></div>
+          <div class="pm-item"><div class="pm-label">Year</div><div class="pm-value">[YYYY]</div></div>
+          <div class="pm-divider"></div>
+          <div class="pm-item"><div class="pm-label">Domain</div><div class="pm-value">[Domain]</div></div>
+        </div>
+        <a href="#contact" class="project-link">Discuss this work →</a>
+      </div>
+    </article>
+
+    <!-- 5. EDIT: PROJECT 5 -->
+    <article class="project-card rv d2">
+      <div class="project-hero" data-domain="banking">
+        <div class="project-domain">[Domain — Edit Me]</div>
+        <div class="project-initial">?</div>
+      </div>
+      <div class="project-content">
+        <h3 class="project-title">[Project 5 — Add Client Name]</h3>
+        <p class="project-desc">
+          [Replace this. Designer-approach language: name the user, name the friction,
+          name the decision. Senior portfolios talk about constraints openly — what
+          you couldn't do is often as interesting as what you did.]
+        </p>
+        <div class="project-meta">
+          <div class="pm-item"><div class="pm-label">Role</div><div class="pm-value">[Your role]</div></div>
+          <div class="pm-divider"></div>
+          <div class="pm-item"><div class="pm-label">Year</div><div class="pm-value">[YYYY]</div></div>
+          <div class="pm-divider"></div>
+          <div class="pm-item"><div class="pm-label">Domain</div><div class="pm-value">[Domain]</div></div>
+        </div>
+        <a href="#contact" class="project-link">Discuss this work →</a>
+      </div>
+    </article>
+
+    <!-- 6. EDIT: PROJECT 6 -->
+    <article class="project-card rv d3">
+      <div class="project-hero" data-domain="other">
+        <div class="project-domain">[Domain — Edit Me]</div>
+        <div class="project-initial">?</div>
+      </div>
+      <div class="project-content">
+        <h3 class="project-title">[Project 6 — Add Client Name]</h3>
+        <p class="project-desc">
+          [Replace this. Tip: the best project descriptions read like field notes,
+          not marketing copy. What did you observe? What did you change? Who is
+          better off because of it? Three sentences is enough.]
+        </p>
+        <div class="project-meta">
+          <div class="pm-item"><div class="pm-label">Role</div><div class="pm-value">[Your role]</div></div>
+          <div class="pm-divider"></div>
+          <div class="pm-item"><div class="pm-label">Year</div><div class="pm-value">[YYYY]</div></div>
+          <div class="pm-divider"></div>
+          <div class="pm-item"><div class="pm-label">Domain</div><div class="pm-value">[Domain]</div></div>
+        </div>
+        <a href="#contact" class="project-link">Discuss this work →</a>
+      </div>
+    </article>
+
+  </div>
+
+  <!-- Closing CTA -->
+  <div class="rv projects-cta">
+    <p class="projects-cta-text">
+      Want to dig deeper into any of these? <a href="#contact">Let's set up a 30-minute call →</a>
+    </p>
   </div>
 </section>
 
@@ -518,28 +703,28 @@
       <div class="proc-ico">🔍</div>
       <div class="proc-num">Step 01</div>
       <div class="proc-title">Listen First, Design Second</div>
-      <div class="proc-desc">I start by understanding the actual problem, not the assumed one. User interviews, stakeholder sessions, contextual observation. No assumptions, no skipping ahead.</div>
+      <div class="proc-desc">Whether it's nurses on 12-hour shifts or first-time investors checking portfolio apps, the real problem is rarely the brief. I start with deep user conversations — clinical contextual inquiry, fintech trust interviews, learner motivation studies — before a single wireframe.</div>
       <div class="proc-tools"><span class="ptool">User Interviews</span><span class="ptool">Contextual Inquiry</span><span class="ptool">Dovetail AI</span></div>
     </div>
     <div class="proc-step rv d2" data-num="2">
       <div class="proc-ico">🗺️</div>
       <div class="proc-num">Step 02</div>
       <div class="proc-title">Map the Whole System</div>
-      <div class="proc-desc">I think in ecosystems before I think in screens. Journey maps, service blueprints, IA diagrams — the full picture before the first wireframe.</div>
+      <div class="proc-desc">Healthcare workflows don't fit on one screen. Banking decisions don't happen in isolation. I map full ecosystems first — service blueprints for clinical handoffs, journey maps for lending applications, IA for adaptive learning paths.</div>
       <div class="proc-tools"><span class="ptool">Journey Mapping</span><span class="ptool">IA Diagrams</span><span class="ptool">Miro</span></div>
     </div>
     <div class="proc-step rv d3" data-num="3">
       <div class="proc-ico">✏️</div>
       <div class="proc-num">Step 03</div>
       <div class="proc-title">Design with Intention</div>
-      <div class="proc-desc">Every element earns its place. HCI principles, UX laws, and accessibility aren't checklists — they're the natural grammar of how I think through interactions.</div>
+      <div class="proc-desc">Every interaction earns its place. HCI principles aren't a checklist for me — they're how I think. Whether it's a 7-tap rule for emergency clinical workflows or a progressive trust model for finance apps, design decisions are deliberate.</div>
       <div class="proc-tools"><span class="ptool">Figma</span><span class="ptool">Axure RP</span><span class="ptool">Design Systems</span></div>
     </div>
     <div class="proc-step rv d4" data-num="4">
       <div class="proc-ico">🔁</div>
       <div class="proc-num">Step 04</div>
       <div class="proc-title">Test, Learn, Ship Better</div>
-      <div class="proc-desc">Design doesn't end at handoff. I run usability tests, read behavior data, and iterate until what ships actually works for the people using it.</div>
+      <div class="proc-desc">Design isn't done at handoff. I run moderated tests with real users in their real context — clinicians at the bedside, students in their dorms, investors at the kitchen table. Then iterate until outcome data agrees with design intent.</div>
       <div class="proc-tools"><span class="ptool">Usability Testing</span><span class="ptool">Analytics</span><span class="ptool">A/B Tests</span></div>
     </div>
   </div>
@@ -559,23 +744,46 @@
 
   <div class="skills-grid">
     <div class="rv d1">
-      <div class="skill-cat">
-        <div class="skill-cat-lbl">UX & Design</div>
-        <div class="sbars">
-          <div class="sbar"><div class="sbar-head"><span class="sbar-name">UX Research & Strategy</span><span class="sbar-pct">96%</span></div><div class="sbar-track"><div class="sbar-fill" data-w="96"></div></div></div>
-          <div class="sbar"><div class="sbar-head"><span class="sbar-name">Interaction & Visual Design</span><span class="sbar-pct">93%</span></div><div class="sbar-track"><div class="sbar-fill" data-w="93"></div></div></div>
-          <div class="sbar"><div class="sbar-head"><span class="sbar-name">Information Architecture</span><span class="sbar-pct">90%</span></div><div class="sbar-track"><div class="sbar-fill" data-w="90"></div></div></div>
-          <div class="sbar"><div class="sbar-head"><span class="sbar-name">Design Systems</span><span class="sbar-pct">88%</span></div><div class="sbar-track"><div class="sbar-fill" data-w="88"></div></div></div>
-          <div class="sbar"><div class="sbar-head"><span class="sbar-name">Prototyping & Usability Testing</span><span class="sbar-pct">91%</span></div><div class="sbar-track"><div class="sbar-fill" data-w="91"></div></div></div>
-        </div>
+      <!-- Prose Block 1: Expertise -->
+      <div class="prose-block">
+        <div class="prose-eyebrow">Where my expertise runs deepest</div>
+        <p class="prose-body">
+          After 12 years across healthcare, fintech, and EdTech, my strongest work
+          sits at the intersection of <strong>complex enterprise systems and the
+          people who use them daily.</strong> UX research and synthesis, information
+          architecture, and design systems are where I'm most confident — turning
+          operator workflows that fight back into ones that get out of the way.
+          I'm equally comfortable running stakeholder interviews with C-suite execs
+          and pair-designing components with engineers.
+        </p>
       </div>
-      <div class="skill-cat" style="margin-top:36px">
-        <div class="skill-cat-lbl">Leadership</div>
-        <div class="sbars">
-          <div class="sbar"><div class="sbar-head"><span class="sbar-name">Team Mentoring & Management</span><span class="sbar-pct">92%</span></div><div class="sbar-track"><div class="sbar-fill" data-w="92"></div></div></div>
-          <div class="sbar"><div class="sbar-head"><span class="sbar-name">Stakeholder Communication</span><span class="sbar-pct">89%</span></div><div class="sbar-track"><div class="sbar-fill" data-w="89"></div></div></div>
-          <div class="sbar"><div class="sbar-head"><span class="sbar-name">AI-Integrated UX Workflows</span><span class="sbar-pct">85%</span></div><div class="sbar-track"><div class="sbar-fill" data-w="85"></div></div></div>
-        </div>
+
+      <!-- Prose Block 2: Leadership -->
+      <div class="prose-block">
+        <div class="prose-eyebrow">How I lead teams</div>
+        <p class="prose-body">
+          Managing designers is about <strong>knowing when to step in and when
+          to step back.</strong> My approach is rooted in design critique that's
+          specific over kind, mentorship that focuses on judgment over execution,
+          and giving the team enough context to make great decisions without me
+          in the room. I've grown junior designers into mids, hired teams,
+          run quarterly OKR planning, and built design ops to scale practice —
+          but the work I'm proudest of is people.
+        </p>
+      </div>
+
+      <!-- Prose Block 3: Currently -->
+      <div class="prose-block prose-now">
+        <div class="prose-eyebrow"><span class="now-dot"></span> What I'm exploring right now</div>
+        <p class="prose-body">
+          AI in design isn't a buzzword for me — it's daily practice. I'm currently
+          integrating <strong>Galileo AI</strong> for early concept exploration,
+          <strong>Dovetail AI</strong> for research synthesis at scale, and
+          <strong>Claude / ChatGPT</strong> for stakeholder communication and
+          design specifications. The goal isn't to replace thinking — it's to
+          compress the time between insight and prototype so the team spends
+          more time on what matters.
+        </p>
       </div>
     </div>
 
@@ -596,45 +804,91 @@
 <div class="divider"></div>
 
 <!-- ═══ TESTIMONIALS ═══ -->
-<section id="testimonials">
+<section id="recommendations">
   <div class="rv">
     <div class="section-eyebrow">
       <div class="ey-line"></div>
-      <span class="ey-txt">What People Say</span>
+      <span class="ey-txt">Recommendations</span>
     </div>
     <h2 class="section-title">Don't take<br>my word for <em>it.</em></h2>
+    <p style="font-size:1rem;color:var(--ink-2);max-width:560px;margin-top:24px;line-height:1.75">
+      A few words from the people I've actually worked with —
+      designers I've mentored, PMs I've collaborated with, and engineers
+      who've shipped my work into production.
+    </p>
   </div>
 
   <div class="testi-grid">
+
+    <!-- 1. From a Product / Business stakeholder -->
     <div class="tcard rv d1">
       <div class="tcard-stars">★★★★★</div>
       <div class="tcard-quote-mark">"</div>
-      <div class="tcard-text">Sonal doesn't just deliver screens — she delivers thinking. She asked questions in our first stakeholder meeting that our product team had been avoiding for months. The design process she ran completely changed how we thought about the problem.</div>
+      <div class="tcard-text">
+        Sonal asked questions in our first stakeholder workshop that our
+        product team had been avoiding for months. The design process she
+        ran completely reframed how we thought about the problem — and
+        the solution we shipped was better because of it.
+      </div>
       <div class="tcard-author">
-        <div class="author-avatar">AR</div>
-        <div><div class="author-name">Amit Rastogi</div><div class="author-role">Product Manager · HealthTech Startup</div></div>
+        <div class="author-avatar">??</div>
+        <div>
+          <div class="author-name">[Add Real Name]</div>
+          <div class="author-role">[Title] · [Company]</div>
+        </div>
       </div>
     </div>
 
+    <!-- 2. From a Designer / Mentee -->
     <div class="tcard rv d2">
       <div class="tcard-stars">★★★★★</div>
       <div class="tcard-quote-mark">"</div>
-      <div class="tcard-text">Working with Sonal was a masterclass in how design and engineering can actually collaborate. She takes the time to understand technical constraints, then finds creative solutions that work within them. Her handoffs are the clearest I've ever received.</div>
+      <div class="tcard-text">
+        Sonal's critique style taught me how to think, not just how to make.
+        She'd ask "what's the user trying to do?" until I had no choice
+        but to defend my work with reasoning, not preference. I'm a better
+        designer because of how she leads.
+      </div>
       <div class="tcard-author">
-        <div class="author-avatar">PS</div>
-        <div><div class="author-name">Priya Sharma</div><div class="author-role">Senior Developer · B2B SaaS Platform</div></div>
+        <div class="author-avatar">??</div>
+        <div>
+          <div class="author-name">[Add Real Name]</div>
+          <div class="author-role">[Title] · [Company]</div>
+        </div>
       </div>
     </div>
 
+    <!-- 3. From an Engineer / Developer -->
     <div class="tcard rv d3">
       <div class="tcard-stars">★★★★★</div>
       <div class="tcard-quote-mark">"</div>
-      <div class="tcard-text">Sonal has a rare gift: she can make a room full of non-designers understand why a decision matters. I've watched her turn design sceptics into design advocates — and the products we built together are so much better because of it.</div>
+      <div class="tcard-text">
+        Working with Sonal was a masterclass in how design and engineering
+        can actually collaborate. She takes time to understand technical
+        constraints, then finds creative solutions within them.
+        Her handoffs are the clearest I've ever received.
+      </div>
       <div class="tcard-author">
-        <div class="author-avatar">RK</div>
-        <div><div class="author-name">Rohit Kumar</div><div class="author-role">VP Engineering · EdTech Organisation</div></div>
+        <div class="author-avatar">??</div>
+        <div>
+          <div class="author-name">[Add Real Name]</div>
+          <div class="author-role">[Title] · [Company]</div>
+        </div>
       </div>
     </div>
+
+  </div>
+
+  <!-- Subtle LinkedIn link below testimonials -->
+  <div class="rv" style="margin-top:40px;text-align:center">
+    <a href="https://linkedin.com/in/sonalkandhway" target="_blank" rel="noopener"
+       style="display:inline-flex;align-items:center;gap:8px;font-size:.875rem;color:var(--ink-3);transition:color .2s">
+      More recommendations on LinkedIn
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+        <path d="M5 3h6v6M11 3L3 11" stroke="currentColor" stroke-width="1.4"
+              stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
   </div>
 </section>
 
@@ -657,6 +911,15 @@
     </p>
 
     <div class="contact-details" style="display:flex;flex-direction:column;gap:14px;margin-top:8px">
+      <div class="cd-item cd-looking" style="background:linear-gradient(135deg,rgba(91,123,248,.08),var(--card));border-color:var(--border-s)">
+        <div class="cd-label" style="color:var(--accent);margin-bottom:10px">✦ What I'm Looking For</div>
+        <div style="display:flex;flex-direction:column;gap:8px;margin-top:4px">
+          <div style="display:flex;justify-content:space-between;font-size:.8125rem"><span style="color:var(--ink-3)">Role</span><span style="color:var(--ink-1);text-align:right">Senior UX Manager · Design Director · Principal</span></div>
+          <div style="display:flex;justify-content:space-between;font-size:.8125rem"><span style="color:var(--ink-3)">Location</span><span style="color:var(--ink-1)">Noida · Open to relocate</span></div>
+          <div style="display:flex;justify-content:space-between;font-size:.8125rem"><span style="color:var(--ink-3)">Format</span><span style="color:var(--ink-1)">Hybrid · Remote</span></div>
+          <div style="display:flex;justify-content:space-between;font-size:.8125rem"><span style="color:var(--ink-3)">Notice Period</span><span style="color:var(--ink-1)">30 days</span></div>
+        </div>
+      </div>
       <div class="cd-item">
         <div class="cd-label">Email</div>
         <div class="cd-val">kandhwaysonal12@gmail.com</div>
@@ -757,10 +1020,14 @@
   </div>
 </section>
 
+</main>
+
 <!-- ═══ FOOTER ═══ -->
+</main>
+
 <!-- ═══ FOOTER ═══ -->
 <footer>
-  <div class="ft-copy"><img class="logo-dark" src="assets/images/logo-dark.png" alt="SK" height="40" style="display:inline-block;vertical-align:middle;margin-right:12px;"><img class="logo-light" src="assets/images/logo-white.png" alt="SK" height="40" style="display:inline-block;vertical-align:middle;margin-right:12px;">© 2025 Sonal Kandhway · All rights reserved</div>
+  <div class="ft-copy"><img class="ft-logo logo-dark" src="assets/images/logo-dark.png" alt="SK"><img class="ft-logo logo-light" src="assets/images/logo-white.png" alt="SK"><span>© 2025 Sonal Kandhway · All rights reserved</span></div>
   <div class="ft-made">Designed with intention. Built with care.</div>
 </footer>
 
@@ -771,5 +1038,11 @@
   <!-- Scripts -->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/home.js"></script>
+
+<button class="back-top" id="backTop" aria-label="Back to top">
+  <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+    <path d="M10 16V4M5 9l5-5 5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</button>
 </body>
 </html>
