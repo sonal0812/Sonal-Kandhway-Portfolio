@@ -1503,53 +1503,90 @@
   box-shadow: var(--shadow);
 }
 
-/* Hero area with gradient + initial */
+/* ── Project Card Hero ── */
 .project-hero {
-  height: 200px;
-  padding: 32px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  height: 220px;
   position: relative;
   border-bottom: 1px solid var(--border);
   overflow: hidden;
+  background: var(--card-h);
 }
-.project-hero::before {
+
+/* Real image variant */
+.project-hero--img .project-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.6s var(--ease-out);
+  display: block;
+}
+.project-card:hover .project-img {
+  transform: scale(1.04);
+}
+
+/* Dark scrim so domain label is always readable over image */
+.project-hero--img::after {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(91,123,248,0.10), transparent 70%);
+  background: linear-gradient(180deg, rgba(0,0,0,.5) 0%, transparent 50%, rgba(0,0,0,.2) 100%);
   pointer-events: none;
+  z-index: 1;
 }
-.project-hero[data-domain="health"]::before  { background: linear-gradient(135deg, rgba(74,222,128,0.10), transparent 70%); }
-.project-hero[data-domain="fintech"]::before { background: linear-gradient(135deg, rgba(91,123,248,0.14), transparent 70%); }
-.project-hero[data-domain="edtech"]::before  { background: linear-gradient(135deg, rgba(155,124,235,0.10), transparent 70%); }
-.project-hero[data-domain="saas"]::before    { background: linear-gradient(135deg, rgba(239,178,79,0.08),  transparent 70%); }
-.project-hero[data-domain="banking"]::before { background: linear-gradient(135deg, rgba(91,123,248,0.10), transparent 70%); }
-.project-hero[data-domain="other"]::before   { background: linear-gradient(135deg, rgba(160,160,164,0.10), transparent 70%); }
 
-.project-domain {
+/* Domain tag — overlaid on image */
+.project-domain-overlay {
+  position: absolute;
+  top: 18px;
+  left: 20px;
+  z-index: 2;
   font-family: var(--font-m);
-  font-size: 0.7rem;
+  font-size: 0.65rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--accent);
   font-weight: 500;
-  position: relative;
-  z-index: 1;
+  color: #fff;
+  background: rgba(0,0,0,.45);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 5px 12px;
+  border-radius: 100px;
+  border: 1px solid rgba(255,255,255,.12);
 }
 
-.project-initial {
-  font-family: var(--font-d);
-  font-size: 6.5rem;
-  font-weight: 200;
-  line-height: 0.8;
-  color: var(--ink-1);
-  letter-spacing: -0.04em;
-  align-self: flex-end;
-  position: relative;
-  z-index: 1;
-  opacity: 0.92;
+/* Placeholder image slot — for cards without images yet */
+.project-img-slot {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: var(--ink-3);
+}
+.project-img-slot[data-domain="health"]   { background: linear-gradient(135deg, rgba(74,222,128,.06), var(--card-h)); }
+.project-img-slot[data-domain="fintech"]  { background: linear-gradient(135deg, rgba(91,123,248,.08), var(--card-h)); }
+.project-img-slot[data-domain="edtech"]   { background: linear-gradient(135deg, rgba(155,124,235,.06), var(--card-h)); }
+.project-img-slot[data-domain="saas"]     { background: linear-gradient(135deg, rgba(239,178,79,.06),  var(--card-h)); }
+.project-img-slot[data-domain="banking"]  { background: linear-gradient(135deg, rgba(91,123,248,.06), var(--card-h)); }
+.project-img-slot[data-domain="other"]    { background: var(--card-h); }
+.project-img-slot span {
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-family: var(--font-m);
+  color: var(--ink-3);
+}
+
+/* Domain label on placeholder cards */
+.project-hero:not(.project-hero--img) .project-domain-overlay {
+  background: var(--card);
+  color: var(--accent);
+  border-color: var(--border-s);
 }
 
 .project-content {
@@ -1653,4 +1690,48 @@
   .project-content { padding: 22px; }
   .project-meta { flex-wrap: wrap; gap: 12px; }
   .pm-divider { display: none; }
+}
+
+/* ════════════════════════════════════════════
+   FEATURED CASE STUDY — Transition Divider
+═══════════════════════════════════════════════ */
+.featured-divider {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin: 80px 0 48px;
+  padding: 40px 0;
+}
+.featured-divider-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border), transparent);
+}
+.featured-divider-content {
+  text-align: center;
+  max-width: 540px;
+  flex-shrink: 0;
+}
+.featured-divider-content .section-eyebrow {
+  justify-content: center;
+  margin-bottom: 16px;
+}
+.featured-divider-title {
+  font-size: clamp(1.4rem, 2.5vw, 1.8rem);
+  font-weight: 500;
+  color: var(--ink-1);
+  line-height: 1.25;
+  letter-spacing: -0.015em;
+  margin-bottom: 12px;
+}
+.featured-divider-sub {
+  font-size: 0.9rem;
+  color: var(--ink-2);
+  line-height: 1.7;
+  margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+  .featured-divider { flex-direction: column; gap: 16px; margin: 56px 0 32px; padding: 24px 0; }
+  .featured-divider-line { width: 60%; flex: none; }
 }
