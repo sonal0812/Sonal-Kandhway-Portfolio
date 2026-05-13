@@ -1574,6 +1574,7 @@
 .project-img-slot[data-domain="saas"]     { background: linear-gradient(135deg, rgba(239,178,79,.06),  var(--card-h)); }
 .project-img-slot[data-domain="banking"]  { background: linear-gradient(135deg, rgba(91,123,248,.06), var(--card-h)); }
 .project-img-slot[data-domain="other"]    { background: var(--card-h); }
+.project-img-slot[data-domain="hrtech"]   { background: linear-gradient(135deg, rgba(251,191,36,.06), var(--card-h)); }
 .project-img-slot span {
   font-size: 0.72rem;
   letter-spacing: 0.08em;
@@ -1734,4 +1735,38 @@
 @media (max-width: 900px) {
   .featured-divider { flex-direction: column; gap: 16px; margin: 56px 0 32px; padding: 24px 0; }
   .featured-divider-line { width: 60%; flex: none; }
+}
+
+/* ════════════════════════════════════
+   WORD REVEAL — Section title animation
+═══════════════════════════════════════ */
+.rv-word {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(18px);
+  /* 0.35s base delay lets parent .rv fade-in first */
+  transition:
+    opacity   0.55s var(--ease-out) calc(0.35s + var(--wi) * 0.065s),
+    transform 0.55s var(--ease-out) calc(0.35s + var(--wi) * 0.065s);
+}
+.section-title.words-revealed .rv-word {
+  opacity:   1;
+  transform: translateY(0);
+}
+
+/* ── Agni Design System card placeholder ── */
+.project-img-slot[data-domain="agni"] {
+  background: linear-gradient(135deg, rgba(217,119,6,.12), rgba(180,83,9,.06), var(--card-h));
+  flex-direction: column;
+}
+.agni-swatch-row {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.agni-swatch {
+  width: 32px;
+  height: 48px;
+  border-radius: 6px;
+  flex-shrink: 0;
 }

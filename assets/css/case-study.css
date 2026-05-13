@@ -429,3 +429,127 @@ footer{padding:28px 56px;border-top:1px solid var(--border);display:flex;align-i
   footer{flex-direction:column;gap:8px;text-align:center;padding:20px}
   #next{padding:70px 24px}
 }
+
+/* ════════════════════════════════════════════════════
+   SHARED CASE STUDY ELEMENTS — All 4 case studies
+════════════════════════════════════════════════════ */
+
+/* Image placeholders */
+.cs-ph {
+  background: var(--card);
+  border: 1px dashed var(--border-s);
+  border-radius: 16px;
+  padding: 40px 32px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: var(--ink-3);
+}
+.cs-ph--hero {
+  height: 360px;
+  justify-content: center;
+  border-radius: 24px;
+}
+.cs-ph--screen { min-height: 200px; justify-content: center; margin: 24px 0; }
+.cs-ph span   { font-size: 0.9rem; font-weight: 500; color: var(--ink-2); }
+.cs-ph code   { font-family: var(--font-m); background: var(--surface); padding: 4px 10px; border-radius: 6px; font-size: 0.75rem; color: var(--accent); }
+.cs-ph small  { font-size: 0.75rem; color: var(--ink-3); }
+
+/* Competitive analysis table */
+.cs-table-wrap { overflow-x: auto; border-radius: 12px; border: 1px solid var(--border); }
+.cs-table { width: 100%; border-collapse: collapse; font-size: 0.8125rem; }
+.cs-table th { background: var(--card); color: var(--ink-2); font-weight: 500; padding: 14px 16px; text-align: left; border-bottom: 1px solid var(--border); font-size: 0.75rem; letter-spacing: 0.04em; }
+.cs-table td { padding: 12px 16px; border-bottom: 1px solid var(--border); color: var(--ink-2); }
+.cs-table tr:last-child td { border-bottom: none; }
+.cs-table tr:hover td { background: var(--card); }
+.t-hi  { color: var(--accent) !important; font-weight: 500; }
+.t-mid { color: var(--ink-2) !important; }
+.t-low { color: var(--ink-3) !important; }
+
+/* Chapter intro text */
+.chapter-intro { font-size: 1rem; color: var(--ink-2); line-height: 1.8; max-width: 680px; margin-bottom: 40px; }
+
+/* Insight cards (already styled in base, reuse) */
+.cs-insight-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.cs-insight-card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 24px; transition: border-color 0.2s; }
+.cs-insight-card:hover { border-color: var(--border-s); }
+.ci-num  { font-size: 0.65rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); margin-bottom: 10px; font-family: var(--font-m); font-weight: 500; }
+.ci-title { font-size: 0.9375rem; font-weight: 500; color: var(--ink-1); margin-bottom: 10px; line-height: 1.3; }
+.ci-body  { font-size: 0.8125rem; color: var(--ink-2); line-height: 1.7; }
+
+/* Heuristic findings */
+.cs-finding-list { display: flex; flex-direction: column; gap: 20px; }
+.cs-finding { background: var(--card); border: 1px solid var(--border); border-left: 3px solid var(--accent); border-radius: 0 16px 16px 0; padding: 28px 28px 28px 32px; }
+.cf-heuristic { font-size: 0.65rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); font-family: var(--font-m); margin-bottom: 8px; font-weight: 500; }
+.cf-title { font-size: 1rem; font-weight: 500; color: var(--ink-1); margin-bottom: 10px; }
+.cf-body  { font-size: 0.875rem; color: var(--ink-2); line-height: 1.7; margin-bottom: 16px; }
+.cf-fix   { font-size: 0.8125rem; color: var(--ink-1); background: rgba(91,123,248,.06); border-radius: 8px; padding: 12px 16px; border: 1px solid var(--border-s); }
+
+/* Two column */
+.cs-two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+.cs-subhead { font-size: 0.875rem; font-weight: 600; color: var(--ink-1); margin-bottom: 16px; letter-spacing: -0.01em; }
+.cs-list { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+.cs-list li { font-size: 0.8125rem; color: var(--ink-2); line-height: 1.65; padding-left: 20px; position: relative; }
+.cs-list li::before { content: '→'; position: absolute; left: 0; color: var(--accent); font-size: 0.75rem; }
+
+/* 5Ws grid */
+.cs-fivew-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.fivew-cell    { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 24px; }
+.fw-q { font-family: var(--font-m); font-size: 0.65rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent); margin-bottom: 10px; font-weight: 500; }
+.fw-a { font-size: 0.8125rem; color: var(--ink-2); line-height: 1.7; }
+
+/* POV statement */
+.cs-pov { font-size: 1rem; color: var(--ink-2); line-height: 1.85; font-style: italic; border-left: 3px solid var(--accent); padding: 20px 24px; background: var(--card); border-radius: 0 12px 12px 0; margin-bottom: 40px; }
+
+/* Callout */
+.cs-callout { background: rgba(91,123,248,.06); border: 1px solid var(--border-s); border-radius: 12px; padding: 20px 24px; font-size: 0.875rem; color: var(--ink-2); line-height: 1.7; }
+.cs-callout strong { color: var(--ink-1); }
+
+/* Challenges & solutions */
+.cs-challenge-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
+.cs-challenge, .cs-solution { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 24px; font-size: 0.875rem; color: var(--ink-2); line-height: 1.7; }
+.cc-tag { font-size: 0.6rem; letter-spacing: 0.16em; text-transform: uppercase; font-family: var(--font-m); font-weight: 500; margin-bottom: 10px; color: var(--ink-3); }
+.cc-tag--sol { color: var(--accent); }
+
+/* Outcome grid */
+.cs-outcome-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 40px; }
+.cs-outcome-item { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 28px; }
+.co-icon  { font-size: 1.5rem; margin-bottom: 14px; }
+.co-title { font-size: 0.9375rem; font-weight: 600; color: var(--ink-1); margin-bottom: 10px; }
+.co-body  { font-size: 0.8125rem; color: var(--ink-2); line-height: 1.7; }
+
+/* Learnings */
+.cs-learnings { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 32px; }
+
+/* HMW list */
+.cs-hmw-list { display: flex; flex-direction: column; gap: 10px; }
+.cs-hmw-item { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 14px 18px; font-size: 0.875rem; color: var(--ink-2); line-height: 1.65; transition: border-color 0.2s; }
+.cs-hmw-item:hover { border-color: var(--border-s); }
+
+/* Screen labels */
+.cs-screen-labels { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+.cs-sl { font-size: 0.72rem; padding: 5px 14px; border: 1px solid var(--border-s); border-radius: 100px; color: var(--accent); font-family: var(--font-m); font-weight: 500; letter-spacing: 0.06em; }
+
+/* Screen pair */
+.cs-screen-pair { margin-bottom: 40px; }
+.cs-sp-label { font-size: 0.72rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-3); margin-bottom: 16px; font-family: var(--font-m); }
+.cs-sp-note  { font-size: 0.8125rem; color: var(--ink-2); line-height: 1.7; margin-top: 14px; padding: 0 4px; }
+
+/* Quote */
+.cs-quote-list { display: flex; flex-direction: column; gap: 12px; }
+.cs-quote { background: var(--card); border-left: 3px solid var(--accent); padding: 16px 20px; border-radius: 0 10px 10px 0; font-size: 0.875rem; color: var(--ink-2); line-height: 1.7; font-style: italic; }
+
+/* Chapter alt background */
+.cs-chapter--alt { background: var(--surface); }
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .cs-insight-row   { grid-template-columns: 1fr; }
+  .cs-fivew-grid    { grid-template-columns: 1fr; }
+  .cs-two-col       { grid-template-columns: 1fr; gap: 24px; }
+  .cs-challenge-pair { grid-template-columns: 1fr; }
+  .cs-outcome-grid  { grid-template-columns: 1fr; }
+  .cs-ph--hero      { height: 220px; }
+}

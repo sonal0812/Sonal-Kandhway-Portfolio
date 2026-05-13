@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="My Connect — UX Case Study. Building an employee experience platform from scratch. By Sonal Kandhway.">
+  <title>My Connect — Case Study · Sonal Kandhway</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300;0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700;1,14..32,300;1,14..32,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/case-study.css">
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to main content</a>
+<div id="prog"></div>
+
+<nav>
+  <a href="index.html" class="nav-back">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13 8H3M7 12L3 8l4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Back to Portfolio
+  </a>
+  <div class="nav-center">Case Study — My Connect</div>
+  <div class="nav-right">
+    <div class="nav-logo-wrap">
+      <img class="nav-logo-img logo-dark" src="assets/images/logo-dark.png" alt="Sonal Kandhway" height="72">
+      <img class="nav-logo-img logo-light" src="assets/images/logo-white.png" alt="Sonal Kandhway" height="72">
+    </div>
+    <button class="theme-btn" id="themeToggle">
+      <div class="theme-knob" id="themeKnob"><span id="themeIcon">🌙</span></div>
+    </button>
+  </div>
+</nav>
+
+<main id="main" tabindex="-1">
+
+<!-- ══ HERO ══ -->
+<section id="hero">
+  <div class="hero-glow"></div>
+  <div class="hero-glow2"></div>
+  <div class="hero-left">
+    <div class="cs-breadcrumb">
+      <span class="bc-item">Portfolio</span>
+      <span class="bc-sep">›</span>
+      <span class="bc-item">Case Studies</span>
+      <span class="bc-sep">›</span>
+      <span class="bc-active">My Connect</span>
+    </div>
+    <div class="hero-tag">✦ Enterprise SaaS · HRTech · Employee Experience</div>
+    <h1 class="hero-title">My<br><em>Connect</em></h1>
+    <p class="hero-sub">Building a central platform for a company that had no central platform.</p>
+    <p class="hero-desc">
+      Thousands of employees with no shared space for announcements, career opportunities, or colleague recognition.
+      Internal job postings were missed. Achievements went unacknowledged.
+      <strong>The communication gap wasn't just an inconvenience — it was silently eroding culture.</strong>
+    </p>
+    <div class="hero-meta-grid">
+      <div class="hm-cell"><div class="hm-label">My Role</div><div class="hm-val">Lead UX Designer</div></div>
+      <div class="hm-cell"><div class="hm-label">Process</div><div class="hm-val">End-to-End Design Thinking</div></div>
+      <div class="hm-cell"><div class="hm-label">Users</div><div class="hm-val">CEO · Directors · Managers · Juniors · Interns</div></div>
+      <div class="hm-cell"><div class="hm-label">Tools</div><div class="hm-val">Figma · MUI Design System · Usability Testing</div></div>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="cs-ph cs-ph--hero">
+      <span>📸 Add My Connect hero screen here</span>
+      <code>assets/images/myconnect-hero.jpg</code>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 01 PROBLEM ══ -->
+<section class="cs-chapter">
+  <div class="chapter-label">01 — Problem Statement</div>
+  <h2 class="chapter-title">No feed. No jobs board.<br><em>No recognition.</em></h2>
+  <div class="chapter-body">
+    <div class="cs-hmw-block">
+      <p class="cs-pov">The company lacked a dedicated platform for effective employee interaction and communication. Without a centralised post feed, key messages went unnoticed. Without a visible jobs board, internal career opportunities were missed. Without recognition features, achievements and milestones went uncelebrated — and employees felt disconnected from the company's culture and goals.</p>
+    </div>
+    <div class="cs-insight-row">
+      <div class="cs-insight-card">
+        <div class="ci-num">01</div>
+        <div class="ci-title">Career Opportunities Missed</div>
+        <p class="ci-body">Employees were unaware of internal job openings. No simple or consistent referral process existed. Valuable talent was being lost to external hiring when internal candidates existed.</p>
+      </div>
+      <div class="cs-insight-card">
+        <div class="ci-num">02</div>
+        <div class="ci-title">No Central Communication Hub</div>
+        <p class="ci-body">Management announcements, promotions, and company news had no consistent channel. Critical updates often reached only part of the organisation — or arrived too late to be useful.</p>
+      </div>
+      <div class="cs-insight-card">
+        <div class="ci-num">03</div>
+        <div class="ci-title">Recognition Gap</div>
+        <p class="ci-body">Achievements, promotions, and milestones went unrecognised. Employees had no visible, engaging space to celebrate each other — weakening team cohesion and morale across the organisation.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 02 DISCOVERY ══ -->
+<section class="cs-chapter cs-chapter--alt">
+  <div class="chapter-label">02 — Discovery</div>
+  <h2 class="chapter-title">5 questions to frame<br><em>the research.</em></h2>
+  <div class="chapter-body">
+    <div class="cs-fivew-grid">
+      <div class="fivew-cell"><div class="fw-q">Who?</div><p class="fw-a">Target audience spans the full org hierarchy — CEO to intern. Age group 20–60. Different information needs, different digital comfort levels, one platform to serve all.</p></div>
+      <div class="fivew-cell"><div class="fw-q">What?</div><p class="fw-a">What frustrates users about the current intranet? What features do they actually want? What's the first thing they'd look for when opening the app?</p></div>
+      <div class="fivew-cell"><div class="fw-q">When?</div><p class="fw-a">When during the workday do employees need the platform most? When do they feel most disconnected from company news and updates?</p></div>
+      <div class="fivew-cell"><div class="fw-q">Where?</div><p class="fw-a">Where in the current intranet do users get confused or drop off? Where are the gaps between what's communicated and what's received?</p></div>
+      <div class="fivew-cell"><div class="fw-q">Why?</div><p class="fw-a">Why do people use (or avoid) the current portal? Why are certain features underused? Why is employee engagement lower than it should be?</p></div>
+    </div>
+    <div class="cs-callout" style="margin-top:32px">
+      <strong>Secondary Research:</strong> Reviewed Facebook Workplace and Zoho Intranet to understand established patterns before starting requirements gathering with stakeholders.
+    </div>
+  </div>
+</section>
+
+<!-- ══ 03 RESEARCH ══ -->
+<section class="cs-chapter">
+  <div class="chapter-label">03 — Primary Research</div>
+  <h2 class="chapter-title">6 users. 2 age groups.<br><em>One clear picture.</em></h2>
+  <div class="chapter-body">
+    <p class="chapter-intro">Ran a screening survey across social media groups to identify the right participants, then conducted in-depth interviews with 6 people — 4 aged 18–30 and 2 aged 30–65. The age split was deliberate: different digital behaviours, different communication expectations.</p>
+    <div class="cs-insight-row">
+      <div class="cs-insight-card">
+        <div class="ci-title">Interview Insight 1</div>
+        <p class="ci-body">"It would be great if the platform had a user-friendly interface accessible on both mobile and desktop." — Accessibility across devices was a universal expectation, not a nice-to-have.</p>
+      </div>
+      <div class="cs-insight-card">
+        <div class="ci-title">Interview Insight 2</div>
+        <p class="ci-body">"Sometimes I miss out on career growth opportunities because I'm not aware of internal job vacancies." — Career visibility was one of the highest-pain unmet needs identified.</p>
+      </div>
+      <div class="cs-insight-card">
+        <div class="ci-title">Interview Insight 3</div>
+        <p class="ci-body">"I often feel disconnected from the company when I'm uninformed about crucial news and events." — The emotional impact of communication gaps was more significant than expected.</p>
+      </div>
+      <div class="cs-insight-card">
+        <div class="ci-title">Interview Insight 4</div>
+        <p class="ci-body">"It would be great to have a dedicated space for recognition and appreciation." — Celebration features were explicitly requested — not just by junior staff, but across all seniority levels.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 04 DEFINE ══ -->
+<section class="cs-chapter cs-chapter--alt">
+  <div class="chapter-label">04 — Define</div>
+  <h2 class="chapter-title">Six personas.<br><em>One empathy map.</em></h2>
+  <div class="chapter-body">
+    <p class="chapter-intro">Developed 6 detailed personas based on interviews and feedback — from CEO to intern. Then created a combined empathy map to capture shared experiences across all user types.</p>
+    <div class="cs-ph cs-ph--screen">📸 Add persona images here<br><code>assets/images/myconnect-persona-1.jpg</code> · <code>assets/images/myconnect-persona-2.jpg</code></div>
+    <div class="cs-ph cs-ph--screen" style="margin-top:16px">📸 Add combined empathy map here<br><code>assets/images/myconnect-empathy-map.jpg</code></div>
+
+    <h3 class="cs-subhead" style="margin-top:40px">How Might We Questions</h3>
+    <div class="cs-hmw-list">
+      <div class="cs-hmw-item">How might we make the platform easier to use and navigate for all employees — from CEO to intern?</div>
+      <div class="cs-hmw-item">How can we help users quickly find promotions, posts, and updates that matter to them?</div>
+      <div class="cs-hmw-item">How might we improve the way users explore internal job openings and refer colleagues?</div>
+      <div class="cs-hmw-item">How might we suggest the right mentors or connections based on a user's skills and interests?</div>
+      <div class="cs-hmw-item">How might we make the company hierarchy clearer and easier to understand for everyone?</div>
+      <div class="cs-hmw-item">How can we provide managers with better insights and reports regarding team engagement and activity?</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 05 IDEATION ══ -->
+<section class="cs-chapter">
+  <div class="chapter-label">05 — Ideation</div>
+  <h2 class="chapter-title">Sketched on paper.<br><em>Approved before pixels.</em></h2>
+  <div class="chapter-body">
+    <p class="chapter-intro">Due to time constraints, I created flow diagrams on paper first and presented to stakeholders for approval before moving to digital tools. This saved significant rework.</p>
+    <div class="cs-screen-labels">
+      <span class="cs-sl">Home Feed</span>
+      <span class="cs-sl">Find Mentors</span>
+      <span class="cs-sl">Dashboard</span>
+      <span class="cs-sl">Referrals</span>
+      <span class="cs-sl">Org Chart</span>
+      <span class="cs-sl">Create Post</span>
+    </div>
+    <div class="cs-ph cs-ph--screen">📸 Add lo-fi wireframes here<br><code>assets/images/myconnect-lofi-home.jpg</code> · <code>assets/images/myconnect-lofi-dashboard.jpg</code> · etc.</div>
+  </div>
+</section>
+
+<!-- ══ 06 DESIGN ══ -->
+<section class="cs-chapter cs-chapter--alt">
+  <div class="chapter-label">06 — Visual Design</div>
+  <h2 class="chapter-title">MUI as the base.<br><em>Customised to fit.</em></h2>
+  <div class="chapter-body">
+    <p class="chapter-intro">I used the MUI Design System as the component foundation and customised it — changing fonts, colours, and sizes to match the project's brand and feel. This balanced delivery speed with visual distinctiveness.</p>
+    <div class="cs-ph cs-ph--screen">📸 Add style guide: colours, typography, spacing, components<br><code>assets/images/myconnect-styleguide.jpg</code> · <code>assets/images/myconnect-components.jpg</code></div>
+    <div class="cs-ph cs-ph--screen" style="margin-top:16px">📸 Add V1 high-fidelity screens<br><code>assets/images/myconnect-v1-home.jpg</code> · <code>assets/images/myconnect-v1-orgchart.jpg</code> etc.</div>
+  </div>
+</section>
+
+<!-- ══ 07 TESTING & V2 ══ -->
+<section class="cs-chapter">
+  <div class="chapter-label">07 — Testing & V2 Iteration</div>
+  <h2 class="chapter-title">V1 feedback.<br><em>V2 response.</em></h2>
+  <div class="chapter-body">
+    <p class="chapter-intro">I shared the Figma prototype with 2–3 team members before development began. Their feedback was direct — and shaped the entire second version.</p>
+    <div class="cs-callout">
+      <strong>V1 Feedback received:</strong> "The UI looks too simple and needs more visual engagement." · "Incorporate AI-powered solutions." · "Display team hierarchy and achievements prominently on the dashboard." · "Convert the Feed section into the main dashboard." · "Include Quick Action options."
+    </div>
+    <div class="cs-finding-list" style="margin-top:32px">
+      <div class="cs-finding">
+        <div class="cf-heuristic">V2 Change 01</div>
+        <div class="cf-title">Feed became the main dashboard</div>
+        <p class="cf-body">The original design had a separate dashboard and feed. After feedback, the post feed was elevated to the primary landing view — with team activity, announcements, and updates all visible immediately on login.</p>
+        <div class="cf-fix">Outcome: Users landed where the content was. No navigating to find what's happening.</div>
+      </div>
+      <div class="cs-finding">
+        <div class="cf-heuristic">V2 Change 02</div>
+        <div class="cf-title">Quick Actions added throughout</div>
+        <p class="cf-body">High-frequency tasks — post creation, job referral, viewing org chart — were buried in navigation. V2 introduced persistent Quick Action shortcuts surfaced at every key touchpoint.</p>
+        <div class="cf-fix">Outcome: Task completion speed improved for the most common daily actions.</div>
+      </div>
+      <div class="cs-finding">
+        <div class="cf-heuristic">V2 Change 03</div>
+        <div class="cf-title">AI-assisted post creation</div>
+        <p class="cf-body">Employees wanted to share thoughts and work knowledge but found writing posts time-consuming. V2 added AI-assisted post creation — users could share rough ideas and have the AI help structure and refine their content.</p>
+        <div class="cf-fix">Outcome: Post frequency increased. Employees who previously never posted began sharing regularly.</div>
+      </div>
+    </div>
+    <div class="cs-ph cs-ph--screen" style="margin-top:32px">📸 Add V2 screens: Redesigned Dashboard, Quick Actions, AI Post Creation, Find Mentor, Org Chart<br><code>assets/images/myconnect-v2-dashboard.jpg</code> · <code>assets/images/myconnect-v2-post.jpg</code> · <code>assets/images/myconnect-v2-mentor.jpg</code></div>
+  </div>
+</section>
+
+<!-- ══ 08 LEARNINGS ══ -->
+<section class="cs-chapter cs-chapter--alt">
+  <div class="chapter-label">08 — What I Learned</div>
+  <h2 class="chapter-title">Five things I carry<br><em>into every project.</em></h2>
+  <div class="chapter-body">
+    <div class="cs-outcome-grid">
+      <div class="cs-outcome-item">
+        <div class="co-icon">🔄</div>
+        <div class="co-title">Always gather early feedback</div>
+        <p class="co-body">The V1 → V2 iteration proved this definitively. Getting 3 users to review a prototype before development saved weeks of rework. Feedback early costs hours. Feedback late costs sprints.</p>
+      </div>
+      <div class="cs-outcome-item">
+        <div class="co-icon">🏠</div>
+        <div class="co-title">Dashboard design is high-stakes</div>
+        <p class="co-body">The landing experience determines whether users return. A clear, engaging dashboard with relevant content and quick access to frequent tasks is the difference between adoption and abandonment.</p>
+      </div>
+      <div class="cs-outcome-item">
+        <div class="co-icon">🤖</div>
+        <div class="co-title">AI features need user context</div>
+        <p class="co-body">AI-powered post creation only worked because we understood why users weren't posting in the first place. AI without user context is a feature. AI with user insight is a solution.</p>
+      </div>
+      <div class="cs-outcome-item">
+        <div class="co-icon">🏗️</div>
+        <div class="co-title">Hierarchy needs to be visible</div>
+        <p class="co-body">Employees don't just want to communicate — they want to understand the organisation they work within. Making the org chart accessible and visual was one of the highest-rated features in post-launch feedback.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ NEXT ══ -->
+<section class="cs-next">
+  <div class="chapter-label">More Work</div>
+  <h2 class="chapter-title">See what else <em>I've built.</em></h2>
+  <div class="next-cards rv d1">
+    <a href="oracle.html" class="next-card">
+      <div class="nc-domain">Enterprise SaaS · Oracle JET · 2023</div>
+      <div class="nc-title">Oracle Pipeline Designer</div>
+      <p style="font-size:.78rem;color:var(--ink-3);line-height:1.6">Migrating a legacy Oracle JET application to Redwood Design System. Three heuristic failures resolved, WCAG 2.1 achieved.</p>
+      <div class="nc-arrow">→</div>
+    </a>
+    <a href="varminer.html" class="next-card">
+      <div class="nc-domain">HealthTech · Clinical Genomics</div>
+      <div class="nc-title">VarMiner Cloud</div>
+      <p style="font-size:.78rem;color:var(--ink-3);line-height:1.6">Redesigning a clinical genomics platform so clinicians spend less time navigating and more time diagnosing.</p>
+      <div class="nc-arrow">→</div>
+    </a>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="ft-copy">
+    <img class="ft-logo logo-dark" src="assets/images/logo-dark.png" alt="SK">
+    <img class="ft-logo logo-light" src="assets/images/logo-white.png" alt="SK">
+    <span>© 2025 Sonal Kandhway · All rights reserved</span>
+  </div>
+  <div class="ft-made">My Connect · UX Case Study</div>
+</footer>
+
+<button class="back-top" id="backTop" aria-label="Back to top">
+  <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+    <path d="M10 16V4M5 9l5-5 5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</button>
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/case-study.js"></script>
+</body>
+</html>

@@ -78,6 +78,20 @@ ADDING YOUR PHOTO
           style="width:100%;height:100%;object-fit:cover;object-position:top;">
 
 
+ADDING YOUR CV / RÉSUMÉ
+────────────────────────
+The hero has a "Download CV" button that links to:
+  assets/sonal-kandhway-cv.pdf
+
+A placeholder file is included. To activate it:
+  1. Export your CV as PDF
+  2. Rename it to:  sonal-kandhway-cv.pdf
+  3. Replace the file in the assets/ folder
+  4. Re-upload assets/sonal-kandhway-cv.pdf to your host
+
+That's it — the download button will now serve your real CV.
+
+
 ADDING MORE CASE STUDIES
 ─────────────────────────
   1. Duplicate clearpaisa.html → rename e.g. healthcare.html
