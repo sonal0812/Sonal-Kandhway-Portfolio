@@ -142,6 +142,7 @@
       .agni-stat-row { grid-template-columns: 1fr; }
     }
   </style>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 </head>
 <body>
 
@@ -150,14 +151,14 @@
 
 <nav>
   <a href="index.html" class="nav-back">
-    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13 8H3M7 12L3 8l4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <i data-lucide="arrow-left"></i>
     Back to Portfolio
   </a>
   <div class="nav-center">Case Study — Agni Design System</div>
   <div class="nav-right">
     <div class="nav-logo-wrap">
-      <img class="nav-logo-img logo-dark" src="assets/images/logo-dark.png" alt="Sonal Kandhway" height="72">
-      <img class="nav-logo-img logo-light" src="assets/images/logo-white.png" alt="Sonal Kandhway" height="72">
+      <img class="nav-logo-img logo-dark" src="assets/images/logo-dark.svg" alt="Sonal Kandhway" height="72">
+      <img class="nav-logo-img logo-light" src="assets/images/logo-white.svg" alt="Sonal Kandhway" height="72">
     </div>
     <button class="theme-btn" id="themeToggle">
       <div class="theme-knob" id="themeKnob"><span id="themeIcon">🌙</span></div>
@@ -173,9 +174,9 @@
   <div class="hero-glow2"></div>
   <div class="hero-left">
     <div class="cs-breadcrumb">
-      <span class="bc-item">Portfolio</span>
+      <a href="index.html" class="bc-item">Portfolio</a>
       <span class="bc-sep">›</span>
-      <span class="bc-item">Case Studies</span>
+      <a href="index.html#work" class="bc-item">Case Studies</a>
       <span class="bc-sep">›</span>
       <span class="bc-active">Agni Design System</span>
     </div>
@@ -241,7 +242,7 @@
         <div class="agni-swatch" style="background:#2D0812"></div>
       </div>
       <a href="https://www.figma.com/design/LVW6MclasPsTJWxB1ikbxH/Agni-Design-System" target="_blank" rel="noopener" class="figma-link" style="margin-top:20px;justify-content:center">
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M5.5 2A1.5 1.5 0 004 3.5v1A1.5 1.5 0 005.5 6H7V3.5A1.5 1.5 0 005.5 2zM7 7H5.5a1.5 1.5 0 100 3H7V7zm1 3h1.5A1.5 1.5 0 1010 8.5V10h-2zm0-4h2V3.5A1.5 1.5 0 108 3.5V6zm2 5h-2v2.5A1.5 1.5 0 1010 12v-1.5z"/></svg>
+        <i data-lucide="figma"></i>
         View in Figma →
       </a>
     </div>
@@ -470,7 +471,7 @@
     <p class="chapter-intro">The Agni Design System is publicly viewable in Figma. The colour system documentation page alone shows all 7 palettes with their full step ranges, semantic descriptions, and WCAG compliance notation.</p>
     <div style="text-align:center;padding:40px 0">
       <a href="https://www.figma.com/design/LVW6MclasPsTJWxB1ikbxH/Agni-Design-System" target="_blank" rel="noopener" class="figma-link" style="font-size:1rem;padding:18px 40px">
-        <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor"><path d="M5.5 2A1.5 1.5 0 004 3.5v1A1.5 1.5 0 005.5 6H7V3.5A1.5 1.5 0 005.5 2zM7 7H5.5a1.5 1.5 0 100 3H7V7zm1 3h1.5A1.5 1.5 0 1010 8.5V10h-2zm0-4h2V3.5A1.5 1.5 0 108 3.5V6zm2 5h-2v2.5A1.5 1.5 0 1010 12v-1.5z"/></svg>
+        <i data-lucide="figma"></i>
         Open Agni Design System in Figma →
       </a>
       <p style="font-size:.8rem;color:var(--ink-3);margin-top:16px">Public view access · No login required</p>
@@ -490,13 +491,13 @@
       <div class="nc-domain">Enterprise SaaS · Oracle JET · 2023</div>
       <div class="nc-title">Oracle Pipeline Designer</div>
       <p style="font-size:.78rem;color:var(--ink-3);line-height:1.6">Migrating a legacy Oracle JET application to Oracle Redwood Design System. Three heuristic failures resolved.</p>
-      <div class="nc-arrow">→</div>
+      <div class="nc-arrow"><i data-lucide="arrow-right"></i></div>
     </a>
     <a href="varminer.html" class="next-card">
       <div class="nc-domain">HealthTech · Clinical Genomics</div>
-      <div class="nc-title">VarMiner Cloud</div>
+      <div class="nc-title">Impactomics</div>
       <p style="font-size:.78rem;color:var(--ink-3);line-height:1.6">Genomics diagnostics platform redesigned from monolithic legacy UI to a token-based design system and scalable component library.</p>
-      <div class="nc-arrow">→</div>
+      <div class="nc-arrow"><i data-lucide="arrow-right"></i></div>
     </a>
   </div>
 </section>
@@ -505,20 +506,19 @@
 
 <footer>
   <div class="ft-copy">
-    <img class="ft-logo logo-dark" src="assets/images/logo-dark.png" alt="SK">
-    <img class="ft-logo logo-light" src="assets/images/logo-white.png" alt="SK">
+    <img class="ft-logo logo-dark" src="assets/images/logo-dark.svg" alt="SK">
+    <img class="ft-logo logo-light" src="assets/images/logo-white.svg" alt="SK">
     <span>© 2025 Sonal Kandhway · All rights reserved</span>
   </div>
   <div class="ft-made">Agni Design System · Case Study</div>
 </footer>
 
 <button class="back-top" id="backTop" aria-label="Back to top">
-  <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-    <path d="M10 16V4M5 9l5-5 5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-  </svg>
+  <i data-lucide="arrow-up"></i>
 </button>
 
 <script src="assets/js/main.js"></script>
 <script src="assets/js/case-study.js"></script>
+<script>lucide.createIcons();</script>
 </body>
 </html>

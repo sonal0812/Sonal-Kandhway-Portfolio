@@ -93,23 +93,42 @@ body::after {
   z-index: 9999;
   transform: translate(-50%, -50%);
 }
+/* Dot — snaps instantly */
 .cur {
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
   background: var(--accent);
-  transition: transform 0.1s;
+  transition: width .2s var(--ease-out), height .2s var(--ease-out), opacity .2s;
 }
+/* Ring — trails smoothly */
 .cur-r {
-  width: 32px;
-  height: 32px;
-  border: 1.5px solid rgba(91, 123, 248, 0.4);
-  transition: width 0.35s var(--ease-out), height 0.35s var(--ease-out), border-color 0.3s;
+  width: 36px;
+  height: 36px;
+  border: 1.5px solid rgba(91,123,248,.35);
+  background: transparent;
+  transition: width .3s var(--ease-out), height .3s var(--ease-out),
+              border-color .3s, background .3s, border-radius .3s;
+}
+/* Hover over links / buttons — dot shrinks, ring inflates and fills slightly */
+body:has(a:hover) .cur,
+body:has(button:hover) .cur {
+  width: 4px;
+  height: 4px;
+  opacity: .6;
 }
 body:has(a:hover) .cur-r,
 body:has(button:hover) .cur-r {
-  width: 52px;
-  height: 52px;
+  width: 56px;
+  height: 56px;
   border-color: var(--accent);
+  background: rgba(91,123,248,.07);
+}
+/* Hover over images — show zoom icon intent */
+body:has(img:hover) .cur-r {
+  width: 48px;
+  height: 48px;
+  border-color: rgba(255,255,255,.5);
+  border-radius: 8px;
 }
 
 /* ── Scroll Progress Bar ── */
@@ -533,4 +552,138 @@ select:focus-visible,
 /* ── Larger Touch Targets on Mobile ── */
 @media (hover: none) {
   .hamburger { width: 44px; height: 44px; }
+}
+
+/* ════════════════════════════════════════
+   LUCIDE ICON GLOBAL RULES
+════════════════════════════════════════ */
+
+/* All Lucide SVGs — base reset */
+[data-lucide] { display: inline-flex; }
+
+/* Nav back arrow */
+.nav-back svg {
+  width: 16px; height: 16px;
+  stroke: currentColor; fill: none;
+  stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round;
+  flex-shrink: 0;
+}
+
+/* Back-to-top button */
+.back-top svg {
+  width: 20px; height: 20px;
+  stroke: currentColor; fill: none;
+  stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;
+}
+
+/* Hero CTA buttons */
+.btn-p svg, .btn-g svg {
+  width: 15px; height: 15px;
+  stroke: currentColor; fill: none;
+  stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round;
+  flex-shrink: 0;
+}
+
+/* Download CV icon */
+.btn-g svg {
+  width: 14px; height: 14px;
+}
+
+/* nc-arrow (next case study cards) */
+.nc-arrow svg {
+  width: 16px; height: 16px;
+  stroke: currentColor; fill: none;
+  stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;
+}
+
+/* Figma icon in agni.html links */
+.figma-link svg {
+  width: 18px; height: 18px;
+  stroke: currentColor; fill: none;
+  stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round;
+}
+
+/* External link icon */
+a svg {
+  stroke: currentColor; fill: none;
+  stroke-linecap: round; stroke-linejoin: round;
+}
+
+/* Project card placeholder icons */
+.project-img-slot i svg {
+  stroke: currentColor; fill: none;
+  stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round;
+}
+
+/* ── Lightbox ─────────────────────────────────────────── */
+.lb-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(0,0,0,.88);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .25s ease, visibility .25s ease;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+.lb-overlay.lb-open {
+  opacity: 1;
+  visibility: visible;
+}
+.lb-img-wrap {
+  position: relative;
+  max-width: min(90vw, 1200px);
+  max-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lb-img-wrap img {
+  max-width: 100%;
+  max-height: 90vh;
+  border-radius: 12px;
+  display: block;
+  box-shadow: 0 32px 80px rgba(0,0,0,.6);
+  transform: scale(.94);
+  transition: transform .28s cubic-bezier(.22,1,.36,1);
+  object-fit: contain;
+}
+.lb-overlay.lb-open .lb-img-wrap img {
+  transform: scale(1);
+}
+.lb-close {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255,255,255,.12);
+  border: 1px solid rgba(255,255,255,.2);
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  line-height: 1;
+  transition: background .15s ease, transform .15s ease;
+  z-index: 10000;
+}
+.lb-close:hover {
+  background: rgba(255,255,255,.22);
+  transform: scale(1.1);
+}
+/* Make every case-study image feel clickable */
+.cs-hero-screenshot,
+.cs-hero-img img,
+.cp-screen-cell img,
+.ba-img,
+.agni-img img {
+  cursor: zoom-in;
 }

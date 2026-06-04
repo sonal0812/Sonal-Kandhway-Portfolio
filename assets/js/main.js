@@ -87,20 +87,32 @@ document.addEventListener('DOMContentLoaded', () => {
   const cur  = document.getElementById('cur');
   const curR = document.getElementById('curR');
   if (cur && curR) {
-    let mx = 0, my = 0, rx = 0, ry = 0;
+    let mx = window.innerWidth / 2, my = window.innerHeight / 2;
+    let rx = mx, ry = my;
+    // Dot snaps instantly
     document.addEventListener('mousemove', e => {
       mx = e.clientX;
       my = e.clientY;
       cur.style.left = mx + 'px';
       cur.style.top  = my + 'px';
     });
+    // Ring trails with eased lerp
     (function animRing() {
-      rx += (mx - rx) * 0.1;
-      ry += (my - ry) * 0.1;
-      curR.style.left = rx + 'px';
-      curR.style.top  = ry + 'px';
+      rx += (mx - rx) * 0.12;
+      ry += (my - ry) * 0.12;
+      curR.style.left = (rx | 0) + 'px';
+      curR.style.top  = (ry | 0) + 'px';
       requestAnimationFrame(animRing);
     })();
+    // Hide cursors when mouse leaves window
+    document.addEventListener('mouseleave', () => {
+      cur.style.opacity = '0';
+      curR.style.opacity = '0';
+    });
+    document.addEventListener('mouseenter', () => {
+      cur.style.opacity = '1';
+      curR.style.opacity = '1';
+    });
   }
 
   // ── Scroll Progress Bar ──────────────────────────
@@ -199,3 +211,95 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 });
+
+// ── Lightbox ──────────────────────────────────────────────
+(function () {
+  // Build overlay DOM once
+  const overlay = document.createElement('div');
+  overlay.className = 'lb-overlay';
+  overlay.setAttribute('role', 'dialog');
+  overlay.setAttribute('aria-modal', 'true');
+  overlay.setAttribute('aria-label', 'Image preview');
+
+  const wrap = document.createElement('div');
+  wrap.className = 'lb-img-wrap';
+
+  const img = document.createElement('img');
+  img.alt = '';
+
+  const closeBtn = document.createElement('button');
+  closeBtn.className = 'lb-close';
+  closeBtn.setAttribute('aria-label', 'Close preview');
+  closeBtn.innerHTML = '&times;';
+
+  wrap.appendChild(img);
+  overlay.appendChild(wrap);
+  overlay.appendChild(closeBtn);
+  document.body.appendChild(overlay);
+
+  function open(src, alt) {
+    img.src = src;
+    img.alt = alt || '';
+    overlay.classList.add('lb-open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function close() {
+    overlay.classList.remove('lb-open');
+    document.body.style.overflow = '';
+    // Clear src after transition so old image doesn't flash on next open
+    setTimeout(() => { img.src = ''; }, 280);
+  }
+
+  closeBtn.addEventListener('click', close);
+  // Click outside the image closes overlay
+  overlay.addEventListener('click', function (e) {
+    if (e.target === overlay) close();
+  });
+  // Escape key
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && overlay.classList.contains('lb-open')) close();
+  });
+
+  // Attach to all content images (excluding logos, nav icons, avatars)
+  function attachLightbox() {
+    const selectors = [
+      'main img',
+    ].join(',');
+
+    document.querySelectorAll(selectors).forEach(function (el) {
+      // Skip tiny icons, logos, nav images
+      if (el.closest('nav') || el.closest('footer') || el.closest('.back-top')) return;
+      if (el.classList.contains('nav-logo-img') || el.classList.contains('ft-logo')) return;
+      if (el.getAttribute('data-lb') === 'off') return;
+      if (el._lbAttached) return;
+      el._lbAttached = true;
+
+      el.style.cursor = 'zoom-in';
+      el.addEventListener('click', function () {
+        open(el.src, el.alt);
+      });
+    });
+  }
+
+  // Run once DOM ready, then again after any dynamic content
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', attachLightbox);
+  } else {
+    attachLightbox();
+  }
+  // Also catch lazily rendered images
+  window.addEventListener('load', attachLightbox);
+})();
+
+// ── Project card hero image → navigate to case study ─────
+(function () {
+  document.querySelectorAll('.project-hero').forEach(function (hero) {
+    hero.addEventListener('click', function () {
+      const card = hero.closest('.project-card');
+      if (!card) return;
+      const link = card.querySelector('.project-link');
+      if (link && link.href) window.location.href = link.href;
+    });
+  });
+})();

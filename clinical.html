@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clinical Report Intelligence &mdash; Case Study &middot; Sonal Kandhway</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300;0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700;1,14..32,300;1,14..32,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/case-study.css">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to main content</a>
+<div id="prog"></div>
+<nav>
+  <a href="index.html" class="nav-back"><i data-lucide="arrow-left"></i>Back to Portfolio</a>
+  <div class="nav-center">Case Study &mdash; Clinical Report Intelligence</div>
+  <div class="nav-right">
+    <div class="nav-logo-wrap">
+      <img loading="eager" class="nav-logo-img logo-dark" src="assets/images/logo-dark.svg" alt="Sonal Kandhway" height="72">
+      <img loading="lazy" class="nav-logo-img logo-light" src="assets/images/logo-white.svg" alt="Sonal Kandhway" height="72">
+    </div>
+    <button class="theme-btn" id="themeToggle"><div class="theme-knob" id="themeKnob"><span id="themeIcon">&#x1F319;</span></div></button>
+  </div>
+</nav>
+<main id="main" tabindex="-1">
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-glow"></div><div class="hero-glow2"></div>
+  <div class="hero-left">
+    <div class="cs-breadcrumb"><a href="index.html" class="bc-item">Portfolio</a><span class="bc-sep">&#x203A;</span><a href="index.html#work" class="bc-item">Case Studies</a><span class="bc-sep">&#x203A;</span><span class="bc-active">Clinical Report Intelligence</span></div>
+    <div class="hero-tag">&#x2736; HealthTech &middot; AI Clinical Decision Support &middot; Trust Design</div>
+    <h1 class="hero-title">Clinical Report<br><em>Intelligence Platform</em></h1>
+    <p class="hero-sub">Designing an AI decision-support layer that clinicians actually trust &mdash; by making reasoning visible, not hidden.</p>
+    <p class="hero-desc">In clinical genomics, the challenge is not access to data &mdash; it is <strong>decision-making</strong>. Reports are dense, decisions are high-stakes. Raw data increases cognitive load. AI outputs without transparency reduce trust. This creates a gap between information and action.</p>
+    <div class="hero-meta-grid">
+      <div class="hm-cell"><div class="hm-label">Role</div><div class="hm-val">UX Designer</div></div>
+      <div class="hm-cell"><div class="hm-label">Domain</div><div class="hm-val">Healthcare AI &middot; Clinical Genomics</div></div>
+      <div class="hm-cell"><div class="hm-label">Focus</div><div class="hm-val">AI Trust &middot; Decision Support</div></div>
+      <div class="hm-cell"><div class="hm-label">Users</div><div class="hm-val">Genome Analysts &middot; Clinicians</div></div>
+    </div>
+  </div>
+  <div class="hero-right">
+    <img class="cs-hero-img" src="assets/images/clinical-hero.jpg" alt="Clinical Report Intelligence Platform cover" loading="eager">
+  </div>
+</section>
+
+<!-- 01 CONTEXT -->
+<section class="cs-chapter">
+  <div class="chapter-label">01 &mdash; Context</div>
+  <h2 class="chapter-title">The challenge is not data access.<br>It is <em>decision-making.</em></h2>
+  <div class="chapter-body">
+    <p class="chapter-intro">In clinical genomics, reports are dense, decisions are high-stakes, and validation requires cross-referencing multiple sources. Most existing tools either expose raw data or attempt to simplify through AI. Both approaches introduce friction.</p>
+    <div class="cs-insight-row">
+      <div class="cs-insight-card">
+        <div class="ci-num">01</div>
+        <div class="ci-title">Raw data increases cognitive load</div>
+        <p class="ci-body">Clinicians working with unstructured genomic reports must manually extract signals, prioritise risks, and cross-reference databases &mdash; all under time pressure and with patient outcomes at stake.</p>
+      </div>
+      <div class="cs-insight-card">
+        <div class="ci-num">02</div>
+        <div class="ci-title">AI outputs without transparency reduce trust</div>
+        <p class="ci-body">Systems that deliver AI conclusions without showing reasoning create a different problem: clinicians cannot evaluate the output, so they either over-rely on it or reject it entirely.</p>
+      </div>
+      <div class="cs-insight-card">
+        <div class="ci-num">03</div>
+        <div class="ci-title">The gap between information and action</div>
+        <p class="ci-body">Neither raw data nor opaque AI closes this gap. What clinicians need is a system that structures information around how decisions actually get made &mdash; iteratively, with evidence, not answers.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 02 UNDERSTANDING THE USER -->
+<section class="cs-chapter cs-chapter--alt">
+  <div class="chapter-label">02 &mdash; Understanding the User</div>
+  <h2 class="chapter-title">Genome analysts and clinicians<br>working with <em>complex diagnostic data.</em></h2>
+  <div class="chapter-body">
+    <p class="chapter-intro">This workflow is used by genome analysts and clinicians who process high-volume, high-stakes genomic data. A few consistent patterns shaped every design decision.</p>
+    <div class="cs-fivew-grid">
+      <div class="fivew-cell"><div class="fw-q">Decisions are iterative, not linear</div><p class="fw-a">Clinicians orient, prioritise, inspect, compare, then act &mdash; and often cycle back. Rigid sequences break natural reasoning at the worst moment.</p></div>
+      <div class="fivew-cell"><div class="fw-q">Users look for evidence, not answers</div><p class="fw-a">Clinicians do not want an AI to deliver a conclusion. They want evidence they can evaluate and stand behind. Confidence comes from corroboration, not a single metric.</p></div>
+      <div class="fivew-cell"><div class="fw-q">Confidence comes from corroboration</div><p class="fw-a">A single percentage score is not enough. Clinicians need to see the basis for an AI assessment &mdash; and assess whether the evidence is strong enough to act on.</p></div>
+      <div class="fivew-cell"><div class="fw-q">Systems that remove control are rarely adopted</div><p class="fw-a">Regardless of efficiency gains, tools that reduce clinician agency create distrust. The design position: AI as an interpretable assistive layer that supports judgment &mdash; never replaces it.</p></div>
+    </div>
+    <div class="cs-callout" style="margin-top:32px">
+      <strong>The framing shift:</strong> This was approached as a <em>decision-support system</em>, not a visualisation problem. The key question: <em>&ldquo;How might clinicians arrive at confident, defensible decisions with AI support?&rdquo;</em>
+    </div>
+  </div>
+</section>
+
+<!-- 03 KEY OBSERVATION & POSITION -->
+<section class="cs-chapter">
+  <div class="chapter-label">03 &mdash; Key Observation</div>
+  <h2 class="chapter-title">The critical moment is not when AI produces a result.<br>It is when the user asks: <em>&ldquo;Do I trust this?&rdquo;</em></h2>
+  <div class="chapter-body">
+    <p class="chapter-intro">Most systems do not design for this moment. This became the central design problem.</p>
+    <div class="cs-callout">
+      <strong>Position:</strong> AI in healthcare should not act as an authority. It should function as an interpretable, assistive layer that supports human judgment.
+    </div>
+    <p style="margin-top:28px">Every design decision was evaluated against one principle: <strong>Does this help the user make a better decision?</strong></p>
+    <p style="margin-top:12px">The focus remained on: reducing ambiguity, supporting validation, and making system behaviour understandable.</p>
+  </div>
+</section>
+
+<!-- 04 SYSTEM FLOW -->
+<section class="cs-chapter cs-chapter--alt">
+  <div class="chapter-label">04 &mdash; System Flow</div>
+  <h2 class="chapter-title">Structured around how<br>decisions <em>naturally evolve.</em></h2>
+  <div class="chapter-body">
+    <p class="chapter-intro">The system is structured around how decisions naturally evolve &mdash; avoiding rigid workflows and supporting natural reasoning at every stage.</p>
+    <div class="cs-fivew-grid">
+      <div class="fivew-cell"><div class="fw-q">1. Upload report and patient data</div><p class="fw-a">Minimal friction intake. The system orients the clinician to the case before beginning interpretation.</p></div>
+      <div class="fivew-cell"><div class="fw-q">2. AI analyses and identifies signals</div><p class="fw-a">The system processes the report and surfaces key genomic signals, prioritised by risk level.</p></div>
+      <div class="fivew-cell"><div class="fw-q">3. Summary highlights key risks</div><p class="fw-a">A structured summary tells the clinician what needs attention first &mdash; without requiring them to read the full report.</p></div>
+      <div class="fivew-cell"><div class="fw-q">4. User inspects evidence</div><p class="fw-a">Clinicians drill into individual variants, reviewing supporting evidence from ClinVar, COSMIC, gnomAD, and literature.</p></div>
+      <div class="fivew-cell"><div class="fw-q">5. AI reasoning is explored</div><p class="fw-a">Full AI reasoning is available on demand &mdash; signal strength, evidence sources, consistency, and validation gaps.</p></div>
+      <div class="fivew-cell"><div class="fw-q">6. AI and human interpretations are compared</div><p class="fw-a">A dedicated comparison view surfaces where AI and clinician assessments agree, partially agree, or diverge.</p></div>
+      <div class="fivew-cell"><div class="fw-q">7. User validates or overrides</div><p class="fw-a">Overrides are a first-class action. Clinician reasoning is explicitly captured. AI output remains visible throughout.</p></div>
+      <div class="fivew-cell"><div class="fw-q">8. Final report is generated</div><p class="fw-a">Every decision step is traceable in the output. The report is defensible, not just generated.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 05 DASHBOARD -->
+<section class="cs-chapter">
+  <div class="chapter-label">05 &mdash; Dashboard</div>
+  <h2 class="chapter-title">Orientation and prioritisation<br><em>before the clinician reads a word.</em></h2>
+  <div class="chapter-body">
+    <p class="chapter-intro">The dashboard gives clinicians an immediate case-level view &mdash; total reports, pending reviews, AI accuracy, and active patients &mdash; with recent cases listed by risk level. The clinician knows what needs attention before opening a single report.</p>
+    <img class="cs-hero-screenshot rv d1" src="assets/images/clinical-dashboard.jpg" alt="Clinical genomics dashboard showing case list with risk levels and AI accuracy metrics" loading="lazy">
+    <p style="margin-top:20px;color:var(--ink-3);font-size:.88rem">The information architecture reflects real decision patterns: Orientation &rarr; What is this case? &middot; Prioritisation &rarr; What needs attention? &middot; Inspection &rarr; Why is this flagged? &middot; Comparison &rarr; Do I agree? &middot; Action &rarr; What decision do I make?</p>
+  </div>
+</section>
+
+<!-- 06 KEY DESIGN DECISIONS -->
+<section class="cs-chapter cs-chapter--alt">
+  <div class="chapter-label">06 &mdash; Key Design Decisions</div>
+  <h2 class="chapter-title">Five decisions that define<br><em>how trust is built.</em></h2>
+  <div class="chapter-body">
+
+    <!-- Decision 1: Making AI Reasoning Visible -->
+    <div class="cs-finding">
+      <div class="cf-heuristic">Decision 01</div>
+      <div class="cf-title">Making AI Reasoning Visible</div>
+      <p class="cf-body">Hiding reasoning reduces trust. Showing everything simultaneously increases cognitive load. The system uses progressive disclosure: summary by default, reasoning on demand. Clinicians access the depth they need, when they need it.</p>
+      <div class="cf-fix">Each variant card shows an AI-generated clinical summary with confidence indicators. Full reasoning &mdash; evidence sources, signal strength, consistency, and validation gaps &mdash; expands on demand.</div>
+    </div>
+    <img class="cs-hero-screenshot rv d1" src="assets/images/clinical-ai-summary.jpg" alt="AI Analysis Summary screen showing identified variants with confidence levels" loading="lazy" style="margin-bottom:40px">
+
+    <!-- Decision 2: Reframing Confidence -->
+    <div class="cs-finding">
+      <div class="cf-heuristic">Decision 02</div>
+      <div class="cf-title">Reframing Confidence &mdash; Evidence Over Percentage</div>
+      <p class="cf-body">A single confidence percentage is not actionable. &ldquo;87% confident&rdquo; tells a clinician nothing they can evaluate. Confidence is presented as three readable dimensions: strength of evidence, consistency of signals, and need for additional validation.</p>
+      <div class="cf-fix">Clinicians shift from passively accepting a score to actively evaluating its basis &mdash; which is how clinical judgment actually works.</div>
+    </div>
+    <img class="cs-hero-screenshot rv d1" src="assets/images/clinical-variant-detail.jpg" alt="Variant detail screen showing BRCA1 evidence breakdown with confidence dimensions" loading="lazy" style="margin-bottom:40px">
+
+    <!-- Decision 3: Supporting Critical Evaluation -->
+    <div class="cs-finding">
+      <div class="cf-heuristic">Decision 03</div>
+      <div class="cf-title">Supporting Critical Evaluation &mdash; AI vs. Human Comparison</div>
+      <p class="cf-body">AI is positioned as input, not decision. A dedicated comparison layer shows AI interpretation and human interpretation side by side, with differences clearly surfaced. Clinicians evaluate where they agree with the system and where they diverge.</p>
+      <div class="cf-fix">Transparency about disagreement builds more confidence than false agreement would. This is the most trust-building feature in the system.</div>
+    </div>
+    <img class="cs-hero-screenshot rv d1" src="assets/images/clinical-ai-vs-human.jpg" alt="AI vs Human comparison view showing full agreement, partial agreement, and disagreement across variants" loading="lazy" style="margin-bottom:40px">
+
+    <!-- Decision 4: Preserving Decision Integrity -->
+    <div class="cs-finding">
+      <div class="cf-heuristic">Decision 04</div>
+      <div class="cf-title">Preserving Decision Integrity &mdash; Overrides as Expected, Not Exceptional</div>
+      <p class="cf-body">Most AI systems treat overrides as edge cases &mdash; buried, requiring extra confirmation, making the user feel like they are correcting the system. This platform treats overrides as a normal, first-class clinical action. AI output remains visible. User decisions are explicit. Reasoning is captured.</p>
+      <div class="cf-fix">The clinician is never made to feel like they are overruling the AI. They are doing their job, and the system supports that.</div>
+    </div>
+    <img class="cs-hero-screenshot rv d1" src="assets/images/clinical-human-override.jpg" alt="Human Override screen showing clinician reclassification of a BRCA2 variant with documented reasoning" loading="lazy" style="margin-bottom:40px">
+
+    <!-- Decision 5: Closing the Loop -->
+    <div class="cs-finding">
+      <div class="cf-heuristic">Decision 05</div>
+      <div class="cf-title">Closing the Loop &mdash; Corrections as Structured Feedback</div>
+      <p class="cf-body">User corrections are captured as structured feedback that feeds back into the system&rsquo;s learning layer. Clinical expertise does not get siloed from the tool that should benefit from it.</p>
+      <div class="cf-fix">Clinicians feel their judgment has weight. The system improves. Trust accumulates over time &mdash; not just within a single session.</div>
+    </div>
+    <img class="cs-hero-screenshot rv d1" src="assets/images/clinical-final-report.jpg" alt="Final Clinical Report showing validated variant results with AI and human classification side by side" loading="lazy">
+
+  </div>
+</section>
+
+<!-- 07 WHAT WAS AVOIDED -->
+<section class="cs-chapter">
+  <div class="chapter-label">07 &mdash; What Was Avoided</div>
+  <h2 class="chapter-title">Design decisions are also<br><em>what you choose not to do.</em></h2>
+  <div class="chapter-body">
+    <div class="cs-insight-row">
+      <div class="cs-insight-card">
+        <div class="ci-title">Over-automation without visibility</div>
+        <p class="ci-body">No step is automated without the clinician understanding what the system did and why. Faster to demo, dangerous in practice.</p>
+      </div>
+      <div class="cs-insight-card">
+        <div class="ci-title">Hiding uncertainty</div>
+        <p class="ci-body">Low signal strength, conflicting evidence, and validation gaps are displayed &mdash; not masked. A confident-looking output built on weak evidence is more dangerous than an honest uncertain one.</p>
+      </div>
+      <div class="cs-insight-card">
+        <div class="ci-title">Reducing complex decisions to single scores</div>
+        <p class="ci-body">A single percentage transfers accountability to a number that cannot hold it. Confidence is multidimensional and presented that way throughout the system.</p>
+      </div>
+      <div class="cs-insight-card">
+        <div class="ci-title">Forcing rigid, linear workflows</div>
+        <p class="ci-body">Clinical reasoning is non-linear. The system supports jumping between orientation, inspection, and comparison without requiring a fixed sequence.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 08 OUTCOME -->
+<section class="cs-chapter cs-chapter--alt">
+  <div class="chapter-label">08 &mdash; Outcome</div>
+  <h2 class="chapter-title">Structure introduced into<br><em>a fragmented process.</em></h2>
+  <div class="chapter-body">
+    <div class="cs-insight-row">
+      <div class="cs-insight-card">
+        <div class="ci-num">01</div>
+        <div class="ci-title">Faster identification of relevant signals</div>
+        <p class="ci-body">AI-prioritised risk summaries reduced time spent manually scanning reports before knowing where to focus.</p>
+      </div>
+      <div class="cs-insight-card">
+        <div class="ci-num">02</div>
+        <div class="ci-title">Clear path from insight to decision</div>
+        <p class="ci-body">The structured flow &mdash; orientation to action &mdash; gave clinicians a reproducible process that matched how they already reasoned.</p>
+      </div>
+      <div class="cs-insight-card">
+        <div class="ci-num">03</div>
+        <div class="ci-title">Increased confidence in AI-assisted workflows</div>
+        <p class="ci-body">Clinicians who could see AI reasoning and override freely reported higher confidence in the system &mdash; not lower. The ability to disagree is the foundation of trust.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 09 KEY LEARNINGS -->
+<section class="cs-chapter">
+  <div class="chapter-label">09 &mdash; Key Learnings</div>
+  <h2 class="chapter-title">What this project<br><em>reinforced.</em></h2>
+  <div class="chapter-body">
+    <div class="cs-insight-row">
+      <div class="cs-insight-card"><div class="ci-num">01</div><div class="ci-title">AI systems fail when they hide uncertainty</div><p class="ci-body">Transparency about what the system does not know builds more trust than projecting false confidence. Hidden uncertainty is a future failure point.</p></div>
+      <div class="cs-insight-card"><div class="ci-num">02</div><div class="ci-title">Trust emerges from transparency and control</div><p class="ci-body">The ability to see reasoning and override freely built trust. Systems that take control away, regardless of accuracy, do not get adopted.</p></div>
+      <div class="cs-insight-card"><div class="ci-num">03</div><div class="ci-title">Explainability is a design responsibility</div><p class="ci-body">What to explain, how to explain it, and when to surface it is a UX problem. Designers must own this layer &mdash; it cannot be delegated to engineering.</p></div>
+      <div class="cs-insight-card"><div class="ci-num">04</div><div class="ci-title">Designing AI requires thinking in systems, not screens</div><p class="ci-body">Individual screen decisions only make sense in the context of the full decision flow. Designing a single screen well means understanding what comes before and after it.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 10 REFLECTION -->
+<section class="cs-chapter cs-chapter--alt">
+  <div class="chapter-label">10 &mdash; Reflection</div>
+  <h2 class="chapter-title">From designing interfaces<br><em>to designing systems that support reasoning.</em></h2>
+  <div class="chapter-body">
+    <p class="chapter-intro">This project reinforced a shift in approach: from designing interfaces, to designing systems that support reasoning, judgment, and accountability.</p>
+    <div class="cs-callout" style="margin-top:36px;text-align:center;padding:32px">
+      <p style="font-size:1.1rem;color:var(--ink-1);font-style:italic;line-height:1.7;margin:0">AI should not replace expertise.<br>It should make expertise more effective.</p>
+    </div>
+  </div>
+</section>
+
+<!-- NEXT -->
+<section class="cs-next">
+  <div class="chapter-label">More Work</div>
+  <h2 class="chapter-title">See what else <em>I&rsquo;ve built.</em></h2>
+  <div class="next-cards rv d1">
+    <a href="varminer.html" class="next-card">
+      <div class="nc-domain">HealthTech &middot; Clinical Genomics</div>
+      <div class="nc-title">Impactomics</div>
+      <p style="font-size:.78rem;color:var(--ink-3);line-height:1.6">Full end-to-end redesign of a genomics platform &mdash; from user research and competitive audit to V2 iteration.</p>
+      <div class="nc-arrow"><i data-lucide="arrow-right"></i></div>
+    </a>
+    <a href="clearpaisa.html" class="next-card">
+      <div class="nc-domain">FinTech &middot; Trust Design</div>
+      <div class="nc-title">ClearPaisa</div>
+      <p style="font-size:.78rem;color:var(--ink-3);line-height:1.6">The Trust Operating System &mdash; a six-dimension framework for designing trust in Indian fintech.</p>
+      <div class="nc-arrow"><i data-lucide="arrow-right"></i></div>
+    </a>
+  </div>
+</section>
+
+</main>
+<footer>
+  <div class="ft-copy">
+    <img loading="lazy" class="ft-logo logo-dark" src="assets/images/logo-dark.svg" alt="SK">
+    <img loading="lazy" class="ft-logo logo-light" src="assets/images/logo-white.svg" alt="SK">
+    <span>&copy; 2025 Sonal Kandhway &middot; All rights reserved</span>
+  </div>
+  <div class="ft-made">Clinical Report Intelligence &middot; UX Case Study</div>
+</footer>
+<button class="back-top" id="backTop" aria-label="Back to top">
+  <i data-lucide="arrow-up"></i>
+</button>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/case-study.js"></script>
+<script>lucide.createIcons();</script>
+</body>
+</html>

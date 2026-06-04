@@ -3,797 +3,597 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="ClearPaisa UX Case Study — Designing trust before asking for access. By Sonal Kandhway.">
-  <title>ClearPaisa — Case Study · Sonal Kandhway</title>
-
-  <!-- Fonts -->
+  <meta name="description" content="ClearPaisa &mdash; The Trust Operating System. UX case study by Sonal Kandhway.">
+  <title>ClearPaisa &mdash; Case Study &middot; Sonal Kandhway</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300;0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700;1,14..32,300;1,14..32,400&display=swap" rel="stylesheet">
-
-  <!-- Styles -->
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/case-study.css">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 </head>
 <body>
-
 <a href="#main" class="skip-link">Skip to main content</a>
-
 <div id="prog"></div>
 
-<!-- ══ NAV ══ -->
 <nav>
-  <a href="index.html" class="nav-back">
-    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13 8H3M7 12L3 8l4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-    Back to Portfolio
-  </a>
-  <div class="nav-center">Case Study — ClearPaisa</div>
+  <a href="index.html" class="nav-back"><i data-lucide="arrow-left"></i>Back to Portfolio</a>
+  <div class="nav-center">Case Study &mdash; ClearPaisa</div>
   <div class="nav-right">
     <div class="nav-logo-wrap">
-      <img class="nav-logo-img logo-dark" src="assets/images/logo-dark.png" alt="Sonal Kandhway" height="72">
-      <img class="nav-logo-img logo-light" src="assets/images/logo-white.png" alt="Sonal Kandhway" height="72">
+      <img class="nav-logo-img logo-dark" src="assets/images/logo-dark.svg" alt="Sonal Kandhway" height="72">
+      <img class="nav-logo-img logo-light" src="assets/images/logo-white.svg" alt="Sonal Kandhway" height="72" loading="lazy">
     </div>
-    <button class="theme-btn" id="themeToggle">
-      <div class="theme-knob" id="themeKnob"><span id="themeIcon">🌙</span></div>
-    </button>
+    <button class="theme-btn" id="themeToggle"><div class="theme-knob" id="themeKnob"><span id="themeIcon">&#x1F319;</span></div></button>
   </div>
 </nav>
 
 <main id="main" tabindex="-1">
 
-<!-- ══ HERO ══ -->
+<!-- HERO -->
 <section id="hero">
-  <div class="hero-glow"></div>
-  <div class="hero-glow2"></div>
-
+  <div class="hero-glow"></div><div class="hero-glow2"></div>
   <div class="hero-left">
     <div class="cs-breadcrumb">
-      <span class="bc-item">Portfolio</span>
-      <span class="bc-sep">›</span>
-      <span class="bc-item">Case Studies</span>
-      <span class="bc-sep">›</span>
+      <a href="index.html" class="bc-item">Portfolio</a><span class="bc-sep">&#x203A;</span>
+      <a href="index.html#work" class="bc-item">Case Studies</a><span class="bc-sep">&#x203A;</span>
       <span class="bc-active">ClearPaisa</span>
     </div>
-    <div class="hero-tag">✦ FinTech · Consumer · Personal Finance</div>
-    <h1 class="hero-title">Clear<em>Paisa</em></h1>
-    <p class="hero-sub">Designing trust before asking for access.</p>
-    <p class="hero-desc">
-      Young urban Indians are financially aware but <strong>deeply sceptical of sharing
-      their data with finance apps.</strong> This is the story of how we designed around
-      that fear — and turned transparency into a product feature.
-    </p>
+    <div class="hero-tag">&#x2736; FinTech &middot; Personal Finance &middot; Self-Initiated Framework</div>
+    <h1 class="hero-title">ClearPaisa</h1>
+    <p class="hero-sub">Trust isn&rsquo;t a feature. It&rsquo;s a system. A six-dimension design framework for fintech apps where 40% of users abandon onboarding before they ever see the product.</p>
     <div class="hero-meta-grid">
-      <div class="hm-cell"><div class="hm-label">My Role</div><div class="hm-val">Lead UX Designer</div></div>
-      <div class="hm-cell"><div class="hm-label">Methodology</div><div class="hm-val">HFI · Design Thinking</div></div>
-      <div class="hm-cell"><div class="hm-label">Duration</div><div class="hm-val">14 Weeks</div></div>
-      <div class="hm-cell"><div class="hm-label">Tools Used</div><div class="hm-val">Figma · Dovetail · Maze</div></div>
+      <div class="hm-cell"><div class="hm-label">Type</div><div class="hm-val">Self-Initiated Framework</div></div>
+      <div class="hm-cell"><div class="hm-label">Role</div><div class="hm-val">Lead Designer</div></div>
+      <div class="hm-cell"><div class="hm-label">Duration</div><div class="hm-val">6 Weeks &middot; 2026</div></div>
+      <div class="hm-cell"><div class="hm-label">Output</div><div class="hm-val">Framework + 6 screens + 14 microcopy rules</div></div>
     </div>
   </div>
-
   <div class="hero-right">
-    <div class="hero-phones">
-      <div class="hero-phone hp1">
-        <div class="phs s1">
-          <div class="s1-logo">₹</div>
-          <div class="s1-h">Welcome to ClearPaisa</div>
-          <div class="s1-p">Your finances, finally clear.</div>
-          <div class="s1-trust-row">
-            <div class="s1-trust">🔒 No data sold</div>
-            <div class="s1-trust">✓ Bank-grade encryption</div>
-          </div>
-          <div class="s1-dots"><div class="s1-d a"></div><div class="s1-d"></div><div class="s1-d"></div></div>
-          <div style="flex:1"></div>
-          <div class="s1-btn">Get Started Free →</div>
+    <div class="cs-hero-img">
+      <img src="assets/images/cp-cover.png" alt="ClearPaisa &mdash; Trust isn&rsquo;t a feature. It&rsquo;s a system." class="cs-hero-screenshot" loading="eager">
+    </div>
+  </div>
+</section>
+
+<!-- TL;DR -->
+<section class="cs-chapter">
+  <div class="chapter-label">TL;DR &mdash; For hiring managers who have 90 seconds</div>
+  <h2 class="chapter-title"><em>The short version.</em></h2>
+  <div class="chapter-body">
+    <div class="cs-insight-row">
+      <div class="cs-insight-card"><div class="ci-title">Problem</div><p class="ci-body">Indian fintech apps lose 40% of users in onboarding because they ask for irreversible commitments before earning trust.</p></div>
+      <div class="cs-insight-card"><div class="ci-title">Insight from research</div><p class="ci-body">Users don&rsquo;t fear data theft. They fear <em>commitment without retreat.</em> Anxiety lives in the irreversibility of giving &mdash; not the misuse afterwards.</p></div>
+      <div class="cs-insight-card"><div class="ci-title">Solution</div><p class="ci-body">A six-dimension Trust Operating System &mdash; a framework any fintech team can audit, ship, and measure against. Not just an app.</p></div>
+    </div>
+    <div class="cs-insight-row" style="margin-top:16px">
+      <div class="cs-insight-card"><div class="ci-title">Output</div><p class="ci-body">Framework + design tokens + 6 annotated screens + 14 microcopy rules + production validation plan.</p></div>
+      <div class="cs-insight-card"><div class="ci-title">Honest validation</div><p class="ci-body">5 moderated sessions surfaced strong directional signal. Production validation plan included for what I&rsquo;d test next at scale.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 01 CONTEXT -->
+<section class="cs-chapter cs-chapter--alt">
+  <div class="chapter-label">01 &mdash; Context</div>
+  <h2 class="chapter-title">Indian fintech has a trust ceiling.<br><em>No one is designing for it.</em></h2>
+  <div class="chapter-body">
+    <p class="chapter-intro">India has 14,500+ fintech startups and one of the world&rsquo;s most mature payment infrastructures. Yet personal finance management apps see &lt;8% adoption among first-jobbers &mdash; the demographic with the most to gain from them.</p>
+
+    <div class="cs-table-wrap" style="margin-bottom:24px">
+      <table class="cs-table">
+        <thead>
+          <tr><th>Stat</th><th>What it means</th><th>Source</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong style="font-size:1.25rem;color:var(--accent)">40%</strong></td>
+            <td>of users abandon digital onboarding because it asks for things they&rsquo;re unwilling to share</td>
+            <td class="t-low"><em>Deloitte</em></td>
+          </tr>
+          <tr>
+            <td><strong style="font-size:1.25rem;color:var(--accent)">24%</strong></td>
+            <td>of mobile apps are used once and uninstalled. The activation cliff is steeper in finance</td>
+            <td class="t-low"><em>UXCam</em></td>
+          </tr>
+          <tr>
+            <td><strong style="font-size:1.25rem;color:var(--accent)">&#x20B9;2,500+</strong></td>
+            <td>CAC per activated fintech user in India. Every dropped install is wasted spend</td>
+            <td class="t-low"><em>Industry benchmark</em></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="cs-callout" style="margin-bottom:24px">The industry response has been to optimise speed: instant KYC, Aadhaar-based eKYC, sub-15-minute account opening. Faster onboarding solves a regulatory friction. <strong>It does not solve a trust problem.</strong> A user who completes onboarding in 12 minutes and uninstalls on day three has cost the company more, not less. The framing is wrong.</div>
+
+    <div class="cs-callout">&#x1F4A1; <strong>The question I set out to answer:</strong> If trust is the ceiling, then trust must be designable. What are the specific, observable design moves that build it &mdash; and which ones, despite intent, actively destroy it?</div>
+  </div>
+</section>
+
+<!-- 02 RESEARCH -->
+<section class="cs-chapter">
+  <div class="chapter-label">02 &mdash; Research</div>
+  <h2 class="chapter-title">Eight interviews. One diary study.<br><em>One finding that overturned the brief.</em></h2>
+  <div class="chapter-body">
+    <p class="chapter-intro">The research was deliberately scoped for a self-funded project: small enough to run with rigour, large enough to surface directional patterns. Sample sizes are called out throughout.</p>
+
+    <h3 class="cs-subhead">Methods at a glance</h3>
+    <div class="cs-insight-row" style="margin-bottom:40px">
+      <div class="cs-insight-card"><div class="ci-num">8</div><div class="ci-title">In-depth interviews</div><p class="ci-body">22&ndash;35 yr olds, Tier 1 metros</p></div>
+      <div class="cs-insight-card"><div class="ci-num">4</div><div class="ci-title">Diary study participants</div><p class="ci-body">14 days, daily expense log</p></div>
+      <div class="cs-insight-card"><div class="ci-num">6</div><div class="ci-title">Competitor apps audited</div><p class="ci-body">Across 11 trust signals</p></div>
+      <div class="cs-insight-card"><div class="ci-num">73%</div><div class="ci-title">Named &ldquo;data fear&rdquo;</div><p class="ci-body">As their primary blocker to using finance apps</p></div>
+    </div>
+
+    <h3 class="cs-subhead">Primary Persona &mdash; Built from research, not assumption</h3>
+    <div class="cs-hero-img" style="margin-bottom:40px">
+      <img src="assets/images/cp-persona.png" alt="Primary Persona &mdash; Priya, 26, Software Engineer, Bengaluru" class="cs-hero-screenshot" loading="lazy">
+    </div>
+
+    <h3 class="cs-subhead">Competitive Audit &mdash; Trust Signal Score (out of 11)</h3>
+    <div class="cs-table-wrap" style="margin-bottom:16px">
+      <table class="cs-table">
+        <thead>
+          <tr><th>App</th><th>Trust signals</th><th>Data transparency</th><th>Onboarding friction</th><th>Strategic gap</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>CRED</strong></td>
+            <td><span class="t-hi">&#9679; High (8/11)</span></td>
+            <td><span style="color:#f5a623">&#9679; Medium</span></td>
+            <td><span style="color:#f5a623">&#9679; Medium</span></td>
+            <td>Credit cards only &mdash; locks out salaried first-jobbers</td>
+          </tr>
+          <tr>
+            <td><strong>Fi Money</strong></td>
+            <td><span class="t-hi">&#9679; High (8/11)</span></td>
+            <td><span class="t-hi">&#9679; High</span></td>
+            <td><span class="t-hi">&#9679; Low</span></td>
+            <td>Targets high earners; bank-link mandatory</td>
+          </tr>
+          <tr>
+            <td><strong>Jupiter</strong></td>
+            <td><span class="t-hi">&#9679; High (7/11)</span></td>
+            <td><span class="t-hi">&#9679; High</span></td>
+            <td><span class="t-hi">&#9679; Low</span></td>
+            <td>Limited manual control; auto-categorisation feels surveillant</td>
+          </tr>
+          <tr>
+            <td><strong>Groww</strong></td>
+            <td><span class="t-hi">&#9679; High (7/11)</span></td>
+            <td><span class="t-hi">&#9679; High</span></td>
+            <td><span class="t-hi">&#9679; Low</span></td>
+            <td>Investing-first; personal finance is secondary</td>
+          </tr>
+          <tr>
+            <td><strong>ET Money</strong></td>
+            <td><span style="color:#f5a623">&#9679; Medium (5/11)</span></td>
+            <td><span style="color:#f5a623">&#9679; Medium</span></td>
+            <td><span style="color:#f5a623">&#9679; Medium</span></td>
+            <td>SMS parsing without explicit consent surfaced as anxiety trigger</td>
+          </tr>
+          <tr>
+            <td><strong>Walnut</strong></td>
+            <td><span style="color:#e05f5f">&#9679; Low (3/11)</span></td>
+            <td><span style="color:#e05f5f">&#9679; Low</span></td>
+            <td><span style="color:#e05f5f">&#9679; High</span></td>
+            <td>SMS access required upfront; no recovery-visible design</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cs-callout">&#x1F3AF; <strong>The shared blind spot:</strong> every app in the audit assumed the user wanted bank linking and worked backwards from regulatory friction. None of them treated the choice <em>not to link</em> as a legitimate design state. <strong>That assumption is the gap.</strong></div>
+  </div>
+</section>
+
+<!-- 03 REFRAME -->
+<section class="cs-chapter cs-chapter--alt">
+  <div class="chapter-label">03 &mdash; The Reframe</div>
+  <h2 class="chapter-title">The finding that<br><em>overturned the brief.</em></h2>
+  <div class="chapter-body">
+    <p class="chapter-intro">The original hypothesis was the obvious one: users don&rsquo;t trust fintech apps because they fear data theft. Three interviews in, that frame collapsed.</p>
+
+    <div class="cs-quote">&ldquo;It&rsquo;s not that I think they&rsquo;ll steal my data. It&rsquo;s that the moment I link my bank, I&rsquo;ve handed something over and I can&rsquo;t get it back. I don&rsquo;t want to feel that yet.&rdquo;</div>
+    <p style="font-size:.78rem;color:var(--ink-3);margin-top:8px;margin-bottom:32px">Interview 04 &middot; Software engineer &middot; 26 &middot; Bengaluru</p>
+
+    <div class="cs-callout" style="margin-bottom:32px">The same pattern surfaced in 5 of 8 interviews. Users weren&rsquo;t worried about malicious actors &mdash; they were worried about <strong>the act of giving something irreversible.</strong> Credentials, account access, biometric data: the anxiety lived in the irreversibility, not in the misuse afterwards.</div>
+
+    <div class="cs-callout" style="margin-bottom:32px"><strong>The reframe:</strong> Trust isn&rsquo;t built by saying &ldquo;we&rsquo;re safe.&rdquo; It&rsquo;s built by giving users <strong>moments of retreat</strong> at every step they feel exposed.</div>
+
+    <h3 class="cs-subhead">Anxiety Map &mdash; Where Existing Apps Lose First-Time Users</h3>
+    <div class="cs-hero-img" style="margin-bottom:24px">
+      <img src="assets/images/cp-anxiety-chart.png" alt="Anxiety map &mdash; two curves showing existing apps vs ClearPaisa across onboarding touchpoints" class="cs-hero-screenshot" loading="lazy">
+    </div>
+    <div class="cs-table-wrap" style="margin-bottom:16px">
+      <table class="cs-table">
+        <thead>
+          <tr><th>Touchpoint</th><th>Existing apps (anxiety state)</th><th>ClearPaisa (anxiety state)</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Install</td>
+            <td>Calm</td>
+            <td><span class="t-hi">Calm</span></td>
+          </tr>
+          <tr>
+            <td>Sign up</td>
+            <td><span style="color:#f5a623">Cautious</span></td>
+            <td><span class="t-hi">Calm</span></td>
+          </tr>
+          <tr>
+            <td>Bank login ask</td>
+            <td><span style="color:#e05f5f">&#9679; High anxiety &mdash; <em>&ldquo;I closed the app&rdquo;</em></span></td>
+            <td><span class="t-hi">&#10003; Not asked yet</span></td>
+          </tr>
+          <tr>
+            <td>Aadhaar ask</td>
+            <td><span style="color:#e05f5f">&#9679; High anxiety &mdash; <em>&ldquo;Why does it need this?&rdquo;</em></span></td>
+            <td><span class="t-hi">&#10003; Not asked yet</span></td>
+          </tr>
+          <tr>
+            <td>Setup choice</td>
+            <td class="t-low">&mdash;</td>
+            <td><span class="t-hi">Calm &mdash; <em>&ldquo;Skip&rdquo; is visible</em></span></td>
+          </tr>
+          <tr>
+            <td>First entry</td>
+            <td class="t-low">&mdash;</td>
+            <td><span class="t-hi">Calm &mdash; <em>&ldquo;Only you can see this&rdquo;</em></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cs-callout"><em>Where in this flow does the user feel they&rsquo;ve crossed a point of no return &mdash; and how do we make that point reversible, visible, and chosen?</em></div>
+  </div>
+</section>
+
+<!-- 04 THE FRAMEWORK -->
+<section class="cs-chapter">
+  <div class="chapter-label">04 &mdash; The Framework</div>
+  <h2 class="chapter-title">Six designable dimensions.<br><em>Trust accrued, not declared.</em></h2>
+  <div class="chapter-body">
+    <p class="chapter-intro">A control surface, not a checklist. Each dimension is a lever a designer can audit, ship against, and measure. Together they describe trust as a system &mdash; not a feeling.</p>
+    <div class="cs-hero-img" style="margin-bottom:40px">
+      <img src="assets/images/cp-framework.png" alt="The Trust Operating System &mdash; Six designable dimensions diagram" class="cs-hero-screenshot" loading="lazy">
+    </div>
+
+    <div class="cs-finding-list">
+
+      <div class="cs-finding">
+        <div class="cf-heuristic">Dimension 01</div>
+        <div class="cf-title">Disclosure timing</div>
+        <p class="cf-body"><strong>What it is.</strong> When the app asks for what. The chronology of consent &mdash; what is required at minute one versus what waits until trust has accrued.</p>
+        <p class="cf-body" style="margin-top:8px"><strong>Evidence.</strong> &ldquo;I&rsquo;d given the app my name and email. Then it asked for my Aadhaar. I closed the app.&rdquo; &mdash; Interview 02</p>
+        <div class="cf-fix"><strong>Pattern:</strong> Stagger requests across the value journey. Bank linking unlocks at day 7, not day 0. Aadhaar only when filing taxes is the use case. &middot; <strong>Measure:</strong> Drop-off rate at each disclosure point.</div>
+      </div>
+
+      <div class="cs-finding">
+        <div class="cf-heuristic">Dimension 02</div>
+        <div class="cf-title">Control locus</div>
+        <p class="cf-body"><strong>What it is.</strong> Who is doing what to whose data &mdash; and how visible that authorship is. Users distrust passive verbs (&ldquo;data is processed&rdquo;) and trust active agency (&ldquo;you decide who sees this&rdquo;).</p>
+        <p class="cf-body" style="margin-top:8px"><strong>Evidence.</strong> Five of eight interviewees explicitly preferred manual entry to auto-sync &mdash; even when told it was &ldquo;more convenient.&rdquo;</p>
+        <div class="cf-fix"><strong>Pattern:</strong> Show the user as the active subject in every microcopy line. &ldquo;You logged...&rdquo; not &ldquo;We tracked...&rdquo; Always offer manual override. &middot; <strong>Measure:</strong> % of users keeping automation enabled at D14.</div>
+      </div>
+
+      <div class="cs-finding">
+        <div class="cf-heuristic">Dimension 03</div>
+        <div class="cf-title">Language register</div>
+        <p class="cf-body"><strong>What it is.</strong> The distance between how the app speaks and how the user speaks. Legalese, security jargon, and brand voice extremes all signal &ldquo;this is not for me.&rdquo;</p>
+        <p class="cf-body" style="margin-top:8px"><strong>Evidence.</strong> &ldquo;Your data never leaves your device&rdquo; tested 4&times; higher in trust ratings than any security icon or badge.</p>
+        <div class="cf-fix"><strong>Pattern:</strong> &ldquo;Only you can see this. Even we can&rsquo;t.&rdquo; Plain present-tense, second-person, concrete. &middot; <strong>Measure:</strong> 5-second test on every trust message. Target &ge;80% verbatim recall.</div>
+      </div>
+
+      <div class="cs-finding">
+        <div class="cf-heuristic">Dimension 04</div>
+        <div class="cf-title">Visual calmness</div>
+        <p class="cf-body"><strong>What it is.</strong> Density, colour, and motion as anxiety modulators. Most fintech UI uses urgency cues borrowed from trading apps &mdash; wrong context for personal finance.</p>
+        <p class="cf-body" style="margin-top:8px"><strong>Evidence.</strong> Three users used the word &ldquo;scammy&rdquo; to describe high-density dashboards. The same users described low-density layouts as &ldquo;real.&rdquo;</p>
+        <div class="cf-fix"><strong>Pattern:</strong> Teal/amber palette (never red), one primary number per screen, motion only on user-initiated action. &middot; <strong>Measure:</strong> Self-reported anxiety pre/post session.</div>
+      </div>
+
+      <div class="cs-finding">
+        <div class="cf-heuristic">Dimension 05</div>
+        <div class="cf-title">Recovery visibility</div>
+        <p class="cf-body"><strong>What it is.</strong> How easily the user can undo, delete, leave, or pull data out. Most apps hide these flows; surfacing them is the single highest-leverage trust move.</p>
+        <p class="cf-body" style="margin-top:8px"><strong>Evidence.</strong> Six of eight interviewees had abandoned an app because they couldn&rsquo;t find the delete-account flow. They assumed it was &ldquo;trapped on purpose.&rdquo;</p>
+        <div class="cf-fix"><strong>Pattern:</strong> &ldquo;Leave anytime&rdquo; surfaced in onboarding. One-tap data export. Account deletion in settings root. &middot; <strong>Measure:</strong> Time-to-find delete flow (target &le;15s).</div>
+      </div>
+
+      <div class="cs-finding" style="border-bottom:none">
+        <div class="cf-heuristic">Dimension 06</div>
+        <div class="cf-title">Social proof layering</div>
+        <p class="cf-body"><strong>What it is.</strong> Whose validation matters, and where it appears. Generic &ldquo;10,000+ users&rdquo; badges are wallpaper. Contextual proof &mdash; at the moment of doubt &mdash; is leverage.</p>
+        <p class="cf-body" style="margin-top:8px"><strong>Evidence.</strong> Users trusted ratings most when they saw them on the screen they hesitated on, not on the splash screen.</p>
+        <div class="cf-fix"><strong>Pattern:</strong> Just-in-time proof. On the bank-link screen: &ldquo;412 users from your city linked their bank this week.&rdquo; &middot; <strong>Measure:</strong> A/B test conversion at decision points with vs. without contextual proof.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- 05 DESIGN SYSTEM -->
+<section class="cs-chapter cs-chapter--alt">
+  <div class="chapter-label">05 &mdash; Design System</div>
+  <h2 class="chapter-title">From framework to tokens,<br><em>components, and copy rules.</em></h2>
+  <div class="chapter-body">
+    <p class="chapter-intro">The framework is only useful if it becomes a system designers can ship. Each Trust dimension translates to concrete artefacts.</p>
+
+    <h3 class="cs-subhead">Colour Tokens &mdash; Visual Calmness</h3>
+    <p style="font-size:.875rem;color:var(--ink-2);line-height:1.7;margin-bottom:16px">The palette deliberately rejects the red/green convention. Loss is not a moral failure to be flagged &mdash; it&rsquo;s information. Tokens are named semantically (intent, not hue) so the system can re-skin without breaking patterns.</p>
+    <div class="cs-table-wrap" style="margin-bottom:40px">
+      <table class="cs-table">
+        <thead><tr><th>Token</th><th>Hex</th><th>Role</th></tr></thead>
+        <tbody>
+          <tr><td><code>--surface-paper</code></td><td>#F4EFE6</td><td>Default canvas. Warm enough to feel human, neutral enough to recede.</td></tr>
+          <tr><td><code>--ink-primary</code></td><td>#0E0E0C</td><td>Primary type and high-emphasis surfaces. Not pure black.</td></tr>
+          <tr><td><code>--accent-trust</code></td><td>#1E4D49</td><td>Affirmative actions, on-track states. Stable, not loud.</td></tr>
+          <tr><td><code>--accent-attention</code></td><td>#B47A2E</td><td>Warmth and emphasis. Used for nudges, never urgency.</td></tr>
+          <tr><td><code>--accent-critical</code></td><td>#A23E2C</td><td>Reserved for true urgency only &mdash; fraud, overdraft. Never spending.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 class="cs-subhead">Typography &mdash; Language Register</h3>
+    <div class="cs-table-wrap" style="margin-bottom:40px">
+      <table class="cs-table">
+        <thead><tr><th>Role</th><th>Family</th><th>Use</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Display</strong></td><td>Bricolage Grotesque 500</td><td>Headlines, hero numbers, screen titles</td></tr>
+          <tr><td><strong>Editorial</strong></td><td>Instrument Serif italic</td><td>Trust-building emotional accents (&ldquo;your way&rdquo;, &ldquo;no rush&rdquo;)</td></tr>
+          <tr><td><strong>Body</strong></td><td>Geist 400</td><td>All UI copy. Plain, second-person, concrete.</td></tr>
+          <tr><td><strong>Mono</strong></td><td>Geist Mono 400</td><td>Labels, meta, technical references</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 class="cs-subhead">Microcopy Rulebook &mdash; Sample of 14 Rules</h3>
+    <div class="cs-callout" style="margin-bottom:24px"><strong>Rule 03 &middot; Use second-person active voice.</strong> The user is the subject, not the object.</div>
+    <div class="cs-table-wrap" style="margin-bottom:40px">
+      <table class="cs-table">
+        <thead><tr><th>&#x274C; Don&rsquo;t</th><th>&#x2705; Do</th><th>Why</th></tr></thead>
+        <tbody>
+          <tr><td>&ldquo;We use 256-bit AES encryption to protect your sensitive financial data.&rdquo;</td><td>&ldquo;Only you can see this. Even we can&rsquo;t.&rdquo;</td><td>Plain, concrete, recalled verbatim 4&times; more often. Makes a falsifiable claim &mdash; which paradoxically makes it credible.</td></tr>
+          <tr><td>&ldquo;We&rsquo;re tracking your spending so you can make smarter decisions.&rdquo;</td><td>&ldquo;You logged &#x20B9;450 today. That&rsquo;s the third coffee this week.&rdquo;</td><td>User as active subject. Specific, neutral, no moral framing.</td></tr>
+          <tr><td>&ldquo;Connect your bank to unlock the full ClearPaisa experience.&rdquo;</td><td>&ldquo;You&rsquo;re set. If you want to link your bank later for auto-tracking, it&rsquo;s in Settings &mdash; no rush.&rdquo;</td><td>Surfaces optionality as a feature. &ldquo;No rush&rdquo; was cited by 3/5 testers as the moment they felt the app wasn&rsquo;t pushing them.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 class="cs-subhead">Component Anatomy &mdash; The Privacy Disclosure</h3>
+    <p style="font-size:.875rem;color:var(--ink-2);line-height:1.7;margin-bottom:16px">The most reusable artefact in the system: a component that surfaces what data is collected, who can see it, and how to revoke it &mdash; at the exact moment of any new data input.</p>
+    <div class="cs-insight-row">
+      <div class="cs-insight-card"><div class="ci-title">6 Props</div><p class="ci-body"><code>data</code> &middot; <code>visibility</code> &middot; <code>reversibility</code> &middot; <code>tone</code> &middot; <code>default</code> &middot; <code>revokeFlow</code></p></div>
+      <div class="cs-insight-card"><div class="ci-title">4 States</div><p class="ci-body">default &middot; expanded &middot; revoked &middot; error</p></div>
+      <div class="cs-insight-card"><div class="ci-title">Accessibility</div><p class="ci-body">Screen-reader order documented per state. Touch target &ge;44px. Contrast &ge;4.5:1.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 06 APPLIED SCREENS -->
+<section class="cs-chapter">
+  <div class="chapter-label">06 &mdash; Applied Screens</div>
+  <h2 class="chapter-title">Six screens, including the ones<br><em>most fintech case studies skip.</em></h2>
+  <div class="chapter-body">
+    <p class="chapter-intro">Most case studies show the happy path. The interesting design decisions live in the edge cases &mdash; empty states, network failures, account deletion. Each screen below is annotated against the framework dimension it addresses.</p>
+
+    <!-- Row 1: Screens 01–03 -->
+    <div class="cp-screen-row">
+      <div class="cp-screen-cell">
+        <img src="assets/images/cp-screen-01.png" alt="Screen 01 — Onboarding, three reversible decisions" loading="lazy">
+        <div class="cp-screen-meta">
+          <div class="cp-screen-num">01</div>
+          <div class="cp-screen-title">Onboarding &mdash; Three reversible decisions</div>
+          <div class="cp-screen-dim">Disclosure timing &middot; Recovery visibility</div>
+          <p class="cp-screen-desc">No bank, no Aadhaar, no SMS. Each toggle defaults off. The &ldquo;delete in two taps&rdquo; anchor sits below the primary CTA &mdash; not buried in settings.</p>
         </div>
       </div>
-      <div class="hero-phone hp2">
-        <div class="phs s3">
-          <div class="s3-header">
-            <div><div class="s3-greet">Good morning</div><div class="s3-name">Sonal ✨</div></div>
-            <div class="s3-notif"></div>
-          </div>
-          <div class="s3-balance-card">
-            <div class="s3-bl">Total Balance</div>
-            <div class="s3-bamt">₹84,200</div>
-            <div class="s3-bsub">↑ ₹3,200 this month</div>
-          </div>
-          <div class="s3-chart">
-            <div class="s3-bar"></div><div class="s3-bar"></div><div class="s3-bar a"></div>
-            <div class="s3-bar"></div><div class="s3-bar a"></div><div class="s3-bar"></div><div class="s3-bar"></div>
-          </div>
-          <div class="s3-row">
-            <div class="s3-mini"><div class="s3-ml">Income</div><div class="s3-mv" style="color:#5B7BF8">₹52k</div></div>
-            <div class="s3-mini"><div class="s3-ml">Spent</div><div class="s3-mv" style="color:#f87171">₹33k</div></div>
-          </div>
+      <div class="cp-screen-cell">
+        <img src="assets/images/cp-screen-02.png" alt="Screen 02 — Empty state, Your money diary page one" loading="lazy">
+        <div class="cp-screen-meta">
+          <div class="cp-screen-num">02</div>
+          <div class="cp-screen-title">Empty State &mdash; &ldquo;Your money diary, page one&rdquo;</div>
+          <div class="cp-screen-dim">Language register &middot; Control locus</div>
+          <p class="cp-screen-desc">Frames the absence of data as ownership. No streaks, no guilt &mdash; the product respects the user&rsquo;s pace.</p>
         </div>
       </div>
-      <div class="hero-phone hp3">
-        <div class="phs s5">
-          <div class="s5-h">Insights</div>
-          <div class="s5-sub">October 2024</div>
-          <div style="position:relative">
-            <div class="s5-donut"><div class="s5-donut-label" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;z-index:2;font-size:7px;color:rgba(255,255,255,.6)">Oct</div></div>
-          </div>
-          <div class="s5-legend">
-            <div class="s5-leg-row"><div class="s5-leg-dot-label"><div class="s5-leg-dot" style="background:#5B7BF8"></div>Food</div><div class="s5-leg-pct">42%</div></div>
-            <div class="s5-leg-row"><div class="s5-leg-dot-label"><div class="s5-leg-dot" style="background:#4ade80"></div>Travel</div><div class="s5-leg-pct">25%</div></div>
-            <div class="s5-leg-row"><div class="s5-leg-dot-label"><div class="s5-leg-dot" style="background:rgba(91,123,248,.4)"></div>Shopping</div><div class="s5-leg-pct">23%</div></div>
-            <div class="s5-leg-row"><div class="s5-leg-dot-label"><div class="s5-leg-dot" style="background:#f87171"></div>Other</div><div class="s5-leg-pct">10%</div></div>
-          </div>
+      <div class="cp-screen-cell">
+        <img src="assets/images/cp-screen-03.png" alt="Screen 03 — Manual expense entry" loading="lazy">
+        <div class="cp-screen-meta">
+          <div class="cp-screen-num">03</div>
+          <div class="cp-screen-title">Manual Expense Entry &mdash; One amount, one tap, one privacy line</div>
+          <div class="cp-screen-dim">Language register &middot; Visual calmness</div>
+          <p class="cp-screen-desc">&ldquo;Only you can see this entry&rdquo; appears inline at the moment of input &mdash; not in a settings page.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Row 2: Screens 04–06 -->
+    <div class="cp-screen-row">
+      <div class="cp-screen-cell">
+        <img src="assets/images/cp-screen-04.png" alt="Screen 04 — Network failure, reassurance before action" loading="lazy">
+        <div class="cp-screen-meta">
+          <div class="cp-screen-num">04</div>
+          <div class="cp-screen-title">Network Failure &mdash; Reassurance before action</div>
+          <div class="cp-screen-dim">Language register &middot; Recovery visibility</div>
+          <p class="cp-screen-desc">Anxiety resolution comes first; retry is secondary. &ldquo;Your data is safe on this device. Nothing is lost.&rdquo;</p>
+        </div>
+      </div>
+      <div class="cp-screen-cell">
+        <img src="assets/images/cp-screen-05.png" alt="Screen 05 — Settings, Your data" loading="lazy">
+        <div class="cp-screen-meta">
+          <div class="cp-screen-num">05</div>
+          <div class="cp-screen-title">Settings &rarr; Your Data &mdash; Everything we hold. All of it yours.</div>
+          <div class="cp-screen-dim">Recovery visibility &middot; Control locus</div>
+          <p class="cp-screen-desc">Every piece of data the app holds, listed plainly. Each row has a download and delete button. &ldquo;Delete account&rdquo; is visible, two taps.</p>
+        </div>
+      </div>
+      <div class="cp-screen-cell">
+        <img src="assets/images/cp-screen-06.png" alt="Screen 06 — Bank link opt-in" loading="lazy">
+        <div class="cp-screen-meta">
+          <div class="cp-screen-num">06</div>
+          <div class="cp-screen-title">Bank Link (opt-in) &mdash; Specific, recent, contextual proof</div>
+          <div class="cp-screen-dim">Social proof layering &middot; Disclosure timing</div>
+          <p class="cp-screen-desc">&ldquo;412 users from Bengaluru&rdquo; &mdash; not &ldquo;10,000+ trust us.&rdquo; Granular toggles: read-only by default, auto-revoke in 30 days.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<div class="divider"></div>
+<!-- 07 VALIDATION -->
+<section class="cs-chapter cs-chapter--alt">
+  <div class="chapter-label">07 &mdash; Validation</div>
+  <h2 class="chapter-title">What the testing showed &mdash;<br><em>and what it didn&rsquo;t.</em></h2>
+  <div class="chapter-body">
+    <div class="cs-callout" style="margin-bottom:32px">&#x26A0;&#xFE0F; <strong>Sample size disclosure.</strong> Five moderated remote sessions, 3 days, prototype only. Five sessions cannot prove anything &mdash; they surface qualitative signal strong enough to design against and weak enough to falsify in production. Treating directional signal as proof is the most common case-study mistake. I&rsquo;m not making it.</div>
 
-<!-- ══ 01 PROBLEM ══ -->
-<section id="problem" class="cs-section">
-  <div class="rv">
-    <div class="chapter-num">01 — The Problem</div>
-    <h2 class="chapter-title">The real barrier wasn't<br>the <em>product.</em> It was trust.</h2>
-    <p class="chapter-intro">
-      When we started this project, the brief was: <strong>"Design a personal finance app for urban Indians aged 22–35."</strong> Simple enough. But the moment we started talking to actual users, the problem statement had to completely change.
-    </p>
-  </div>
-
-  <div class="pull-quote rv d1">
-    <div class="pq-text">"I know I should track my money. But the moment any app asks for my bank login, I close it. Who knows what they're doing with it?"</div>
-    <div class="pq-attr">— Meera, 27, Product Manager in Bengaluru</div>
-  </div>
-
-  <div class="problem-grid">
-    <div class="prob-card rv d1">
-      <div class="prob-icon">😟</div>
-      <div class="prob-title">The User's Reality</div>
-      <div class="prob-body">Young professionals are financially literate — they understand budgeting, investing, and expense tracking. But they've been burned before. Spam calls after linking a bank account. Email addresses sold to lenders. Credit scores pulled without consent. The trust is broken.</div>
-    </div>
-    <div class="prob-card rv d2">
-      <div class="prob-icon">📱</div>
-      <div class="prob-title">The Market Problem</div>
-      <div class="prob-body">Existing finance apps treat data collection as a prerequisite to value. You must connect your bank account before you see anything useful. For a trust-sceptical user, this is a dealbreaker — the cost (privacy risk) happens before the benefit (financial insight).</div>
-    </div>
-    <div class="prob-card rv d3">
-      <div class="prob-icon">🧩</div>
-      <div class="prob-title">The Design Challenge</div>
-      <div class="prob-body">How do we create a finance app where users feel genuinely in control of their data — not because of a privacy policy they won't read, but because the design itself communicates safety, transparency, and user agency at every step?</div>
-    </div>
-    <div class="prob-card rv d4">
-      <div class="prob-icon">🎯</div>
-      <div class="prob-title">The Reframe</div>
-      <div class="prob-body">We stopped asking "how do we make budgeting easier?" and started asking "how do we earn the right to be trusted before we ask for access?" That one shift changed the entire direction of the product.</div>
-    </div>
-  </div>
-
-  <div class="hmw-box rv d2">
-    <div class="hmw-label">Our "How Might We" Statement</div>
-    <div class="hmw-statement">How might we design a personal finance app that earns trust incrementally — delivering genuine value before asking for sensitive access — so that privacy-conscious users feel empowered rather than exposed?</div>
-  </div>
-</section>
-
-<div class="divider"></div>
-
-<!-- ══ 02 RESEARCH ══ -->
-<section id="research" class="cs-section" style="background:var(--surface)">
-  <div class="rv">
-    <div class="chapter-num">02 — Research & Discovery</div>
-    <h2 class="chapter-title">18 conversations that<br>changed <em>everything.</em></h2>
-    <p class="chapter-intro">
-      We conducted in-depth user interviews with 18 young professionals across Bangalore, Mumbai, and Delhi NCR. We also ran a survey with 240 respondents and analysed 5 competitor apps using heuristic evaluation.
-    </p>
-  </div>
-
-  <div class="research-layout">
-    <div>
-      <div class="stat-boxes rv d1">
-        <div class="stat-box"><div class="stat-big">18</div><div class="stat-lbl">Depth Interviews</div></div>
-        <div class="stat-box"><div class="stat-big">240</div><div class="stat-lbl">Survey Responses</div></div>
-        <div class="stat-box"><div class="stat-big">5</div><div class="stat-lbl">Competitor Apps Audited</div></div>
-        <div class="stat-box"><div class="stat-big">83%</div><div class="stat-lbl">Had a negative data experience</div></div>
+    <h3 class="cs-subhead">What the Sessions Surfaced (n=5)</h3>
+    <div class="cs-finding-list">
+      <div class="cs-finding">
+        <div class="cf-title">The bank-link absence didn&rsquo;t feel &ldquo;broken.&rdquo;</div>
+        <p class="cf-body">5/5 completed setup without questioning the missing bank-linking step. Two used the word &ldquo;respectful.&rdquo;</p>
       </div>
-
-      <div class="rv d2">
-        <div class="insight">
-          <div class="insight-icon">📊</div>
-          <div class="insight-text"><strong>76% of users</strong> had uninstalled a finance app specifically because of a data permission they didn't understand or trust.</div>
-        </div>
-        <div class="insight">
-          <div class="insight-icon">🔒</div>
-          <div class="insight-text"><strong>91% wanted to know</strong> what happens to their data when they delete the app — but none of the apps they used told them clearly.</div>
-        </div>
-        <div class="insight">
-          <div class="insight-icon">💡</div>
-          <div class="insight-text"><strong>68% said they would be comfortable</strong> sharing bank data if they could see exactly what the app accessed and revoke access any time.</div>
-        </div>
-        <div class="insight">
-          <div class="insight-icon">📱</div>
-          <div class="insight-text"><strong>Manual entry users</strong> were more engaged and retained longer — suggesting value doesn't require bank access, it requires insight.</div>
-        </div>
+      <div class="cs-finding">
+        <div class="cf-title">The delete anchor was noticed.</div>
+        <p class="cf-body">3/5 commented unprompted on the visible deletion option in onboarding. Two said it felt &ldquo;honest.&rdquo;</p>
+      </div>
+      <div class="cs-finding">
+        <div class="cf-title">Microcopy carried more weight than visuals.</div>
+        <p class="cf-body">4/5 quoted specific microcopy lines when asked what made the app feel trustworthy. Zero mentioned colour or layout unprompted.</p>
+      </div>
+      <div class="cs-finding" style="border-bottom:none;margin-bottom:40px">
+        <div class="cf-title">&ldquo;No rush&rdquo; was the relaxation moment.</div>
+        <p class="cf-body">Cited by 3/5 as the moment they &ldquo;felt like the app wasn&rsquo;t trying to push them.&rdquo; Worth A/B testing in production.</p>
       </div>
     </div>
 
-    <div>
-      <div class="quotes-stack rv d2">
-        <div class="user-quote">
-          <div class="uq-text">"I turned off location access in my banking app. I have no idea why they need my location. So I just said no. Better safe."</div>
-          <div class="uq-author"><div class="uq-avatar">P</div><div><div class="uq-name">Priya S.</div><div class="uq-role">28 · Marketing Manager, Bangalore</div></div></div>
-        </div>
-        <div class="user-quote">
-          <div class="uq-text">"Tell me straight — what data are you taking, why, and what happens if I say no. If you can do that, I'll trust you. Nobody does that."</div>
-          <div class="uq-author"><div class="uq-avatar">A</div><div><div class="uq-name">Arjun M.</div><div class="uq-role">31 · Software Engineer, Mumbai</div></div></div>
-        </div>
-        <div class="user-quote">
-          <div class="uq-text">"I saw 'Connect Bank Account' on the first screen and just closed the app. Why do you need that just to show me my own expenses?"</div>
-          <div class="uq-author"><div class="uq-avatar">N</div><div><div class="uq-name">Nisha K.</div><div class="uq-role">26 · Graphic Designer, Delhi</div></div></div>
-        </div>
-        <div class="user-quote">
-          <div class="uq-text">"I got four loan offer calls the week after I installed a finance app. I'll never link my bank to anything again. Never."</div>
-          <div class="uq-author"><div class="uq-avatar">R</div><div><div class="uq-name">Rahul T.</div><div class="uq-role">30 · Startup Founder, Pune</div></div></div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="affinity-themes rv d3">
-    <div class="af-theme">
-      <div class="af-icon">🔐</div>
-      <div class="af-name">Data Anxiety</div>
-      <div class="af-count">14 of 18 users</div>
-      <div class="af-desc">Deep-seated fear of data misuse, driven by past negative experiences with finance products</div>
-    </div>
-    <div class="af-theme">
-      <div class="af-icon">🧭</div>
-      <div class="af-name">Control Desire</div>
-      <div class="af-count">16 of 18 users</div>
-      <div class="af-desc">Strong preference for granular control over what data is shared and when</div>
-    </div>
-    <div class="af-theme">
-      <div class="af-icon">💬</div>
-      <div class="af-name">Transparency Gap</div>
-      <div class="af-count">18 of 18 users</div>
-      <div class="af-desc">Universal frustration with vague, legal-language privacy communication</div>
-    </div>
-    <div class="af-theme">
-      <div class="af-icon">✨</div>
-      <div class="af-name">Value First</div>
-      <div class="af-count">12 of 18 users</div>
-      <div class="af-desc">Willingness to share data — but only after experiencing genuine product value</div>
-    </div>
-    <div class="af-theme">
-      <div class="af-icon">📱</div>
-      <div class="af-name">Manual Entry OK</div>
-      <div class="af-count">11 of 18 users</div>
-      <div class="af-desc">Would happily enter data manually as a trust-safe starting point</div>
-    </div>
-    <div class="af-theme">
-      <div class="af-icon">🤝</div>
-      <div class="af-name">Brand Trust Matters</div>
-      <div class="af-count">15 of 18 users</div>
-      <div class="af-desc">Trusted design and clear brand identity significantly increases willingness to engage</div>
+    <h3 class="cs-subhead">Production Validation Plan &mdash; What I&rsquo;d Test Next, with Budget</h3>
+    <div class="cs-table-wrap">
+      <table class="cs-table">
+        <thead><tr><th>Method</th><th>Sample</th><th>Hypothesis</th><th>Metric</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Unmoderated test</strong> (Maze / Lyssna)</td><td>n=50</td><td>Onboarding completion &ge;75% without bank link</td><td>Conversion through 3 onboarding screens, time-to-first-expense, SUS score</td></tr>
+          <tr><td><strong>Trust survey</strong></td><td>n=200</td><td>Higher trust scores correlate with D30 retention</td><td>6 Likert questions, one per framework dimension, pre/post 7-day use</td></tr>
+          <tr><td><strong>Beta cohort, real metrics</strong></td><td>n=500</td><td>Lower D1 (slower onboarding), materially higher D30 (trust converts to habit)</td><td>D1 / D7 / D30 retention vs. industry benchmarks</td></tr>
+          <tr><td><strong>Microcopy A/B</strong></td><td>n=10,000</td><td>&ldquo;No rush&rdquo; lifts D14 opt-in for bank linking by 8&ndash;12 pp</td><td>Conversion lift on bank-link screen</td></tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </section>
 
-<div class="divider"></div>
-
-<!-- ══ 03 PERSONAS ══ -->
-<section id="personas" class="cs-section">
-  <div class="rv">
-    <div class="chapter-num">03 — Personas</div>
-    <h2 class="chapter-title">Two people. One<br>shared <em>hesitation.</em></h2>
-    <p class="chapter-intro">Based on clustering our research, two distinct user archetypes emerged — different in context, identical in their core concern.</p>
-  </div>
-
-  <div class="persona-grid">
-    <div class="persona-card rv d1">
-      <div class="persona-top">
-        <div class="persona-avatar">A</div>
-        <div>
-          <div class="persona-name">Aanya Mehta</div>
-          <div class="persona-role">Marketing Manager · Bangalore</div>
-          <div class="persona-age">27 years old · Single · ₹68,000/month</div>
-        </div>
-      </div>
-      <div class="persona-body">
-        <div class="persona-section">
-          <div class="persona-section-title">Goals</div>
-          <div class="persona-list">
-            <div class="persona-list-item">Understand where her money actually goes each month</div>
-            <div class="persona-list-item">Save for a solo Europe trip without sacrificing lifestyle</div>
-            <div class="persona-list-item">Feel financially confident, not anxious</div>
-          </div>
-        </div>
-        <div class="persona-section">
-          <div class="persona-section-title">Frustrations</div>
-          <div class="persona-list">
-            <div class="persona-list-item persona-pain">Received spam loan calls after trying a finance app</div>
-            <div class="persona-list-item persona-pain">Doesn't understand what "read-only bank access" actually means</div>
-            <div class="persona-list-item persona-pain">Previous apps felt like they were designed for finance bros, not her</div>
-          </div>
-        </div>
-        <div class="persona-section">
-          <div class="persona-section-title">Key Quote</div>
-          <div class="pull-quote" style="margin:12px 0;padding:16px 20px">
-            <div class="pq-text" style="font-size:1rem">"Just be honest with me. That's all I ask."</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="persona-card rv d2">
-      <div class="persona-top">
-        <div class="persona-avatar">V</div>
-        <div>
-          <div class="persona-name">Vikram Nair</div>
-          <div class="persona-role">Software Engineer · Pune</div>
-          <div class="persona-age">30 years old · Married · ₹1.1L/month</div>
-        </div>
-      </div>
-      <div class="persona-body">
-        <div class="persona-section">
-          <div class="persona-section-title">Goals</div>
-          <div class="persona-list">
-            <div class="persona-list-item">Track household expenses across two incomes</div>
-            <div class="persona-list-item">Build an emergency fund of 6 months expenses</div>
-            <div class="persona-list-item">Stop arguing with his wife about where the money went</div>
-          </div>
-        </div>
-        <div class="persona-section">
-          <div class="persona-section-title">Frustrations</div>
-          <div class="persona-list">
-            <div class="persona-list-item persona-pain">Technically savvy — knows how easy it is to misuse data</div>
-            <div class="persona-list-item persona-pain">Can't find an app that handles joint finances without full bank access</div>
-            <div class="persona-list-item persona-pain">Existing apps show dashboard after 8 taps — he's given up twice</div>
-          </div>
-        </div>
-        <div class="persona-section">
-          <div class="persona-section-title">Key Quote</div>
-          <div class="pull-quote" style="margin:12px 0;padding:16px 20px">
-            <div class="pq-text" style="font-size:1rem">"I need to trust the product before I'll let it near my bank account."</div>
-          </div>
-        </div>
-      </div>
+<!-- 08 TRADE-OFFS -->
+<section class="cs-chapter">
+  <div class="chapter-label">08 &mdash; Trade-offs</div>
+  <h2 class="chapter-title">What the framework gives up &mdash;<br><em>and why it&rsquo;s the right trade.</em></h2>
+  <div class="chapter-body">
+    <p class="chapter-intro">Every design decision is a trade. The framework optimises for trust accrual and long-horizon retention &mdash; which means it gives up things competitors hold dear. Listing them honestly because seniority is judgment, not consensus.</p>
+    <div class="cs-table-wrap">
+      <table class="cs-table">
+        <thead><tr><th>Trade</th><th>What it costs</th><th>Why it&rsquo;s worth it</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Speed vs. Trust</strong></td><td>Manual entry is materially slower than auto-sync for the first 30 days.</td><td>Users who choose manual develop a stronger habit loop; trust gained at week one outweighs convenience lost.</td></tr>
+          <tr><td><strong>Power vs. Activation</strong></td><td>Progressive disclosure delays the 10% who arrive ready to engage deeply.</td><td>Optimises for the 90% activation problem. A &ldquo;show me everything&rdquo; override would dilute the framework&rsquo;s logic.</td></tr>
+          <tr><td><strong>Calm vs. Urgency</strong></td><td>Teal/amber palette is less attention-grabbing than red/green.</td><td>Right trade for a daily-use app. The rose accent is reserved exclusively for true urgency &mdash; fraud, overdraft.</td></tr>
+          <tr><td><strong>Insights vs. Privacy</strong></td><td>No bank linking caps insights depth (no merchant-level forecasts).</td><td>Trade a feature ceiling for a trust ceiling. Trust is the binding constraint in this market.</td></tr>
+          <tr><td><strong>Brand vs. Pattern</strong></td><td>Restrained visual language &mdash; no CRED-like brand silhouette.</td><td>For a year-zero fintech with no track record, &ldquo;calm and credible&rdquo; outperforms &ldquo;bold and memorable.&rdquo; Brand is a v2 problem.</td></tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </section>
 
-<div class="divider"></div>
+<!-- 09 AT SCALE -->
+<section class="cs-chapter cs-chapter--alt">
+  <div class="chapter-label">09 &mdash; At Scale</div>
+  <h2 class="chapter-title">How this becomes a roadmap<br><em>inside a real product org.</em></h2>
+  <div class="chapter-body">
+    <p class="chapter-intro">The framework is built to outlive the prototype. Inside a real product team &mdash; with PMs, engineers, data scientists, compliance &mdash; here&rsquo;s how it ships and gets measured.</p>
 
-<!-- ══ 04 JOURNEY MAP ══ -->
-<section id="journey" class="cs-section" style="background:var(--surface)">
-  <div class="rv">
-    <div class="chapter-num">04 — User Journey Map</div>
-    <h2 class="chapter-title">Mapping Aanya's<br>emotional <em>rollercoaster.</em></h2>
-    <p class="chapter-intro">We mapped Aanya's journey through a typical finance app to pinpoint exactly where trust breaks down — and where we had an opportunity to do something different.</p>
+    <h3 class="cs-subhead">Measurement Plan</h3>
+    <p style="font-size:.875rem;color:var(--ink-2);line-height:1.7;margin-bottom:16px">Each framework dimension maps to a tracked metric in production. The Trust Operating System becomes an instrumented surface, not a design philosophy.</p>
+    <div class="cs-table-wrap" style="margin-bottom:32px">
+      <table class="cs-table">
+        <thead><tr><th>Dimension</th><th>Production metric</th><th>Target</th></tr></thead>
+        <tbody>
+          <tr><td>01 Disclosure timing</td><td>Drop-off rate per disclosure point</td><td>&lt;8% per ask</td></tr>
+          <tr><td>02 Control locus</td><td>% users keeping manual mode at D60</td><td>&ge;40%</td></tr>
+          <tr><td>03 Language register</td><td>Verbatim recall in 5-sec test</td><td>&ge;80%</td></tr>
+          <tr><td>04 Visual calmness</td><td>Self-reported anxiety delta pre/post session</td><td>&ge;1 pt drop on 5-pt scale</td></tr>
+          <tr><td>05 Recovery visibility</td><td>Time to find delete-account flow</td><td>&le;15 seconds</td></tr>
+          <tr><td>06 Social proof</td><td>Conversion lift at decision points</td><td>&ge;10 pp with vs. without</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="cs-callout">The Trust Operating System is sector-agnostic by design. Any product that asks users to share data they cannot reverse benefits from the same six dimensions: <strong>healthtech</strong> (medical records), <strong>insurtech</strong> (health and asset disclosures), <strong>KYC-heavy banking</strong>, <strong>AI products</strong> that train on user data.</div>
   </div>
+</section>
 
-  <div class="journey-table rv d1">
-    <div class="jt-head">
-      <div class="jth">Stage</div>
-      <div class="jth">Awareness</div>
-      <div class="jth">Download</div>
-      <div class="jth">Sign Up</div>
-      <div class="jth">First Use</div>
-      <div class="jth">Ongoing</div>
+<!-- 10 REFLECTION -->
+<section class="cs-chapter">
+  <div class="chapter-label">10 &mdash; Reflection</div>
+  <h2 class="chapter-title"><em>What I&rsquo;d do differently.</em></h2>
+  <div class="chapter-body">
+    <div class="cs-finding-list">
+      <div class="cs-finding">
+        <div class="cf-title">Run the diary study before the interviews.</div>
+        <p class="cf-body">Diary participants surfaced patterns interviewees rationalised away. People know what they say about money apps; they don&rsquo;t know what they actually do. Diary first, interview second &mdash; that&rsquo;s the order I&rsquo;d use next time.</p>
+      </div>
+      <div class="cs-finding">
+        <div class="cf-title">Test the framework on a non-finance product earlier.</div>
+        <p class="cf-body">A framework that only works for one app isn&rsquo;t a framework. Halfway through, I should have tested the six dimensions against a healthtech onboarding or B2B SaaS data import. That&rsquo;s the generalisability test, and I deferred it for scope.</p>
+      </div>
+      <div class="cs-finding" style="border-bottom:none;margin-bottom:40px">
+        <div class="cf-title">Resist the urge to design 12 screens.</div>
+        <p class="cf-body">The screens are demonstration, not deliverable. The framework, tokens, and microcopy rules carry the value forward. With sharper discipline, I&rsquo;d cut to 5 screens and spend the saved effort on the framework&rsquo;s documentation.</p>
+      </div>
     </div>
-    <div class="jt-row">
-      <div class="jt-row-label">Actions</div>
-      <div class="jt-cell">Sees app on Play Store or friend recommends it</div>
-      <div class="jt-cell">Downloads after reading reviews</div>
-      <div class="jt-cell">Enters email, phone, then hits "Connect Bank"</div>
-      <div class="jt-cell">Explores dashboard, enters first expense</div>
-      <div class="jt-cell">Returns to check spending patterns</div>
-    </div>
-    <div class="jt-row">
-      <div class="jt-row-label">Thoughts</div>
-      <div class="jt-cell">"This looks good. Maybe it'll help me save."</div>
-      <div class="jt-cell">"Let me try it. Looks professional."</div>
-      <div class="jt-cell">"Wait — why do they need my bank? I don't know about this."</div>
-      <div class="jt-cell">"OK this is actually useful. But I'm still nervous about the bank link."</div>
-      <div class="jt-cell">"I keep using it but I keep wondering about my data."</div>
-    </div>
-    <div class="jt-row">
-      <div class="jt-row-label">Feelings</div>
-      <div class="jt-cell"><div class="emotion-bar"><div class="emotion-dot e-high"></div></div>Curious & hopeful</div>
-      <div class="jt-cell"><div class="emotion-bar"><div class="emotion-dot e-high"></div></div>Optimistic</div>
-      <div class="jt-cell"><div class="emotion-bar"><div class="emotion-dot e-low"></div></div>Anxious, distrustful</div>
-      <div class="jt-cell"><div class="emotion-bar"><div class="emotion-dot e-mid"></div></div>Cautiously positive</div>
-      <div class="jt-cell"><div class="emotion-bar"><div class="emotion-dot e-mid"></div></div>Mild background anxiety</div>
-    </div>
-    <div class="jt-row">
-      <div class="jt-row-label">Pain Points</div>
-      <div class="jt-cell">—</div>
-      <div class="jt-cell">—</div>
-      <div class="jt-cell">🔴 Forced bank connect. No explanation. No opt-out.</div>
-      <div class="jt-cell">🟡 Unclear what data is being stored or used</div>
-      <div class="jt-cell">🟡 No way to see or delete her data</div>
-    </div>
-    <div class="jt-row">
-      <div class="jt-row-label">Our Design Opportunity</div>
-      <div class="jt-cell">Build trust signal into marketing</div>
-      <div class="jt-cell">Set expectations before download</div>
-      <div class="jt-cell">✅ Delay bank connect. Deliver value first.</div>
-      <div class="jt-cell">✅ Show data vault. Plain language everywhere.</div>
-      <div class="jt-cell">✅ Ongoing transparency. One-tap data delete.</div>
+
+    <h3 class="cs-subhead">Three Things I&rsquo;m Taking Forward into Every Product I Work On</h3>
+    <div class="cs-insight-row">
+      <div class="cs-insight-card"><div class="ci-num">01</div><div class="ci-title">Anxiety mapping comes before user journey mapping.</div><p class="ci-body"><em>Where does the user feel exposed, and how do we resolve it?</em></p></div>
+      <div class="cs-insight-card"><div class="ci-num">02</div><div class="ci-title">Microcopy is design, not decoration.</div><p class="ci-body">It deserves its own test loop.</p></div>
+      <div class="cs-insight-card"><div class="ci-num">03</div><div class="ci-title">Every system needs a measurement layer.</div><p class="ci-body">Frameworks that can&rsquo;t be instrumented are opinions, not systems.</p></div>
     </div>
   </div>
 </section>
 
-<div class="divider"></div>
-
-<!-- ══ 05 DECISIONS ══ -->
-<section id="decisions" class="cs-section">
-  <div class="rv">
-    <div class="chapter-num">05 — Design Decisions</div>
-    <h2 class="chapter-title">The choices that made<br>this work <em>differently.</em></h2>
-    <p class="chapter-intro">Every significant design decision in ClearPaisa was made in direct response to a specific user fear. Here are the three that changed everything.</p>
-  </div>
-
-  <div class="trust-model rv d1">
-    <div class="tm-title">The Progressive Trust Model</div>
-    <div class="tm-sub">Our core innovation: you get value before you give access. Trust is earned incrementally, not demanded upfront.</div>
-    <div class="tm-steps">
-      <div class="tm-step">
-        <div class="tm-step-num">1</div>
-        <div class="tm-step-title">Free Preview</div>
-        <div class="tm-step-desc">Full dashboard with demo data. No sign-up required.</div>
-      </div>
-      <div class="tm-step">
-        <div class="tm-step-num">2</div>
-        <div class="tm-step-title">Manual Entry</div>
-        <div class="tm-step-desc">Sign up with just an email. Enter expenses manually. No bank access.</div>
-      </div>
-      <div class="tm-step">
-        <div class="tm-step-num">3</div>
-        <div class="tm-step-title">Smart Sync</div>
-        <div class="tm-step-desc">After 7 days of value, offer bank sync with full plain-language explanation.</div>
-      </div>
-      <div class="tm-step">
-        <div class="tm-step-num">4</div>
-        <div class="tm-step-title">Full Access</div>
-        <div class="tm-step-desc">Complete picture. User can see, edit, or delete any data at any time.</div>
-      </div>
-    </div>
-  </div>
-
-  <div class="decision-cards">
-    <div class="dec-card rv d1">
-      <div class="dec-num">Decision 01</div>
-      <div class="dec-title">Permission Explanations in Plain Language</div>
-      <div class="dec-body">Every single permission request in ClearPaisa includes a plain-language card explaining exactly why it's needed, what it's used for, and what happens if you say no. Not legalese — actual sentences a human would write.</div>
-      <div class="dec-result">✓ Users who saw permission cards rated trust 1.6 pts higher on average</div>
-    </div>
-    <div class="dec-card rv d2">
-      <div class="dec-num">Decision 02</div>
-      <div class="dec-title">The Data Vault</div>
-      <div class="dec-body">A dedicated screen showing users exactly what data ClearPaisa holds about them — categorised, dated, and with one-tap delete for any category. Not buried in settings. Prominent, because we're proud of it.</div>
-      <div class="dec-result">✓ Users with Data Vault access showed 43% higher 30-day retention</div>
-    </div>
-    <div class="dec-card rv d3">
-      <div class="dec-num">Decision 03</div>
-      <div class="dec-title">Value Before Access Architecture</div>
-      <div class="dec-body">The entire information architecture was rebuilt around the idea of showing value before requesting access. The dashboard shows real, useful insights from manually entered data — proving the product works before asking for bank credentials.</div>
-      <div class="dec-result">✓ 78% onboarding completion vs. industry average of ~34%</div>
-    </div>
-  </div>
-</section>
-
-<div class="divider"></div>
-
-<!-- ══ 06 ALL FIVE SCREENS ══ -->
-<section id="screens" class="cs-section" style="background:var(--surface)">
-  <div class="screens-intro">
-    <div class="rv">
-      <div class="chapter-num">06 — The Five Screens</div>
-      <h2 class="chapter-title">Every screen tells<br>a trust <em>story.</em></h2>
-    </div>
-    <div class="rv d1">
-      <p style="font-size:.9375rem;color:var(--ink-2);line-height:1.8">
-        Each screen in ClearPaisa was designed with a specific trust moment in mind. The progression from left to right mirrors the progressive trust model — value first, access earned.
-      </p>
-    </div>
-  </div>
-
-  <div class="all-phones rv d1">
-    <!-- Screen 1: Onboarding -->
-    <div class="phone-wrap">
-      <div class="phone-num">01</div>
-      <div class="ph-device">
-        <div class="phs s1">
-          <div class="s1-logo">₹</div>
-          <div class="s1-h">Welcome to ClearPaisa</div>
-          <div class="s1-p">Your finances, finally clear. No data sold. No surprises. Ever.</div>
-          <div class="s1-trust-row">
-            <div class="s1-trust">🔒 Bank-grade encryption</div>
-            <div class="s1-trust">✓ No data sold. Ever.</div>
-          </div>
-          <div class="s1-dots"><div class="s1-d a"></div><div class="s1-d"></div><div class="s1-d"></div></div>
-          <div style="flex:1"></div>
-          <div class="s1-btn">Get Started Free →</div>
-        </div>
-      </div>
-      <div class="phone-label">Onboarding</div>
-    </div>
-
-    <!-- Screen 2: Sign Up -->
-    <div class="phone-wrap">
-      <div class="phone-num">02</div>
-      <div class="ph-device">
-        <div class="phs s2">
-          <div class="s2-h">Create your account</div>
-          <div class="s2-sub">Just an email. No bank details required.</div>
-          <div class="s2-field active">
-            <div class="s2-fl">EMAIL ADDRESS</div>
-            <div class="s2-fv">sonal@example.com</div>
-          </div>
-          <div class="s2-field">
-            <div class="s2-fl">CREATE PASSWORD</div>
-            <div class="s2-fv">••••••••</div>
-          </div>
-          <div class="s2-field">
-            <div class="s2-fl">YOUR NAME (OPTIONAL)</div>
-            <div class="s2-fv">Sonal K.</div>
-          </div>
-          <div class="s2-privacy">
-            <div style="font-size:8px;color:rgba(74,222,128,.8);flex-shrink:0;margin-top:1px">🛡</div>
-            <div class="s2-ptext">We only store your email to save your data. We never share it. You can delete everything in one tap, anytime.</div>
-          </div>
-          <div class="s2-btn">Create Account</div>
-        </div>
-      </div>
-      <div class="phone-label">Sign Up</div>
-    </div>
-
-    <!-- Screen 3: Dashboard -->
-    <div class="phone-wrap" style="transform:translateY(-20px)">
-      <div class="phone-num">03</div>
-      <div class="ph-device" style="height:360px">
-        <div class="phs s3">
-          <div class="s3-header">
-            <div><div class="s3-greet">Good morning</div><div class="s3-name">Sonal ✨</div></div>
-            <div class="s3-notif"></div>
-          </div>
-          <div class="s3-balance-card">
-            <div class="s3-bl">Total Balance</div>
-            <div class="s3-bamt">₹84,200</div>
-            <div class="s3-bsub">↑ ₹3,200 this month</div>
-          </div>
-          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:3px">
-            <div style="font-size:5px;color:rgba(255,255,255,.25)">Spending · Oct</div>
-            <div style="font-size:4px;color:rgba(91,123,248,.6)">See all</div>
-          </div>
-          <div class="s3-chart">
-            <div class="s3-bar"></div><div class="s3-bar"></div><div class="s3-bar a"></div>
-            <div class="s3-bar"></div><div class="s3-bar a"></div><div class="s3-bar"></div><div class="s3-bar"></div>
-          </div>
-          <div class="s3-row">
-            <div class="s3-mini"><div class="s3-ml">Income</div><div class="s3-mv" style="color:#5B7BF8">₹52k</div></div>
-            <div class="s3-mini"><div class="s3-ml">Spent</div><div class="s3-mv" style="color:#f87171">₹33k</div></div>
-            <div class="s3-mini"><div class="s3-ml">Saved</div><div class="s3-mv" style="color:#4ade80">₹18k</div></div>
-          </div>
-          <div style="background:rgba(91,123,248,.06);border:1px solid rgba(91,123,248,.12);border-radius:7px;padding:6px;margin-top:5px">
-            <div style="font-size:4px;color:rgba(91,123,248,.5);margin-bottom:2px;letter-spacing:.06em">DATA VAULT</div>
-            <div style="font-size:5px;color:rgba(255,255,255,.25)">You own your data. See &amp; delete anytime →</div>
-          </div>
-        </div>
-      </div>
-      <div class="phone-label">Dashboard</div>
-    </div>
-
-    <!-- Screen 4: Expense Logger -->
-    <div class="phone-wrap">
-      <div class="phone-num">04</div>
-      <div class="ph-device">
-        <div class="phs s4">
-          <div class="s4-h">Log Expense</div>
-          <div class="s4-sub">Quick, private, yours.</div>
-          <div class="s4-cats">
-            <div class="s4-cat">🍔 Food</div>
-            <div class="s4-cat a">🚕 Transport</div>
-            <div class="s4-cat">🛍 Shopping</div>
-            <div class="s4-cat">💊 Health</div>
-            <div class="s4-cat">🎬 Fun</div>
-            <div class="s4-cat">+ More</div>
-          </div>
-          <div class="s4-amount">
-            <div class="s4-amtlbl">AMOUNT</div>
-            <div class="s4-amtval">₹ 340</div>
-          </div>
-          <div class="s4-note">Ola to office — Monday morning</div>
-          <div style="display:flex;gap:4px;margin-bottom:5px">
-            <div style="flex:1;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);border-radius:5px;padding:5px;text-align:center;font-size:4.5px;color:rgba(255,255,255,.3)">📅 Today</div>
-            <div style="flex:1;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);border-radius:5px;padding:5px;text-align:center;font-size:4.5px;color:rgba(255,255,255,.3)">🔁 Repeat?</div>
-          </div>
-          <div class="s4-btn">✓ Save Expense</div>
-        </div>
-      </div>
-      <div class="phone-label">Expense Logger</div>
-    </div>
-
-    <!-- Screen 5: Insights -->
-    <div class="phone-wrap">
-      <div class="phone-num">05</div>
-      <div class="ph-device">
-        <div class="phs s5">
-          <div class="s5-h">Your Insights</div>
-          <div class="s5-sub">October 2024</div>
-          <div class="s5-donut">
-            <div class="s5-donut-label" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;z-index:2;font-size:7px;color:rgba(255,255,255,.5)">Oct</div>
-          </div>
-          <div class="s5-legend">
-            <div class="s5-leg-row"><div class="s5-leg-dot-label"><div class="s5-leg-dot" style="background:#5B7BF8"></div>Food &amp; Dining</div><div class="s5-leg-pct">42%</div></div>
-            <div class="s5-leg-row"><div class="s5-leg-dot-label"><div class="s5-leg-dot" style="background:#4ade80"></div>Transport</div><div class="s5-leg-pct">25%</div></div>
-            <div class="s5-leg-row"><div class="s5-leg-dot-label"><div class="s5-leg-dot" style="background:rgba(91,123,248,.4)"></div>Shopping</div><div class="s5-leg-pct">23%</div></div>
-            <div class="s5-leg-row"><div class="s5-leg-dot-label"><div class="s5-leg-dot" style="background:#f87171"></div>Other</div><div class="s5-leg-pct">10%</div></div>
-          </div>
-          <div class="s5-ai-tip">
-            <div class="s5-ai-tip-label">✦ AI Insight</div>
-            You spent 18% more on food than last month. Small meal-planning changes could save ₹2,800/month.
-          </div>
-        </div>
-      </div>
-      <div class="phone-label">Insights</div>
-    </div>
-  </div>
-</section>
-
-<div class="divider"></div>
-
-<!-- ══ 07 TESTING ══ -->
-<section id="testing" class="cs-section">
-  <div class="rv">
-    <div class="chapter-num">07 — Usability Testing</div>
-    <h2 class="chapter-title">Three rounds. Honest<br><em>feedback.</em> Better design.</h2>
-    <p class="chapter-intro">We ran three rounds of moderated usability testing across the prototype's evolution, with 6 participants per round. Here's what we found — and what we changed.</p>
-  </div>
-
-  <div class="testing-grid">
-    <div>
-      <div class="test-rounds">
-        <div class="test-round rv d1">
-          <div class="tr-header"><div class="tr-label">Round 01</div><div class="tr-participants">6 participants · Week 6</div></div>
-          <div class="tr-method">Moderated · Figma Prototype · Think-Aloud Protocol</div>
-          <div class="tr-finding">Users loved the "value first" approach but were confused by where the privacy settings lived. Three participants couldn't find the Data Vault. The labelling "Account Settings" was too generic.</div>
-        </div>
-        <div class="test-round rv d2">
-          <div class="tr-header"><div class="tr-label">Round 02</div><div class="tr-participants">6 participants · Week 9</div></div>
-          <div class="tr-method">Moderated · Updated Prototype · A/B Test on Permission Language</div>
-          <div class="tr-finding">Renamed "Account Settings" to "Data Vault" — findability jumped from 33% to 83%. The A/B test showed that conversational permission language scored 1.6 points higher on trust than formal legal language.</div>
-        </div>
-        <div class="test-round rv d3">
-          <div class="tr-header"><div class="tr-label">Round 03</div><div class="tr-participants">6 participants · Week 12</div></div>
-          <div class="tr-method">Unmoderated · Maze · Task Completion Focus</div>
-          <div class="tr-finding">Final round focused on task completion time and error rate. Onboarding: avg 2m 14s (target &lt;3 min ✓). Expense logging: avg 38s (target &lt;1 min ✓). One issue surfaced: sync confirmation needed a stronger success state.</div>
-        </div>
-      </div>
-    </div>
-
-    <div>
-      <div class="rv d2">
-        <div style="font-size:.65rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);font-family:var(--font-m);margin-bottom:20px">Key Issues Found & Fixed</div>
-        <div class="findings-list">
-          <div class="finding-item">
-            <div class="finding-top"><div class="finding-issue">Data Vault not findable</div><span class="sev sev-high">● High</span></div>
-            <div class="finding-desc">4 of 6 users in Round 1 couldn't locate their privacy controls because it was buried in "Account Settings."</div>
-            <div class="finding-fix">→ Fix: Renamed to "Data Vault," added persistent shortcut from dashboard. Findability: 33% → 83%</div>
-          </div>
-          <div class="finding-item">
-            <div class="finding-top"><div class="finding-issue">Permission language triggered anxiety</div><span class="sev sev-high">● High</span></div>
-            <div class="finding-desc">Formal legal language on permission modals increased user hesitation significantly in A/B tests.</div>
-            <div class="finding-fix">→ Fix: Rewrote all 9 permission cards in conversational tone. Trust score: +1.6 pts</div>
-          </div>
-          <div class="finding-item">
-            <div class="finding-top"><div class="finding-issue">Expense categories too generic</div><span class="sev sev-med">● Medium</span></div>
-            <div class="finding-desc">Users struggled to categorise expenses like "Zomato" or "Ola" — too many taps to find the right option.</div>
-            <div class="finding-fix">→ Fix: Added smart auto-categorisation with editable suggestions. Logging time: -40%</div>
-          </div>
-          <div class="finding-item">
-            <div class="finding-top"><div class="finding-issue">Bank sync success state weak</div><span class="sev sev-low">● Low</span></div>
-            <div class="finding-desc">After linking bank account, users weren't sure if the sync had worked — no clear confirmation state.</div>
-            <div class="finding-fix">→ Fix: Added animated sync confirmation with plain-language summary of what was accessed</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="divider"></div>
-
-<!-- ══ 08 OUTCOMES ══ -->
-<section id="outcomes" class="cs-section" style="background:var(--surface)">
-  <div class="rv">
-    <div class="chapter-num">08 — Outcomes & Impact</div>
-    <h2 class="chapter-title">Numbers that tell<br>a human <em>story.</em></h2>
-    <p class="chapter-intro">After three rounds of testing and two major design iterations, ClearPaisa landed in a genuinely different place from where we started. The numbers reflect real people making real choices.</p>
-  </div>
-
-  <div class="outcomes-big">
-    <div class="outcome-cell rv d1"><div class="outcome-num">78%</div><div class="outcome-label">Onboarding completion rate (industry avg: ~34%)</div></div>
-    <div class="outcome-cell rv d2"><div class="outcome-num">4.7★</div><div class="outcome-label">Average trust score out of 5.0 in user testing</div></div>
-    <div class="outcome-cell rv d3"><div class="outcome-num">62%</div><div class="outcome-label">Reduction in drop-off at data permission screens</div></div>
-    <div class="outcome-cell rv d1"><div class="outcome-num">83%</div><div class="outcome-label">Data Vault findability after Round 2 fix (from 33%)</div></div>
-    <div class="outcome-cell rv d2"><div class="outcome-num">43%</div><div class="outcome-label">Higher 30-day retention for users who used Data Vault</div></div>
-    <div class="outcome-cell rv d3"><div class="outcome-num">2m14s</div><div class="outcome-label">Average onboarding time — well under 3-minute target</div></div>
-  </div>
-
-  <div class="rv d2">
-    <div style="font-size:.65rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);font-family:var(--font-m);margin-bottom:24px">What I'd Do Differently</div>
-    <div class="learnings">
-      <div class="learning">
-        <div class="learning-num">Reflection 01</div>
-        <div class="learning-title">Start with trust research, not feature research</div>
-        <div class="learning-body">We spent 2 weeks initially researching feature preferences before realising the real problem was trust. In hindsight, framing the research around emotional barriers from day one would have saved time and led us to the reframe faster.</div>
-      </div>
-      <div class="learning">
-        <div class="learning-num">Reflection 02</div>
-        <div class="learning-title">Test the copy as seriously as the design</div>
-        <div class="learning-body">The A/B test on permission language was one of our most impactful findings — but we almost didn't run it. UX writing deserves its own testing protocol, not just a visual polish pass at the end.</div>
-      </div>
-      <div class="learning">
-        <div class="learning-num">Reflection 03</div>
-        <div class="learning-title">Involve engineers in the trust architecture early</div>
-        <div class="learning-body">Several of our most user-valued features (real-time data vault, granular permissions) required engineering decisions that were already made. Earlier collaboration would have unlocked even more possibilities.</div>
-      </div>
-      <div class="learning">
-        <div class="learning-num">Reflection 04</div>
-        <div class="learning-title">The best privacy design is invisible confidence</div>
-        <div class="learning-body">Users shouldn't have to think about privacy — they should just feel safe. We got there, but the journey taught me that trust design isn't a feature. It's a philosophy that has to run through every single decision in a product.</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══ NEXT ══ -->
-<section id="next">
-  <div class="next-glow"></div>
-  <div class="rv">
-    <div class="next-eyebrow">What's Next</div>
-    <h2 class="next-title">More work from<br>Sonal <em>Kandhway</em></h2>
-    <p class="next-sub">Each project has a different problem space. Same rigour. Same empathy.</p>
-  </div>
+<!-- NEXT -->
+<section class="cs-next">
+  <div class="chapter-label">More Work</div>
+  <h2 class="chapter-title">See what else <em>I&rsquo;ve built.</em></h2>
   <div class="next-cards rv d1">
-    <a href="oracle.html" class="next-card">
-      <div class="nc-domain">Enterprise FinTech · 2023</div>
-      <div class="nc-title">Oracle FCCM Dashboard</div>
-      <p style="font-size:.78rem;color:var(--ink-3);line-height:1.6">Compliance officers were navigating six menu layers to find alerts that mattered. The fix wasn't more features.</p>
-      <div class="nc-arrow">→</div>
-    </a>
     <a href="varminer.html" class="next-card">
-      <div class="nc-domain">HealthTech · Genomics · 2022</div>
-      <div class="nc-title">Medgenome Clinical Platform</div>
-      <p style="font-size:.78rem;color:var(--ink-3);line-height:1.6">Genomics diagnostics for clinicians reviewing hundreds of test results weekly. The visual hierarchy did the heavy lifting.</p>
-      <div class="nc-arrow">→</div>
+      <div class="nc-domain">HealthTech &middot; Clinical Genomics</div>
+      <div class="nc-title">Impactomics</div>
+      <p style="font-size:.78rem;color:var(--ink-3);line-height:1.6">Redesigning a legacy genomics tool into an AI-powered platform for faster clinical decisions.</p>
+      <div class="nc-arrow"><i data-lucide="arrow-right"></i></div>
     </a>
-  </div>
-  <div class="rv d2">
-    <a href="index.html" class="btn-back">
-      ← Back to Portfolio
+    <a href="oracle.html" class="next-card">
+      <div class="nc-domain">Enterprise SaaS &middot; Oracle Redwood</div>
+      <div class="nc-title">Oracle Pipeline Designer</div>
+      <p style="font-size:.78rem;color:var(--ink-3);line-height:1.6">Migrated a data pipeline tool to Oracle Redwood, resolving three critical heuristic failure categories.</p>
+      <div class="nc-arrow"><i data-lucide="arrow-right"></i></div>
     </a>
   </div>
 </section>
 
 </main>
 
-<!-- ══ FOOTER ══ -->
 <footer>
   <div class="ft-copy">
-    <img class="ft-logo logo-dark" src="assets/images/logo-dark.png" alt="SK">
-    <img class="ft-logo logo-light" src="assets/images/logo-white.png" alt="SK">
-    <span>© 2025 Sonal Kandhway</span>
+    <img class="ft-logo logo-dark" src="assets/images/logo-dark.svg" alt="SK">
+    <img class="ft-logo logo-light" src="assets/images/logo-white.svg" alt="SK" loading="lazy">
+    <span>&copy; 2025 Sonal Kandhway &middot; All rights reserved</span>
   </div>
-  <div class="ft-made">ClearPaisa · UX Case Study</div>
+  <div class="ft-made">ClearPaisa &middot; UX Case Study</div>
 </footer>
 
-  <!-- Scripts -->
-  <script src="assets/js/main.js"></script>
-  <script src="assets/js/case-study.js"></script>
-
-<button class="back-top" id="backTop" aria-label="Back to top">
-  <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-    <path d="M10 16V4M5 9l5-5 5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-  </svg>
-</button>
+<button class="back-top" id="backTop" aria-label="Back to top"><i data-lucide="arrow-up"></i></button>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/case-study.js"></script>
+<script>lucide.createIcons();</script>
 </body>
 </html>

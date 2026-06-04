@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300;0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700;1,14..32,300;1,14..32,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/case-study.css">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 </head>
 <body>
 
@@ -18,14 +19,14 @@
 
 <nav>
   <a href="index.html" class="nav-back">
-    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13 8H3M7 12L3 8l4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <i data-lucide="arrow-left"></i>
     Back to Portfolio
   </a>
   <div class="nav-center">Case Study — Oracle Pipeline Designer</div>
   <div class="nav-right">
     <div class="nav-logo-wrap">
-      <img class="nav-logo-img logo-dark" src="assets/images/logo-dark.png" alt="Sonal Kandhway" height="72">
-      <img class="nav-logo-img logo-light" src="assets/images/logo-white.png" alt="Sonal Kandhway" height="72">
+      <img loading="eager" class="nav-logo-img logo-dark" src="assets/images/logo-dark.svg" alt="Sonal Kandhway" height="72">
+      <img loading="lazy" class="nav-logo-img logo-light" src="assets/images/logo-white.svg" alt="Sonal Kandhway" height="72">
     </div>
     <button class="theme-btn" id="themeToggle">
       <div class="theme-knob" id="themeKnob"><span id="themeIcon">🌙</span></div>
@@ -41,9 +42,9 @@
   <div class="hero-glow2"></div>
   <div class="hero-left">
     <div class="cs-breadcrumb">
-      <span class="bc-item">Portfolio</span>
+      <a href="index.html" class="bc-item">Portfolio</a>
       <span class="bc-sep">›</span>
-      <span class="bc-item">Case Studies</span>
+      <a href="index.html#work" class="bc-item">Case Studies</a>
       <span class="bc-sep">›</span>
       <span class="bc-active">Oracle Pipeline Designer</span>
     </div>
@@ -65,10 +66,8 @@
     </div>
   </div>
   <div class="hero-right">
-    <div class="cs-ph cs-ph--hero">
-      <span>📸 Add Oracle Pipeline Designer hero banner here</span>
-      <code>assets/images/project-oracle.jpg</code>
-      <small>(Your ChatGPT image is already in the ZIP — use it here)</small>
+    <div class="cs-hero-img">
+      <img src="assets/images/project-oracle.jpg" alt="Oracle Pipeline Designer" class="cs-hero-screenshot" loading="eager">
     </div>
   </div>
 </section>
@@ -163,25 +162,151 @@
   <div class="chapter-label">04 — Key Screen Redesigns</div>
   <h2 class="chapter-title">Before and after.<br><em>Seven screens.</em></h2>
   <div class="chapter-body">
-    <p class="chapter-intro">Each screen went through the same process: audit against heuristics → identify violations → rebuild in Redwood → validate against WCAG.</p>
+    <p class="chapter-intro">Each screen went through the same process: audit against heuristics, identify violations, rebuild in Redwood, validate against WCAG. Here's what changed — and why.</p>
 
-    <div class="cs-screen-pair">
-      <div class="cs-sp-label">Landing Page · Pipeline Overview</div>
-      <div class="cs-ph cs-ph--screen">📸 Add before/after: Landing Page (old left, new right)<br><code>assets/images/oracle-landing-before.jpg</code> · <code>assets/images/oracle-landing-after.jpg</code></div>
-      <p class="cs-sp-note">Old: Cluttered data table with no visual hierarchy. Actions buried in secondary menus. New: Clear status indicators, primary actions surfaced, Redwood table component with consistent sorting and filtering.</p>
+    <!-- Landing Page -->
+    <div class="ba-section">
+      <div class="ba-header">
+        <span class="ba-num">01</span>
+        <div>
+          <div class="ba-screen-name">Landing Page &mdash; Pipeline Overview</div>
+          <p class="ba-screen-desc">The first screen users see. The old version buried actions in menus and showed all data at equal weight. The redesign surfaces status indicators, primary actions, and uses Redwood's table component with consistent sorting and filtering.</p>
+        </div>
+      </div>
+      <div class="ba-compare">
+        <div class="ba-side">
+          <div class="ba-tag ba-tag--old">Before</div>
+          <img src="assets/images/oracle-landing-old.jpg" alt="Landing Page — before redesign" class="ba-img" loading="lazy">
+        </div>
+        <div class="ba-side">
+          <div class="ba-tag ba-tag--new">After</div>
+          <img src="assets/images/oracle-landing-new.jpg" alt="Landing Page — after Redwood redesign" class="ba-img" loading="lazy">
+        </div>
+      </div>
     </div>
 
-    <div class="cs-screen-pair">
-      <div class="cs-sp-label">Add New Pipeline</div>
-      <div class="cs-ph cs-ph--screen">📸 Add before/after: Pipeline Creation screen<br><code>assets/images/oracle-pipeline-before.jpg</code> · <code>assets/images/oracle-pipeline-after.jpg</code></div>
-      <p class="cs-sp-note">Old: Flat form with no step indication. Users couldn't tell how many fields remained. New: Stepped layout with progress indication, inline validation, contextual help labels.</p>
+    <!-- Add New Pipeline -->
+    <div class="ba-section">
+      <div class="ba-header">
+        <span class="ba-num">02</span>
+        <div>
+          <div class="ba-screen-name">Add New Pipeline</div>
+          <p class="ba-screen-desc">The pipeline creation form had no step indication — users couldn't tell how many fields remained or where they were in the process. The redesign adds stepped layout with progress indication, inline validation, and contextual help labels.</p>
+        </div>
+      </div>
+      <div class="ba-compare">
+        <div class="ba-side">
+          <div class="ba-tag ba-tag--old">Before</div>
+          <img src="assets/images/oracle-pipeline-old.jpg" alt="Add New Pipeline — before" class="ba-img" loading="lazy">
+        </div>
+        <div class="ba-side">
+          <div class="ba-tag ba-tag--new">After</div>
+          <img src="assets/images/oracle-pipeline-new.jpg" alt="Add New Pipeline — after" class="ba-img" loading="lazy">
+        </div>
+      </div>
     </div>
 
-    <div class="cs-screen-pair">
-      <div class="cs-sp-label">Dataset · Define DQ Rules · Filter · Persist · Canvas</div>
-      <div class="cs-ph cs-ph--screen">📸 Add remaining before/after screens<br><code>assets/images/oracle-dataset.jpg</code> · <code>assets/images/oracle-canvas.jpg</code> · etc.</div>
-      <p class="cs-sp-note">All five screens rebuilt using Redwood's panel and canvas components. DQ Rules section restructured around action hierarchy — critical rules surfaced, secondary options collapsed. Canvas view redesigned for spatial clarity.</p>
+    <!-- DataSet -->
+    <div class="ba-section">
+      <div class="ba-header">
+        <span class="ba-num">03</span>
+        <div>
+          <div class="ba-screen-name">DataSet Configuration</div>
+          <p class="ba-screen-desc">Dataset setup was dense and unclear. Configuration options competed for attention without visual hierarchy. The redesign organises settings into logical groups with Redwood's panel components and clear section headings.</p>
+        </div>
+      </div>
+      <div class="ba-compare">
+        <div class="ba-side">
+          <div class="ba-tag ba-tag--old">Before</div>
+          <img src="assets/images/oracle-dataset-old.jpg" alt="DataSet — before" class="ba-img" loading="lazy">
+        </div>
+        <div class="ba-side">
+          <div class="ba-tag ba-tag--new">After</div>
+          <img src="assets/images/oracle-dataset-new.jpg" alt="DataSet — after" class="ba-img" loading="lazy">
+        </div>
+      </div>
     </div>
+
+    <!-- Define DQ Rules -->
+    <div class="ba-section">
+      <div class="ba-header">
+        <span class="ba-num">04</span>
+        <div>
+          <div class="ba-screen-name">Define DQ Rules</div>
+          <p class="ba-screen-desc">Data quality rule definition had no action hierarchy — critical rules sat alongside secondary options with equal visual weight. The redesign surfaces critical rules first, collapses secondary options, and adds inline validation feedback.</p>
+        </div>
+      </div>
+      <div class="ba-compare">
+        <div class="ba-side">
+          <div class="ba-tag ba-tag--old">Before</div>
+          <img src="assets/images/oracle-dqrules-old.jpg" alt="Define DQ Rules — before" class="ba-img" loading="lazy">
+        </div>
+        <div class="ba-side">
+          <div class="ba-tag ba-tag--new">After</div>
+          <img src="assets/images/oracle-dqrules-new.jpg" alt="Define DQ Rules — after" class="ba-img" loading="lazy">
+        </div>
+      </div>
+    </div>
+
+    <!-- Filter -->
+    <div class="ba-section">
+      <div class="ba-header">
+        <span class="ba-num">05</span>
+        <div>
+          <div class="ba-screen-name">Filter Configuration</div>
+          <p class="ba-screen-desc">Filter controls were scattered and inconsistent — different filtering patterns on different screens. The redesign unifies all filter interactions using Redwood's standard filter components with consistent behaviour across the application.</p>
+        </div>
+      </div>
+      <div class="ba-compare">
+        <div class="ba-side">
+          <div class="ba-tag ba-tag--old">Before</div>
+          <img src="assets/images/oracle-filter-old.jpg" alt="Filter — before" class="ba-img" loading="lazy">
+        </div>
+        <div class="ba-side">
+          <div class="ba-tag ba-tag--new">After</div>
+          <img src="assets/images/oracle-filter-new.jpg" alt="Filter — after" class="ba-img" loading="lazy">
+        </div>
+      </div>
+    </div>
+
+    <!-- Persist -->
+    <div class="ba-section">
+      <div class="ba-header">
+        <span class="ba-num">06</span>
+        <div>
+          <div class="ba-screen-name">Persist Configuration</div>
+          <p class="ba-screen-desc">The persist step — where pipeline outputs are saved — lacked clear confirmation patterns. Users were unsure if their configuration was saved. The redesign adds explicit save states, confirmation feedback, and clear visual indicators of completion.</p>
+        </div>
+      </div>
+      <div class="ba-compare">
+        <div class="ba-side">
+          <div class="ba-tag ba-tag--old">Before</div>
+          <img src="assets/images/oracle-persist-old.jpg" alt="Persist — before" class="ba-img" loading="lazy">
+        </div>
+        <div class="ba-side">
+          <div class="ba-tag ba-tag--new">After</div>
+          <img src="assets/images/oracle-persist-new.jpg" alt="Persist — after" class="ba-img" loading="lazy">
+        </div>
+      </div>
+    </div>
+
+    <!-- Canvas (new only) -->
+    <div class="ba-section">
+      <div class="ba-header">
+        <span class="ba-num">07</span>
+        <div>
+          <div class="ba-screen-name">Canvas &mdash; Pipeline Visual Builder</div>
+          <p class="ba-screen-desc">The canvas — where users visually construct data pipelines — was completely redesigned for spatial clarity. Redwood's canvas components replaced the old fixed-grid layout with a fluid workspace that scales with pipeline complexity.</p>
+        </div>
+      </div>
+      <div class="ba-compare ba-compare--single">
+        <div class="ba-side ba-side--full">
+          <div class="ba-tag ba-tag--new">New Design</div>
+          <img src="assets/images/oracle-canvas-new.jpg" alt="Canvas — new Redwood design" class="ba-img" loading="lazy">
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -220,22 +345,22 @@
   <div class="chapter-body">
     <div class="cs-outcome-grid">
       <div class="cs-outcome-item">
-        <div class="co-icon">✅</div>
+        <div class="co-icon"><i data-lucide="check-circle"></i></div>
         <div class="co-title">WCAG 2.1 AA Compliant</div>
         <p class="co-body">All colour combinations verified. Focus states visible. Font sizes meeting minimum requirements across all screen types.</p>
       </div>
       <div class="cs-outcome-item">
-        <div class="co-icon">🎨</div>
+        <div class="co-icon"><i data-lucide="layers"></i></div>
         <div class="co-title">Oracle Redwood Design System</div>
         <p class="co-body">100% Redwood components across all 7 screen types. No one-off custom elements. Developer handoff matched exactly to Oracle's component specifications.</p>
       </div>
       <div class="cs-outcome-item">
-        <div class="co-icon">🔄</div>
+        <div class="co-icon"><i data-lucide="refresh-cw"></i></div>
         <div class="co-title">Heuristic Violations Resolved</div>
         <p class="co-body">All three critical heuristic failure categories addressed — consistency, system status visibility, and error prevention. Validated through stakeholder review and developer walkthrough.</p>
       </div>
       <div class="cs-outcome-item">
-        <div class="co-icon">💬</div>
+        <div class="co-icon"><i data-lucide="message-circle"></i></div>
         <div class="co-title">Positive Stakeholder Feedback</div>
         <p class="co-body">Redesign received positive reception from both the Oracle product team and end users during the review phase. Clean, modern, and aligned with Oracle's visual direction.</p>
       </div>
@@ -258,15 +383,15 @@
   <div class="next-cards rv d1">
     <a href="varminer.html" class="next-card">
       <div class="nc-domain">HealthTech · Clinical Genomics</div>
-      <div class="nc-title">VarMiner Cloud</div>
+      <div class="nc-title">Impactomics</div>
       <p style="font-size:.78rem;color:var(--ink-3);line-height:1.6">Genome analysts reviewing hundreds of variants weekly. Rebuilt the experience around clinical urgency — not data volume.</p>
-      <div class="nc-arrow">→</div>
+      <div class="nc-arrow"><i data-lucide="arrow-right"></i></div>
     </a>
     <a href="myconnect.html" class="next-card">
       <div class="nc-domain">Enterprise SaaS · HRTech</div>
       <div class="nc-title">My Connect</div>
       <p style="font-size:.78rem;color:var(--ink-3);line-height:1.6">An intranet platform built from zero for thousands of employees — post feed, referrals, org chart, and AI-assisted content creation.</p>
-      <div class="nc-arrow">→</div>
+      <div class="nc-arrow"><i data-lucide="arrow-right"></i></div>
     </a>
   </div>
 </section>
@@ -276,20 +401,19 @@
 <!-- ══ FOOTER ══ -->
 <footer>
   <div class="ft-copy">
-    <img class="ft-logo logo-dark" src="assets/images/logo-dark.png" alt="SK">
-    <img class="ft-logo logo-light" src="assets/images/logo-white.png" alt="SK">
+    <img loading="lazy" class="ft-logo logo-dark" src="assets/images/logo-dark.svg" alt="SK">
+    <img loading="lazy" class="ft-logo logo-light" src="assets/images/logo-white.svg" alt="SK">
     <span>© 2025 Sonal Kandhway · All rights reserved</span>
   </div>
   <div class="ft-made">Oracle Pipeline Designer · UX Case Study</div>
 </footer>
 
 <button class="back-top" id="backTop" aria-label="Back to top">
-  <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-    <path d="M10 16V4M5 9l5-5 5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-  </svg>
+  <i data-lucide="arrow-up"></i>
 </button>
 
 <script src="assets/js/main.js"></script>
 <script src="assets/js/case-study.js"></script>
+<script>lucide.createIcons();</script>
 </body>
 </html>

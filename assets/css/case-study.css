@@ -46,7 +46,8 @@ nav{
 
 .hero-left{position:relative;z-index:2}
 .cs-breadcrumb{display:flex;align-items:center;gap:10px;margin-bottom:32px;opacity:0;animation:up .7s .1s var(--ease-out) forwards}
-.bc-item{font-size:.72rem;color:var(--ink-3);letter-spacing:.08em}
+.bc-item{font-size:.72rem;color:var(--ink-3);letter-spacing:.08em;text-decoration:none;transition:color .2s}
+a.bc-item:hover{color:var(--ink-1)}
 .bc-sep{color:var(--ink-3);font-size:.8rem}
 .bc-active{color:var(--accent)}
 
@@ -552,4 +553,177 @@ footer{padding:28px 56px;border-top:1px solid var(--border);display:flex;align-i
   .cs-challenge-pair { grid-template-columns: 1fr; }
   .cs-outcome-grid  { grid-template-columns: 1fr; }
   .cs-ph--hero      { height: 220px; }
+}
+
+/* ── Lucide in case study co-icon ── */
+.co-icon svg {
+  width: 28px; height: 28px;
+  stroke: var(--accent); fill: none;
+  stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round;
+}
+
+/* ── Lucide in validation finding vf-icon ── */
+.vf-icon svg {
+  width: 18px; height: 18px;
+  stroke: var(--accent); fill: none;
+  stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;
+  flex-shrink: 0; margin-top: 2px;
+}
+
+/* ════════════════════════════════════════════
+   BEFORE / AFTER COMPARISON LAYOUT
+════════════════════════════════════════════ */
+
+/* Phone screen grid — stacked rows of 3 */
+.cp-screen-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 48px;
+}
+.cp-screen-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.cp-screen-cell img {
+  width: 100%;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  display: block;
+}
+.cp-screen-meta {}
+.cp-screen-num {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--accent);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+.cp-screen-title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--ink-1);
+  margin-bottom: 4px;
+  line-height: 1.4;
+}
+.cp-screen-dim {
+  font-size: 0.75rem;
+  color: var(--accent);
+  font-style: italic;
+  margin-bottom: 6px;
+}
+.cp-screen-desc {
+  font-size: 0.775rem;
+  color: var(--ink-2);
+  line-height: 1.65;
+}
+
+.ba-section {
+  margin-bottom: 56px;
+  padding-bottom: 56px;
+  border-bottom: 1px solid var(--border);
+}
+.ba-section:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+
+.ba-header {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  margin-bottom: 28px;
+}
+.ba-num {
+  width: 40px; height: 40px;
+  background: var(--accent-dim);
+  border: 1px solid var(--border-s);
+  border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-m);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+.ba-screen-name {
+  font-size: 1.0625rem;
+  font-weight: 600;
+  color: var(--ink-1);
+  margin-bottom: 8px;
+  letter-spacing: -0.01em;
+}
+.ba-screen-desc {
+  font-size: 0.8125rem;
+  color: var(--ink-2);
+  line-height: 1.7;
+  max-width: 680px;
+}
+
+.ba-compare {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.ba-compare--single { grid-template-columns: 1fr; }
+
+.ba-side {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: border-color 0.25s;
+}
+.ba-side:hover { border-color: var(--border-s); }
+.ba-side--full { max-width: 680px; }
+
+.ba-tag {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-m);
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 8px 16px;
+  margin: 12px 12px 0;
+  border-radius: 100px;
+}
+.ba-tag--old {
+  background: rgba(168,62,44,.08);
+  color: #EE6249;
+  border: 1px solid rgba(168,62,44,.15);
+}
+.ba-tag--new {
+  background: rgba(58,146,84,.08);
+  color: #3A9254;
+  border: 1px solid rgba(58,146,84,.15);
+}
+
+.ba-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 12px;
+  border-radius: 16px;
+}
+
+/* Hero screenshot (when real image replaces placeholder) */
+.cs-hero-img {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 8px 40px rgba(0,0,0,.25);
+}
+.cs-hero-screenshot {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 24px;
+}
+
+@media (max-width: 768px) {
+  .ba-compare { grid-template-columns: 1fr; }
+  .ba-header { flex-direction: column; gap: 12px; }
+  .cp-screen-row { grid-template-columns: 1fr; }
 }
