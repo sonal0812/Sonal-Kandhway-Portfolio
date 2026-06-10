@@ -292,12 +292,12 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', attachLightbox);
 })();
 
-// ── Project card hero image → navigate to case study ─────
+// ── Project card → navigate to case study (whole card clickable) ─────
 (function () {
-  document.querySelectorAll('.project-hero').forEach(function (hero) {
-    hero.addEventListener('click', function () {
-      const card = hero.closest('.project-card');
-      if (!card) return;
+  document.querySelectorAll('.project-card').forEach(function (card) {
+    card.addEventListener('click', function (e) {
+      // Don't intercept clicks on the actual link itself
+      if (e.target.closest('.project-link')) return;
       const link = card.querySelector('.project-link');
       if (link && link.href) window.location.href = link.href;
     });

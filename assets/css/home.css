@@ -1878,3 +1878,66 @@
   stroke: var(--accent); fill: none;
   stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round;
 }
+
+/* Work heading — REAL spanning effect */
+.work-real {
+  font-style: normal;
+  color: var(--accent);
+  font-weight: 800;
+}
+.work-real-ghost {
+  font-style: normal;
+  color: var(--accent);
+  font-weight: 800;
+  opacity: 0.35;
+}
+
+/* ── Captcha checkbox ─────────────────────────────────── */
+.cf-captcha {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.cf-captcha-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  user-select: none;
+}
+.cf-captcha-label input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.cf-captcha-box {
+  width: 22px;
+  height: 22px;
+  border: 1.5px solid var(--border-s);
+  border-radius: 5px;
+  background: var(--card);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color .2s, background .2s;
+}
+.cf-captcha-label input:checked + .cf-captcha-box {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+.cf-captcha-label input:checked + .cf-captcha-box::after {
+  content: '';
+  width: 5px;
+  height: 9px;
+  border: 2px solid #fff;
+  border-top: none;
+  border-left: none;
+  transform: rotate(45deg) translateY(-1px);
+  display: block;
+}
+.cf-captcha-text {
+  font-size: .875rem;
+  color: var(--ink-2);
+}
