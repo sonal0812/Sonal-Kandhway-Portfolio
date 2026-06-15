@@ -103,7 +103,7 @@ ADDING MORE CASE STUDIES
 CONTACT
 ────────
   Email    kandhwaysonal12@gmail.com
-  Phone    +91 9599 423 492
+  Phone    +91 9599 425 492
   LinkedIn linkedin.com/in/sonalkandhway
 
 ═══════════════════════════════════════════════════════════════════
